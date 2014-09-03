@@ -1,3 +1,3 @@
-module TflJp
+module TFLJourneyPlanner
   VERSION = "0.0.1"
 end

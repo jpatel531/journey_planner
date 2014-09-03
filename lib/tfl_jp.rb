@@ -1,5 +1,5 @@
 require "tfl_jp/version"
 
-module TflJp
+module TFLJourneyPlanner
   # Your code goes here...
 end

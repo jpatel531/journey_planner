@@ -5,7 +5,7 @@ require 'tfl_jp/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "tfl_jp"
-  spec.version       = TflJp::VERSION
+  spec.version       = TFLJourneyPlanner::VERSION
   spec.authors       = ["jpatel531"]
   spec.email         = ["jamie@notespublication.com"]
   spec.summary       = %q{TODO: Write a short summary. Required.}
