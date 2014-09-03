@@ -7,7 +7,7 @@ describe TFLJourneyPlanner::Results, vcr: true do
 		VCR.use_cassette "hello", record: :new_episodes do 
 			client = TFLJourneyPlanner::Client.new(app_id: ENV["TFL_ID"], app_key: ENV["TFL_KEY"])
 			journeys =  client.get_journeys(from: "tw14 9nt", to: "tw14 8ex")
-			expect(journeys[0].startDateTime).to be_a String
+			expect(journeys[0].start_date_time).to be_a String
 		end
 	end
 

@@ -1,3 +1,5 @@
+require_relative 'rubify_keys'
+
 module TFLJourneyPlanner
 
 	module Results
@@ -47,7 +49,7 @@ module TFLJourneyPlanner
 				adjustment: adjustment,
 				alternativeCycle: alternative_cycle, 
 				alternativeWalking: alternative_walking, 
-				applyHtmlMarkup: apply_html_markup})
+				applyHtmlMarkup: apply_html_markup}).rubyify_keys!
 			process_journeys_from results
 		end
 
