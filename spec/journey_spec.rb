@@ -1,22 +1,26 @@
 require_relative 'spec_helper'
 
-describe TFLJourneyPlanner::Client, vcr: true do 
-	
+describe TFLJourneyPlanner::Journey do
 
-	it "must work" do 
+	it "should return an array of instructions" do 
 		VCR.use_cassette "hello", record: :none do 
 			client = TFLJourneyPlanner::Client.new(app_id: ENV["TFL_ID"], app_key: ENV["TFL_KEY"])
-			journeys =  client.get_journeys(from: "tw14 9nt", to: "tw14 8ex")
-			expect(journeys['journeys'][0]['startDateTime']).to eq "2014-09-03T16:58:00"
+			results =  client.get_journeys(from: "tw14 9nt", to: "tw14 8ex")
+			journeys = client.process_journeys_from results
+			array = ["Continue along Fruen Road for 143 metres (2 minutes, 8 seconds).", 
+				"Turn right on to Bedfont Lane, continue for 172 metres (2 minutes, 33 seconds).",
+				"H25 bus to Bedfont Library / H25 bus towards Hatton Cross",
+				 "Continue along Staines Road for 64 metres (0 minutes, 57 seconds).",
+				 "Turn left on to Grovestile Waye, continue for 95 metres (1 minute, 21 seconds)."]
+			expect(journeys[0].instructions).to eq array
 		end
 	end
 
-	it 'must work again' do 
-		VCR.use_cassette "hello", record: :none do 
-			client = TFLJourneyPlanner::Client.new(app_id: ENV["TFL_ID"], app_key: ENV["TFL_KEY"])
-			journeys =  client.get_journeys(from: "tw14 9nt", to: "tw14 8ex")
-			expect(journeys['journeys'][0]['duration']).to eq 11
-		end
-	end
+
+
+
+
+
+
 
 end

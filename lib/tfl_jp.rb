@@ -1,6 +1,8 @@
-require "tfl_jp/version"
+# require "tfl_jp/version"
 require "httparty"
 require 'json'
+require 'ostruct'
+require 'recursive-open-struct'
 
 Dir[File.dirname(__FILE__) + '/tfl_jp/*.rb'].each do |file|
   require file
@@ -9,7 +11,7 @@ end
 module TFLJourneyPlanner
   
 
-	module Journey
+	module Results
 
 		include HTTParty
 
@@ -38,7 +40,7 @@ module TFLJourneyPlanner
 			alternative_walking = options[:alternative_walking] || true
 			apply_html_markup = options[:apply_html_markup] || false
 
-			self.class.get(BASE_URI, query: 
+			results = self.class.get(BASE_URI, query: 
 				{app_key: app_key, 
 				app_id: app_id, 
 				from: from, 
@@ -58,6 +60,31 @@ module TFLJourneyPlanner
 				alternativeCycle: alternative_cycle, 
 				alternativeWalking: alternative_walking, 
 				applyHtmlMarkup: apply_html_markup})
+
+		end
+
+		def process_journeys_from results
+			array = []
+			results["journeys"].each do |journey|
+				array << TFLJourneyPlanner::Journey.new(journey, recurse_over_arrays: true)
+			end
+			return array
+		end
+
+	end
+
+	class Journey < RecursiveOpenStruct
+
+		def instructions
+			array = []
+			legs.each do |leg|
+				if leg.instruction.steps.any?
+					leg.instruction.steps.each {|step| array << step.description}
+				else
+					array << leg.instruction.summary + " / " + leg.instruction.detailed
+				end
+			end
+			return array
 		end
 
 	end
@@ -65,7 +92,7 @@ module TFLJourneyPlanner
 	class Client
 
 		include HTTParty
-		include TFLJourneyPlanner::Journey
+		include TFLJourneyPlanner::Results
 
 		attr_reader :app_key, :app_id
 

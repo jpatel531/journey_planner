@@ -4,6 +4,7 @@ source 'https://rubygems.org'
 gemspec
 
 gem 'httparty'
+gem 'recursive-open-struct'
 
 group :test do 
 	gem 'webmock'
