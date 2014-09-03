@@ -48,7 +48,7 @@ module TFLJourneyPlanner
 				alternativeCycle: alternative_cycle, 
 				alternativeWalking: alternative_walking, 
 				applyHtmlMarkup: apply_html_markup})
-
+			process_journeys_from results
 		end
 
 		def process_journeys_from results

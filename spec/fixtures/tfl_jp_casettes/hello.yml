@@ -774,4 +774,461 @@ http_interactions:
         Tfl.Api.Presentation.Entities","from":"tw14+9nt","to":"tw14+8ex","via":"","uri":"/journey/journeyresults/%7bfrom%7d/to/%7bto%7d/via/%7bvia%7d?app_key=c381b49216f90558cf148c53cd5205b8&app_id=a09e631e&from=tw14%2b9nt&to=tw14%2b8ex&via=&nationalsearch=false&timeis=departing&journeypreference=&mode=&fromname=&toname=&vianame=&maxtransferminutes=&maxwalkingminutes=&cyclepreference=&adjustment=&alternativecycle=false&alternativewalking=true&applyhtmlmarkup=false"}}'
     http_version: 
   recorded_at: Wed, 03 Sep 2014 16:08:55 GMT
+- request:
+    method: get
+    uri: http://api.tfl.gov.uk/Journey/JourneyResults/%7Bfrom%7D/to/%7Bto%7D/via/%7Bvia%7D?adjustment=&alternativeCycle=false&alternativeWalking=true&app_id=a09e631e&app_key=c381b49216f90558cf148c53cd5205b8&applyHtmlMarkup=false&cyclePreference=&from=tw14%209nt&fromName=&journeyPreference=&maxTransferMinutes=&maxWalkingMinutes=&mode=&nationalSearch=false&timeIs=Departing&to=tw14%208ex&toName=&via=&viaName=
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - s-maxage=300
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept-Encoding
+      Server:
+      - Microsoft-IIS/8.0
+      Api-Entity-Payload:
+      - itineraryresult, disambiguationresult, mode, stoppoint, place, disruption,
+        plannedworks, line, linestatus
+      X-Aspnet-Version:
+      - 4.0.30319
+      Access-Control-Allow-Headers:
+      - Content-Type
+      Access-Control-Allow-Methods:
+      - GET,POST,PUT,DELETE,OPTIONS
+      X-Ttl-Rule:
+      - '0'
+      X-Cacheable:
+      - Yes. Cacheable
+      X-Ttl:
+      - '300.000'
+      X-Backend:
+      - api
+      X-Varnish:
+      - 10.73.2.241
+      - '1794991432'
+      X-Backend-Url:
+      - "/Journey/JourneyResults/%7Bfrom%7D/to/%7Bto%7D/via/%7Bvia%7D?app_key=c381b49216f90558cf148c53cd5205b8&app_id=a09e631e&from=tw14%209nt&to=tw14%208ex&via=&nationalSearch=false&timeIs=Departing&journeyPreference=&mode=&fromName=&toName=&viaName=&maxTransferMinutes=&maxWalkingMinutes=&cyclePreference=&adjustment=&alternativeCycle=false&alternativeWalking=true&applyHtmlMarkup=false"
+      X-Hash-Url:
+      - "/Journey/JourneyResults/%7Bfrom%7D/to/%7Bto%7D/via/%7Bvia%7D?app_key=c381b49216f90558cf148c53cd5205b8&app_id=a09e631e&from=tw14%209nt&to=tw14%208ex&via=&nationalSearch=false&timeIs=Departing&journeyPreference=&mode=&fromName=&toName=&viaName=&maxTransferMinutes=&maxWalkingMinutes=&cyclePreference=&adjustment=&alternativeCycle=false&alternativeWalking=true&applyHtmlMarkup=false"
+      Access-Control-Allow-Origin:
+      - "*"
+      Transfer-Encoding:
+      - chunked
+      Date:
+      - Wed, 03 Sep 2014 20:21:53 GMT
+      Age:
+      - '0'
+      Via:
+      - 1.1 varnish
+      Connection:
+      - keep-alive
+      X-Banning:
+      - ''
+      X-Cache:
+      - MISS
+    body:
+      encoding: UTF-8
+      string: '{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.ItineraryResult,
+        Tfl.Api.Presentation.Entities","journeys":[{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Journey,
+        Tfl.Api.Presentation.Entities","startDateTime":"2014-09-03T21:19:00","duration":18,"arrivalDateTime":"2014-09-03T21:37:00","legs":[{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Leg,
+        Tfl.Api.Presentation.Entities","duration":11,"instruction":{"$type":"Tfl.Api.Presentation.Entities.Instruction,
+        Tfl.Api.Presentation.Entities","summary":"Walk to Engleheart Drive (TW14)","detailed":"Walk
+        to Engleheart Drive (TW14)","steps":[{"$type":"Tfl.Api.Presentation.Entities.InstructionStep,
+        Tfl.Api.Presentation.Entities","description":"Continue along Fruen Road for
+        104 metres (1 minute, 32 seconds).","turnDirection":"STRAIGHT","streetName":"Fruen
+        Road","distance":104,"cumulativeDistance":104,"skyDirection":207,"cumulativeTravelTime":92,"latitude":-0.41951598516,"longitude":51.451444620640004,"pathAttribute":{"$type":"Tfl.Api.Presentation.Entities.PathAttribute,
+        Tfl.Api.Presentation.Entities"}},{"$type":"Tfl.Api.Presentation.Entities.InstructionStep,
+        Tfl.Api.Presentation.Entities","description":"Turn left on to Link Road, continue
+        for 77 metres (1 minute, 9 seconds).","turnDirection":"LEFT","streetName":"Link
+        Road","distance":77,"cumulativeDistance":181,"skyDirection":118,"cumulativeTravelTime":161,"latitude":-0.41881099495999996,"longitude":51.452271398869996,"pathAttribute":{"$type":"Tfl.Api.Presentation.Entities.PathAttribute,
+        Tfl.Api.Presentation.Entities"}},{"$type":"Tfl.Api.Presentation.Entities.InstructionStep,
+        Tfl.Api.Presentation.Entities","description":"Turn right on to Tachbrook Road,
+        continue for 237 metres (3 minutes, 32 seconds).","turnDirection":"RIGHT","streetName":"Tachbrook
+        Road","distance":237,"cumulativeDistance":418,"skyDirection":208,"cumulativeTravelTime":373,"latitude":-0.41977804741,"longitude":51.4526081595,"pathAttribute":{"$type":"Tfl.Api.Presentation.Entities.PathAttribute,
+        Tfl.Api.Presentation.Entities"}},{"$type":"Tfl.Api.Presentation.Entities.InstructionStep,
+        Tfl.Api.Presentation.Entities","description":"Continue along Burns Avenue
+        for 104 metres (1 minute, 33 seconds).","turnDirection":"STRAIGHT","streetName":"Burns
+        Avenue","distance":104,"cumulativeDistance":522,"skyDirection":209,"cumulativeTravelTime":466,"latitude":-0.4181303776,"longitude":51.4544743232,"pathAttribute":{"$type":"Tfl.Api.Presentation.Entities.PathAttribute,
+        Tfl.Api.Presentation.Entities"}},{"$type":"Tfl.Api.Presentation.Entities.InstructionStep,
+        Tfl.Api.Presentation.Entities","description":"Turn left on to Shakespeare
+        Avenue, continue for 122 metres (1 minute, 49 seconds).","turnDirection":"LEFT","streetName":"Shakespeare
+        Avenue","distance":122,"cumulativeDistance":644,"skyDirection":156,"cumulativeTravelTime":575,"latitude":-0.41698896860999995,"longitude":51.45501644038,"pathAttribute":{"$type":"Tfl.Api.Presentation.Entities.PathAttribute,
+        Tfl.Api.Presentation.Entities"}},{"$type":"Tfl.Api.Presentation.Entities.InstructionStep,
+        Tfl.Api.Presentation.Entities","description":"Turn left on to Staines Road,
+        continue for 58 metres (0 minutes, 51 seconds).","turnDirection":"LEFT","streetName":"Staines
+        Road","distance":58,"cumulativeDistance":702,"skyDirection":72,"cumulativeTravelTime":626,"latitude":-0.417630016,"longitude":51.45604122309,"pathAttribute":{"$type":"Tfl.Api.Presentation.Entities.PathAttribute,
+        Tfl.Api.Presentation.Entities"}}]},"obstacles":[],"departureTime":"2014-09-03T21:19:00","arrivalTime":"2014-09-03T21:30:00","departurePoint":{"$type":"Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities","platformName":"","modes":[],"icsCode":"99999997","commonName":"TW14
+        9NT","placeType":"PostCode","additionalProperties":[],"lat":51.45151025215,"lon":-0.41971520833},"arrivalPoint":{"$type":"Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities","platformName":"D","modes":[],"icsCode":"1006595","commonName":"Engleheart
+        Drive (TW14)","placeType":"StopPoint","additionalProperties":[],"lat":51.455844784869996,"lon":-0.41839966235},"path":{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Path,
+        Tfl.Api.Presentation.Entities","lineString":"[[51.45151025215, -0.41971520833],[51.45144462064,
+        -0.41951598516],[51.45227139887, -0.41881099496],[51.4526081595, -0.41977804741],[51.4544743232,
+        -0.4181303776],[51.45475844846, -0.41786148044],[51.45501644038, -0.41698896861],[51.45567898064,
+        -0.4174410335],[51.45604122309, -0.417630016],[51.45589832536, -0.41836902498],[51.45589011353,
+        -0.41842688273],[51.45584478487, -0.41839966235]]","stopPoints":[]},"routeOptions":[{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.RouteOption,
+        Tfl.Api.Presentation.Entities","name":"","directions":[""]}],"mode":{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.Mode,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"walking","name":"walking"},"disruptions":[],"plannedWorks":[],"distance":702.0,"isDisrupted":false,"hasFixedLocations":true},{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Leg,
+        Tfl.Api.Presentation.Entities","duration":4,"instruction":{"$type":"Tfl.Api.Presentation.Entities.Instruction,
+        Tfl.Api.Presentation.Entities","summary":"116 bus to Bedfont Library","detailed":"116
+        bus towards Ashford Hospital","steps":[]},"obstacles":[],"departureTime":"2014-09-03T21:30:00","arrivalTime":"2014-09-03T21:34:00","departurePoint":{"$type":"Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities","naptanId":"490006595E","platformName":"D","modes":[],"icsCode":"1006595","commonName":"Engleheart
+        Drive (TW14) - Stop D","placeType":"StopPoint","additionalProperties":[],"lat":51.45589011353,"lon":-0.41842688273},"arrivalPoint":{"$type":"Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities","naptanId":"490003790E","platformName":"M","modes":[],"icsCode":"1003790","commonName":"Bedfont
+        Library","placeType":"StopPoint","additionalProperties":[],"lat":51.45214526251,"lon":-0.43487715283},"path":{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Path,
+        Tfl.Api.Presentation.Entities","lineString":"[[51.45589011353, -0.41842688273],[51.45572218606,
+        -0.41931068563],[51.45552961356, -0.42036805315],[51.4554455464, -0.42080275516],[51.45540409344,
+        -0.42106326552],[51.45519333515, -0.42210685183],[51.45511728179, -0.42246930495],[51.45511728179,
+        -0.42246930495],[51.45494777584, -0.42323798657],[51.45469302404, -0.42435503238],[51.45429280332,
+        -0.42602400322],[51.45429280332, -0.42602400322],[51.45411428567, -0.42679296723],[51.45394320749,
+        -0.42744652667],[51.45373007777, -0.42831741733],[51.45367101727, -0.42860730096],[51.45367101727,
+        -0.42860730096],[51.45366241474, -0.42863638187],[51.45346571073, -0.4293915562],[51.45332960733,
+        -0.42997193339],[51.45321911747, -0.43045068035],[51.45311684369, -0.43087157293],[51.45304821115,
+        -0.43111859968],[51.45298875872, -0.4313797036],[51.45298875872, -0.4313797036],[51.45293752411,
+        -0.43158295509],[51.45263967401, -0.43284530436],[51.45252878782, -0.43329526574],[51.45214526251,
+        -0.43487715283]]","stopPoints":[{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"490004836E","name":"Cassiobury
+        Avenue (TW14)","uri":"/StopPoint/490004836E"},{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"490003788W","name":"Bedfont
+        Lane (TW14)","uri":"/StopPoint/490003788W"},{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"490003788E","name":"Bethany
+        Waye (TW14)","uri":"/StopPoint/490003788E"},{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"490010257E","name":"New
+        Road (TW14)","uri":"/StopPoint/490010257E"},{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"490003790E","name":"Bedfont
+        Library","uri":"/StopPoint/490003790E"}]},"routeOptions":[{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.RouteOption,
+        Tfl.Api.Presentation.Entities","name":"116","directions":["Ashford Hospital"],"lineIdentifier":{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.Line,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"116","name":"116","uri":"/Line/116"}}],"mode":{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.Mode,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"bus","name":"bus"},"disruptions":[],"plannedWorks":[],"isDisrupted":false,"hasFixedLocations":true},{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Leg,
+        Tfl.Api.Presentation.Entities","duration":3,"instruction":{"$type":"Tfl.Api.Presentation.Entities.Instruction,
+        Tfl.Api.Presentation.Entities","summary":"Walk to TW14 8EX","detailed":"Walk
+        to TW14 8EX","steps":[{"$type":"Tfl.Api.Presentation.Entities.InstructionStep,
+        Tfl.Api.Presentation.Entities","description":"Continue along Staines Road
+        for 64 metres (0 minutes, 57 seconds).","turnDirection":"STRAIGHT","streetName":"Staines
+        Road","distance":64,"cumulativeDistance":64,"skyDirection":67,"cumulativeTravelTime":57,"latitude":-0.43487715283,"longitude":51.45214526251,"pathAttribute":{"$type":"Tfl.Api.Presentation.Entities.PathAttribute,
+        Tfl.Api.Presentation.Entities"}},{"$type":"Tfl.Api.Presentation.Entities.InstructionStep,
+        Tfl.Api.Presentation.Entities","description":"Turn left on to Grovestile Waye,
+        continue for 95 metres (1 minute, 21 seconds).","turnDirection":"LEFT","streetName":"Grovestile
+        Waye","distance":95,"cumulativeDistance":159,"skyDirection":346,"cumulativeTravelTime":138,"latitude":-0.43573359002,"longitude":51.451931885,"pathAttribute":{"$type":"Tfl.Api.Presentation.Entities.PathAttribute,
+        Tfl.Api.Presentation.Entities"}}]},"obstacles":[],"departureTime":"2014-09-03T21:34:00","arrivalTime":"2014-09-03T21:37:00","departurePoint":{"$type":"Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities","platformName":"M","modes":[],"icsCode":"1003790","commonName":"Bedfont
+        Library","placeType":"StopPoint","additionalProperties":[],"lat":51.45188230071,"lon":-0.43471343855},"arrivalPoint":{"$type":"Tfl.Api.Presentation.Entities.Place,
+        Tfl.Api.Presentation.Entities","commonName":"TW14 8EX","placeType":"PostCode","lat":51.451125602,"lon":-0.43528621085999997},"path":{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Path,
+        Tfl.Api.Presentation.Entities","lineString":"[[51.45188230071, -0.43471343855],[51.45214526251,
+        -0.43487715283],[51.451931885, -0.43573359002],[51.45157942641, -0.43560171477],[51.45124052845,
+        -0.43513836205],[51.45120399971, -0.43509643498],[51.451125602, -0.43528621086]]","stopPoints":[]},"routeOptions":[{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.RouteOption,
+        Tfl.Api.Presentation.Entities","name":"","directions":[""]}],"mode":{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.Mode,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"walking","name":"walking"},"disruptions":[],"plannedWorks":[],"distance":159.0,"isDisrupted":false,"hasFixedLocations":false}]},{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Journey,
+        Tfl.Api.Presentation.Entities","startDateTime":"2014-09-03T21:38:00","duration":18,"arrivalDateTime":"2014-09-03T21:56:00","legs":[{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Leg,
+        Tfl.Api.Presentation.Entities","duration":11,"instruction":{"$type":"Tfl.Api.Presentation.Entities.Instruction,
+        Tfl.Api.Presentation.Entities","summary":"Walk to Engleheart Drive (TW14)","detailed":"Walk
+        to Engleheart Drive (TW14)","steps":[{"$type":"Tfl.Api.Presentation.Entities.InstructionStep,
+        Tfl.Api.Presentation.Entities","description":"Continue along Fruen Road for
+        104 metres (1 minute, 32 seconds).","turnDirection":"STRAIGHT","streetName":"Fruen
+        Road","distance":104,"cumulativeDistance":104,"skyDirection":207,"cumulativeTravelTime":92,"latitude":-0.41951598516,"longitude":51.451444620640004,"pathAttribute":{"$type":"Tfl.Api.Presentation.Entities.PathAttribute,
+        Tfl.Api.Presentation.Entities"}},{"$type":"Tfl.Api.Presentation.Entities.InstructionStep,
+        Tfl.Api.Presentation.Entities","description":"Turn left on to Link Road, continue
+        for 77 metres (1 minute, 9 seconds).","turnDirection":"LEFT","streetName":"Link
+        Road","distance":77,"cumulativeDistance":181,"skyDirection":118,"cumulativeTravelTime":161,"latitude":-0.41881099495999996,"longitude":51.452271398869996,"pathAttribute":{"$type":"Tfl.Api.Presentation.Entities.PathAttribute,
+        Tfl.Api.Presentation.Entities"}},{"$type":"Tfl.Api.Presentation.Entities.InstructionStep,
+        Tfl.Api.Presentation.Entities","description":"Turn right on to Tachbrook Road,
+        continue for 237 metres (3 minutes, 32 seconds).","turnDirection":"RIGHT","streetName":"Tachbrook
+        Road","distance":237,"cumulativeDistance":418,"skyDirection":208,"cumulativeTravelTime":373,"latitude":-0.41977804741,"longitude":51.4526081595,"pathAttribute":{"$type":"Tfl.Api.Presentation.Entities.PathAttribute,
+        Tfl.Api.Presentation.Entities"}},{"$type":"Tfl.Api.Presentation.Entities.InstructionStep,
+        Tfl.Api.Presentation.Entities","description":"Continue along Burns Avenue
+        for 104 metres (1 minute, 33 seconds).","turnDirection":"STRAIGHT","streetName":"Burns
+        Avenue","distance":104,"cumulativeDistance":522,"skyDirection":209,"cumulativeTravelTime":466,"latitude":-0.4181303776,"longitude":51.4544743232,"pathAttribute":{"$type":"Tfl.Api.Presentation.Entities.PathAttribute,
+        Tfl.Api.Presentation.Entities"}},{"$type":"Tfl.Api.Presentation.Entities.InstructionStep,
+        Tfl.Api.Presentation.Entities","description":"Turn left on to Shakespeare
+        Avenue, continue for 122 metres (1 minute, 49 seconds).","turnDirection":"LEFT","streetName":"Shakespeare
+        Avenue","distance":122,"cumulativeDistance":644,"skyDirection":156,"cumulativeTravelTime":575,"latitude":-0.41698896860999995,"longitude":51.45501644038,"pathAttribute":{"$type":"Tfl.Api.Presentation.Entities.PathAttribute,
+        Tfl.Api.Presentation.Entities"}},{"$type":"Tfl.Api.Presentation.Entities.InstructionStep,
+        Tfl.Api.Presentation.Entities","description":"Turn left on to Staines Road,
+        continue for 58 metres (0 minutes, 51 seconds).","turnDirection":"LEFT","streetName":"Staines
+        Road","distance":58,"cumulativeDistance":702,"skyDirection":72,"cumulativeTravelTime":626,"latitude":-0.417630016,"longitude":51.45604122309,"pathAttribute":{"$type":"Tfl.Api.Presentation.Entities.PathAttribute,
+        Tfl.Api.Presentation.Entities"}}]},"obstacles":[],"departureTime":"2014-09-03T21:38:00","arrivalTime":"2014-09-03T21:49:00","departurePoint":{"$type":"Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities","platformName":"","modes":[],"icsCode":"99999997","commonName":"TW14
+        9NT","placeType":"PostCode","additionalProperties":[],"lat":51.45151025215,"lon":-0.41971520833},"arrivalPoint":{"$type":"Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities","platformName":"D","modes":[],"icsCode":"1006595","commonName":"Engleheart
+        Drive (TW14)","placeType":"StopPoint","additionalProperties":[],"lat":51.455844784869996,"lon":-0.41839966235},"path":{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Path,
+        Tfl.Api.Presentation.Entities","lineString":"[[51.45151025215, -0.41971520833],[51.45144462064,
+        -0.41951598516],[51.45227139887, -0.41881099496],[51.4526081595, -0.41977804741],[51.4544743232,
+        -0.4181303776],[51.45475844846, -0.41786148044],[51.45501644038, -0.41698896861],[51.45567898064,
+        -0.4174410335],[51.45604122309, -0.417630016],[51.45589832536, -0.41836902498],[51.45589011353,
+        -0.41842688273],[51.45584478487, -0.41839966235]]","stopPoints":[]},"routeOptions":[{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.RouteOption,
+        Tfl.Api.Presentation.Entities","name":"","directions":[""]}],"mode":{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.Mode,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"walking","name":"walking"},"disruptions":[],"plannedWorks":[],"distance":702.0,"isDisrupted":false,"hasFixedLocations":true},{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Leg,
+        Tfl.Api.Presentation.Entities","duration":4,"instruction":{"$type":"Tfl.Api.Presentation.Entities.Instruction,
+        Tfl.Api.Presentation.Entities","summary":"116 bus to Bedfont Library","detailed":"116
+        bus towards Ashford Hospital","steps":[]},"obstacles":[],"departureTime":"2014-09-03T21:49:00","arrivalTime":"2014-09-03T21:53:00","departurePoint":{"$type":"Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities","naptanId":"490006595E","platformName":"D","modes":[],"icsCode":"1006595","commonName":"Engleheart
+        Drive (TW14) - Stop D","placeType":"StopPoint","additionalProperties":[],"lat":51.45589011353,"lon":-0.41842688273},"arrivalPoint":{"$type":"Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities","naptanId":"490003790E","platformName":"M","modes":[],"icsCode":"1003790","commonName":"Bedfont
+        Library","placeType":"StopPoint","additionalProperties":[],"lat":51.45214526251,"lon":-0.43487715283},"path":{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Path,
+        Tfl.Api.Presentation.Entities","lineString":"[[51.45589011353, -0.41842688273],[51.45572218606,
+        -0.41931068563],[51.45552961356, -0.42036805315],[51.4554455464, -0.42080275516],[51.45540409344,
+        -0.42106326552],[51.45519333515, -0.42210685183],[51.45511728179, -0.42246930495],[51.45511728179,
+        -0.42246930495],[51.45494777584, -0.42323798657],[51.45469302404, -0.42435503238],[51.45429280332,
+        -0.42602400322],[51.45429280332, -0.42602400322],[51.45411428567, -0.42679296723],[51.45394320749,
+        -0.42744652667],[51.45373007777, -0.42831741733],[51.45367101727, -0.42860730096],[51.45367101727,
+        -0.42860730096],[51.45366241474, -0.42863638187],[51.45346571073, -0.4293915562],[51.45332960733,
+        -0.42997193339],[51.45321911747, -0.43045068035],[51.45311684369, -0.43087157293],[51.45304821115,
+        -0.43111859968],[51.45298875872, -0.4313797036],[51.45298875872, -0.4313797036],[51.45293752411,
+        -0.43158295509],[51.45263967401, -0.43284530436],[51.45252878782, -0.43329526574],[51.45214526251,
+        -0.43487715283]]","stopPoints":[{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"490004836E","name":"Cassiobury
+        Avenue (TW14)","uri":"/StopPoint/490004836E"},{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"490003788W","name":"Bedfont
+        Lane (TW14)","uri":"/StopPoint/490003788W"},{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"490003788E","name":"Bethany
+        Waye (TW14)","uri":"/StopPoint/490003788E"},{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"490010257E","name":"New
+        Road (TW14)","uri":"/StopPoint/490010257E"},{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"490003790E","name":"Bedfont
+        Library","uri":"/StopPoint/490003790E"}]},"routeOptions":[{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.RouteOption,
+        Tfl.Api.Presentation.Entities","name":"116","directions":["Ashford Hospital"],"lineIdentifier":{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.Line,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"116","name":"116","uri":"/Line/116"}}],"mode":{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.Mode,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"bus","name":"bus"},"disruptions":[],"plannedWorks":[],"isDisrupted":false,"hasFixedLocations":true},{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Leg,
+        Tfl.Api.Presentation.Entities","duration":3,"instruction":{"$type":"Tfl.Api.Presentation.Entities.Instruction,
+        Tfl.Api.Presentation.Entities","summary":"Walk to TW14 8EX","detailed":"Walk
+        to TW14 8EX","steps":[{"$type":"Tfl.Api.Presentation.Entities.InstructionStep,
+        Tfl.Api.Presentation.Entities","description":"Continue along Staines Road
+        for 64 metres (0 minutes, 57 seconds).","turnDirection":"STRAIGHT","streetName":"Staines
+        Road","distance":64,"cumulativeDistance":64,"skyDirection":67,"cumulativeTravelTime":57,"latitude":-0.43487715283,"longitude":51.45214526251,"pathAttribute":{"$type":"Tfl.Api.Presentation.Entities.PathAttribute,
+        Tfl.Api.Presentation.Entities"}},{"$type":"Tfl.Api.Presentation.Entities.InstructionStep,
+        Tfl.Api.Presentation.Entities","description":"Turn left on to Grovestile Waye,
+        continue for 95 metres (1 minute, 21 seconds).","turnDirection":"LEFT","streetName":"Grovestile
+        Waye","distance":95,"cumulativeDistance":159,"skyDirection":346,"cumulativeTravelTime":138,"latitude":-0.43573359002,"longitude":51.451931885,"pathAttribute":{"$type":"Tfl.Api.Presentation.Entities.PathAttribute,
+        Tfl.Api.Presentation.Entities"}}]},"obstacles":[],"departureTime":"2014-09-03T21:53:00","arrivalTime":"2014-09-03T21:56:00","departurePoint":{"$type":"Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities","platformName":"M","modes":[],"icsCode":"1003790","commonName":"Bedfont
+        Library","placeType":"StopPoint","additionalProperties":[],"lat":51.45188230071,"lon":-0.43471343855},"arrivalPoint":{"$type":"Tfl.Api.Presentation.Entities.Place,
+        Tfl.Api.Presentation.Entities","commonName":"TW14 8EX","placeType":"PostCode","lat":51.451125602,"lon":-0.43528621085999997},"path":{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Path,
+        Tfl.Api.Presentation.Entities","lineString":"[[51.45188230071, -0.43471343855],[51.45214526251,
+        -0.43487715283],[51.451931885, -0.43573359002],[51.45157942641, -0.43560171477],[51.45124052845,
+        -0.43513836205],[51.45120399971, -0.43509643498],[51.451125602, -0.43528621086]]","stopPoints":[]},"routeOptions":[{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.RouteOption,
+        Tfl.Api.Presentation.Entities","name":"","directions":[""]}],"mode":{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.Mode,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"walking","name":"walking"},"disruptions":[],"plannedWorks":[],"distance":159.0,"isDisrupted":false,"hasFixedLocations":false}]},{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Journey,
+        Tfl.Api.Presentation.Entities","startDateTime":"2014-09-03T21:47:00","duration":12,"arrivalDateTime":"2014-09-03T21:59:00","legs":[{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Leg,
+        Tfl.Api.Presentation.Entities","duration":5,"instruction":{"$type":"Tfl.Api.Presentation.Entities.Instruction,
+        Tfl.Api.Presentation.Entities","summary":"Walk to Tachbrook Road (TW14)","detailed":"Walk
+        to Tachbrook Road (TW14)","steps":[{"$type":"Tfl.Api.Presentation.Entities.InstructionStep,
+        Tfl.Api.Presentation.Entities","description":"Continue along Fruen Road for
+        143 metres (2 minutes, 8 seconds).","turnDirection":"STRAIGHT","streetName":"Fruen
+        Road","distance":143,"cumulativeDistance":143,"skyDirection":27,"cumulativeTravelTime":128,"latitude":-0.41951598516,"longitude":51.451444620640004,"pathAttribute":{"$type":"Tfl.Api.Presentation.Entities.PathAttribute,
+        Tfl.Api.Presentation.Entities"}},{"$type":"Tfl.Api.Presentation.Entities.InstructionStep,
+        Tfl.Api.Presentation.Entities","description":"Turn right on to Bedfont Lane,
+        continue for 172 metres (2 minutes, 33 seconds).","turnDirection":"RIGHT","streetName":"Bedfont
+        Lane","distance":172,"cumulativeDistance":315,"skyDirection":129,"cumulativeTravelTime":281,"latitude":-0.4204904277,"longitude":51.450315730389995,"pathAttribute":{"$type":"Tfl.Api.Presentation.Entities.PathAttribute,
+        Tfl.Api.Presentation.Entities"}}]},"obstacles":[],"departureTime":"2014-09-03T21:47:00","arrivalTime":"2014-09-03T21:52:00","departurePoint":{"$type":"Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities","platformName":"","modes":[],"icsCode":"99999997","commonName":"TW14
+        9NT","placeType":"PostCode","additionalProperties":[],"lat":51.45151025215,"lon":-0.41971520833},"arrivalPoint":{"$type":"Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities","platformName":"","modes":[],"icsCode":"1013143","commonName":"Tachbrook
+        Road (TW14)","placeType":"StopPoint","additionalProperties":[],"lat":51.45127683589,"lon":-0.42241457688},"path":{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Path,
+        Tfl.Api.Presentation.Entities","lineString":"[[51.45151025215, -0.41971520833],[51.45144462064,
+        -0.41951598516],[51.45031573039, -0.4204904277],[51.45054644033, -0.42092861212],[51.45077734235,
+        -0.42138118615],[51.45094358299, -0.42170646688],[51.45129461858, -0.42239957193],[51.45127683589,
+        -0.42241457688]]","stopPoints":[]},"routeOptions":[{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.RouteOption,
+        Tfl.Api.Presentation.Entities","name":"","directions":[""]}],"mode":{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.Mode,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"walking","name":"walking"},"disruptions":[],"plannedWorks":[],"distance":315.0,"isDisrupted":false,"hasFixedLocations":true},{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Leg,
+        Tfl.Api.Presentation.Entities","duration":4,"instruction":{"$type":"Tfl.Api.Presentation.Entities.Instruction,
+        Tfl.Api.Presentation.Entities","summary":"H25 bus to Bedfont Library","detailed":"H25
+        bus towards Hatton Cross","steps":[]},"obstacles":[],"departureTime":"2014-09-03T21:52:00","arrivalTime":"2014-09-03T21:56:00","departurePoint":{"$type":"Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities","naptanId":"490013143N","platformName":"","modes":[],"icsCode":"1013143","commonName":"Tachbrook
+        Road (TW14) - Stop ->N","placeType":"StopPoint","additionalProperties":[],"lat":51.45129461858,"lon":-0.42239957193},"arrivalPoint":{"$type":"Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities","naptanId":"490003790E","platformName":"M","modes":[],"icsCode":"1003790","commonName":"Bedfont
+        Library","placeType":"StopPoint","additionalProperties":[],"lat":51.45214526251,"lon":-0.43487715283},"path":{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Path,
+        Tfl.Api.Presentation.Entities","lineString":"[[51.45129461858, -0.42239957193],[51.45148859493,
+        -0.42278147255],[51.45207032325, -0.42391280827],[51.45250417214, -0.42474702056],[51.45324177029,
+        -0.42610332716],[51.45343573478, -0.42648525981],[51.45343573478, -0.42648525981],[51.45368497803,
+        -0.42696604503],[51.45394320749, -0.42744652667],[51.45373007777, -0.42831741733],[51.45367101727,
+        -0.42860730096],[51.45367101727, -0.42860730096],[51.45366241474, -0.42863638187],[51.45346571073,
+        -0.4293915562],[51.45332960733, -0.42997193339],[51.45321911747, -0.43045068035],[51.45311684369,
+        -0.43087157293],[51.45304821115, -0.43111859968],[51.45298875872, -0.4313797036],[51.45298875872,
+        -0.4313797036],[51.45293752411, -0.43158295509],[51.45263967401, -0.43284530436],[51.45252878782,
+        -0.43329526574],[51.45214526251, -0.43487715283]]","stopPoints":[{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"490003788S","name":"Colonial
+        Road (TW14)","uri":"/StopPoint/490003788S"},{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"490003788E","name":"Bethany
+        Waye (TW14)","uri":"/StopPoint/490003788E"},{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"490010257E","name":"New
+        Road (TW14)","uri":"/StopPoint/490010257E"},{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"490003790E","name":"Bedfont
+        Library","uri":"/StopPoint/490003790E"}]},"routeOptions":[{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.RouteOption,
+        Tfl.Api.Presentation.Entities","name":"H25","directions":["Hatton Cross"],"lineIdentifier":{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.Line,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"h25","name":"H25","uri":"/Line/h25"}}],"mode":{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.Mode,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"bus","name":"bus"},"disruptions":[],"plannedWorks":[],"isDisrupted":false,"hasFixedLocations":true},{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Leg,
+        Tfl.Api.Presentation.Entities","duration":3,"instruction":{"$type":"Tfl.Api.Presentation.Entities.Instruction,
+        Tfl.Api.Presentation.Entities","summary":"Walk to TW14 8EX","detailed":"Walk
+        to TW14 8EX","steps":[{"$type":"Tfl.Api.Presentation.Entities.InstructionStep,
+        Tfl.Api.Presentation.Entities","description":"Continue along Staines Road
+        for 64 metres (0 minutes, 57 seconds).","turnDirection":"STRAIGHT","streetName":"Staines
+        Road","distance":64,"cumulativeDistance":64,"skyDirection":67,"cumulativeTravelTime":57,"latitude":-0.43487715283,"longitude":51.45214526251,"pathAttribute":{"$type":"Tfl.Api.Presentation.Entities.PathAttribute,
+        Tfl.Api.Presentation.Entities"}},{"$type":"Tfl.Api.Presentation.Entities.InstructionStep,
+        Tfl.Api.Presentation.Entities","description":"Turn left on to Grovestile Waye,
+        continue for 95 metres (1 minute, 21 seconds).","turnDirection":"LEFT","streetName":"Grovestile
+        Waye","distance":95,"cumulativeDistance":159,"skyDirection":346,"cumulativeTravelTime":138,"latitude":-0.43573359002,"longitude":51.451931885,"pathAttribute":{"$type":"Tfl.Api.Presentation.Entities.PathAttribute,
+        Tfl.Api.Presentation.Entities"}}]},"obstacles":[],"departureTime":"2014-09-03T21:56:00","arrivalTime":"2014-09-03T21:59:00","departurePoint":{"$type":"Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities","platformName":"M","modes":[],"icsCode":"1003790","commonName":"Bedfont
+        Library","placeType":"StopPoint","additionalProperties":[],"lat":51.45188230071,"lon":-0.43471343855},"arrivalPoint":{"$type":"Tfl.Api.Presentation.Entities.Place,
+        Tfl.Api.Presentation.Entities","commonName":"TW14 8EX","placeType":"PostCode","lat":51.451125602,"lon":-0.43528621085999997},"path":{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Path,
+        Tfl.Api.Presentation.Entities","lineString":"[[51.45188230071, -0.43471343855],[51.45214526251,
+        -0.43487715283],[51.451931885, -0.43573359002],[51.45157942641, -0.43560171477],[51.45124052845,
+        -0.43513836205],[51.45120399971, -0.43509643498],[51.451125602, -0.43528621086]]","stopPoints":[]},"routeOptions":[{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.RouteOption,
+        Tfl.Api.Presentation.Entities","name":"","directions":[""]}],"mode":{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.Mode,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"walking","name":"walking"},"disruptions":[],"plannedWorks":[],"distance":159.0,"isDisrupted":false,"hasFixedLocations":false}]},{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Journey,
+        Tfl.Api.Presentation.Entities","startDateTime":"2014-09-03T21:58:00","duration":17,"arrivalDateTime":"2014-09-03T22:15:00","legs":[{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Leg,
+        Tfl.Api.Presentation.Entities","duration":11,"instruction":{"$type":"Tfl.Api.Presentation.Entities.Instruction,
+        Tfl.Api.Presentation.Entities","summary":"Walk to Engleheart Drive (TW14)","detailed":"Walk
+        to Engleheart Drive (TW14)","steps":[{"$type":"Tfl.Api.Presentation.Entities.InstructionStep,
+        Tfl.Api.Presentation.Entities","description":"Continue along Fruen Road for
+        104 metres (1 minute, 32 seconds).","turnDirection":"STRAIGHT","streetName":"Fruen
+        Road","distance":104,"cumulativeDistance":104,"skyDirection":207,"cumulativeTravelTime":92,"latitude":-0.41951598516,"longitude":51.451444620640004,"pathAttribute":{"$type":"Tfl.Api.Presentation.Entities.PathAttribute,
+        Tfl.Api.Presentation.Entities"}},{"$type":"Tfl.Api.Presentation.Entities.InstructionStep,
+        Tfl.Api.Presentation.Entities","description":"Turn left on to Link Road, continue
+        for 77 metres (1 minute, 9 seconds).","turnDirection":"LEFT","streetName":"Link
+        Road","distance":77,"cumulativeDistance":181,"skyDirection":118,"cumulativeTravelTime":161,"latitude":-0.41881099495999996,"longitude":51.452271398869996,"pathAttribute":{"$type":"Tfl.Api.Presentation.Entities.PathAttribute,
+        Tfl.Api.Presentation.Entities"}},{"$type":"Tfl.Api.Presentation.Entities.InstructionStep,
+        Tfl.Api.Presentation.Entities","description":"Turn right on to Tachbrook Road,
+        continue for 237 metres (3 minutes, 32 seconds).","turnDirection":"RIGHT","streetName":"Tachbrook
+        Road","distance":237,"cumulativeDistance":418,"skyDirection":208,"cumulativeTravelTime":373,"latitude":-0.41977804741,"longitude":51.4526081595,"pathAttribute":{"$type":"Tfl.Api.Presentation.Entities.PathAttribute,
+        Tfl.Api.Presentation.Entities"}},{"$type":"Tfl.Api.Presentation.Entities.InstructionStep,
+        Tfl.Api.Presentation.Entities","description":"Continue along Burns Avenue
+        for 104 metres (1 minute, 33 seconds).","turnDirection":"STRAIGHT","streetName":"Burns
+        Avenue","distance":104,"cumulativeDistance":522,"skyDirection":209,"cumulativeTravelTime":466,"latitude":-0.4181303776,"longitude":51.4544743232,"pathAttribute":{"$type":"Tfl.Api.Presentation.Entities.PathAttribute,
+        Tfl.Api.Presentation.Entities"}},{"$type":"Tfl.Api.Presentation.Entities.InstructionStep,
+        Tfl.Api.Presentation.Entities","description":"Turn left on to Shakespeare
+        Avenue, continue for 122 metres (1 minute, 49 seconds).","turnDirection":"LEFT","streetName":"Shakespeare
+        Avenue","distance":122,"cumulativeDistance":644,"skyDirection":156,"cumulativeTravelTime":575,"latitude":-0.41698896860999995,"longitude":51.45501644038,"pathAttribute":{"$type":"Tfl.Api.Presentation.Entities.PathAttribute,
+        Tfl.Api.Presentation.Entities"}},{"$type":"Tfl.Api.Presentation.Entities.InstructionStep,
+        Tfl.Api.Presentation.Entities","description":"Turn left on to Staines Road,
+        continue for 58 metres (0 minutes, 51 seconds).","turnDirection":"LEFT","streetName":"Staines
+        Road","distance":58,"cumulativeDistance":702,"skyDirection":72,"cumulativeTravelTime":626,"latitude":-0.417630016,"longitude":51.45604122309,"pathAttribute":{"$type":"Tfl.Api.Presentation.Entities.PathAttribute,
+        Tfl.Api.Presentation.Entities"}}]},"obstacles":[],"departureTime":"2014-09-03T21:58:00","arrivalTime":"2014-09-03T22:09:00","departurePoint":{"$type":"Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities","platformName":"","modes":[],"icsCode":"99999997","commonName":"TW14
+        9NT","placeType":"PostCode","additionalProperties":[],"lat":51.45151025215,"lon":-0.41971520833},"arrivalPoint":{"$type":"Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities","platformName":"D","modes":[],"icsCode":"1006595","commonName":"Engleheart
+        Drive (TW14)","placeType":"StopPoint","additionalProperties":[],"lat":51.455844784869996,"lon":-0.41839966235},"path":{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Path,
+        Tfl.Api.Presentation.Entities","lineString":"[[51.45151025215, -0.41971520833],[51.45144462064,
+        -0.41951598516],[51.45227139887, -0.41881099496],[51.4526081595, -0.41977804741],[51.4544743232,
+        -0.4181303776],[51.45475844846, -0.41786148044],[51.45501644038, -0.41698896861],[51.45567898064,
+        -0.4174410335],[51.45604122309, -0.417630016],[51.45589832536, -0.41836902498],[51.45589011353,
+        -0.41842688273],[51.45584478487, -0.41839966235]]","stopPoints":[]},"routeOptions":[{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.RouteOption,
+        Tfl.Api.Presentation.Entities","name":"","directions":[""]}],"mode":{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.Mode,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"walking","name":"walking"},"disruptions":[],"plannedWorks":[],"distance":702.0,"isDisrupted":false,"hasFixedLocations":true},{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Leg,
+        Tfl.Api.Presentation.Entities","duration":3,"instruction":{"$type":"Tfl.Api.Presentation.Entities.Instruction,
+        Tfl.Api.Presentation.Entities","summary":"116 bus to Bedfont Library","detailed":"116
+        bus towards Ashford Hospital","steps":[]},"obstacles":[],"departureTime":"2014-09-03T22:09:00","arrivalTime":"2014-09-03T22:12:00","departurePoint":{"$type":"Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities","naptanId":"490006595E","platformName":"D","modes":[],"icsCode":"1006595","commonName":"Engleheart
+        Drive (TW14) - Stop D","placeType":"StopPoint","additionalProperties":[],"lat":51.45589011353,"lon":-0.41842688273},"arrivalPoint":{"$type":"Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities","naptanId":"490003790E","platformName":"M","modes":[],"icsCode":"1003790","commonName":"Bedfont
+        Library","placeType":"StopPoint","additionalProperties":[],"lat":51.45214526251,"lon":-0.43487715283},"path":{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Path,
+        Tfl.Api.Presentation.Entities","lineString":"[[51.45589011353, -0.41842688273],[51.45572218606,
+        -0.41931068563],[51.45552961356, -0.42036805315],[51.4554455464, -0.42080275516],[51.45540409344,
+        -0.42106326552],[51.45519333515, -0.42210685183],[51.45511728179, -0.42246930495],[51.45511728179,
+        -0.42246930495],[51.45494777584, -0.42323798657],[51.45469302404, -0.42435503238],[51.45429280332,
+        -0.42602400322],[51.45429280332, -0.42602400322],[51.45411428567, -0.42679296723],[51.45394320749,
+        -0.42744652667],[51.45373007777, -0.42831741733],[51.45367101727, -0.42860730096],[51.45367101727,
+        -0.42860730096],[51.45366241474, -0.42863638187],[51.45346571073, -0.4293915562],[51.45332960733,
+        -0.42997193339],[51.45321911747, -0.43045068035],[51.45311684369, -0.43087157293],[51.45304821115,
+        -0.43111859968],[51.45298875872, -0.4313797036],[51.45298875872, -0.4313797036],[51.45293752411,
+        -0.43158295509],[51.45263967401, -0.43284530436],[51.45252878782, -0.43329526574],[51.45214526251,
+        -0.43487715283]]","stopPoints":[{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"490004836E","name":"Cassiobury
+        Avenue (TW14)","uri":"/StopPoint/490004836E"},{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"490003788W","name":"Bedfont
+        Lane (TW14)","uri":"/StopPoint/490003788W"},{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"490003788E","name":"Bethany
+        Waye (TW14)","uri":"/StopPoint/490003788E"},{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"490010257E","name":"New
+        Road (TW14)","uri":"/StopPoint/490010257E"},{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"490003790E","name":"Bedfont
+        Library","uri":"/StopPoint/490003790E"}]},"routeOptions":[{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.RouteOption,
+        Tfl.Api.Presentation.Entities","name":"116","directions":["Ashford Hospital"],"lineIdentifier":{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.Line,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"116","name":"116","uri":"/Line/116"}}],"mode":{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.Mode,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"bus","name":"bus"},"disruptions":[],"plannedWorks":[],"isDisrupted":false,"hasFixedLocations":true},{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Leg,
+        Tfl.Api.Presentation.Entities","duration":3,"instruction":{"$type":"Tfl.Api.Presentation.Entities.Instruction,
+        Tfl.Api.Presentation.Entities","summary":"Walk to TW14 8EX","detailed":"Walk
+        to TW14 8EX","steps":[{"$type":"Tfl.Api.Presentation.Entities.InstructionStep,
+        Tfl.Api.Presentation.Entities","description":"Continue along Staines Road
+        for 64 metres (0 minutes, 57 seconds).","turnDirection":"STRAIGHT","streetName":"Staines
+        Road","distance":64,"cumulativeDistance":64,"skyDirection":67,"cumulativeTravelTime":57,"latitude":-0.43487715283,"longitude":51.45214526251,"pathAttribute":{"$type":"Tfl.Api.Presentation.Entities.PathAttribute,
+        Tfl.Api.Presentation.Entities"}},{"$type":"Tfl.Api.Presentation.Entities.InstructionStep,
+        Tfl.Api.Presentation.Entities","description":"Turn left on to Grovestile Waye,
+        continue for 95 metres (1 minute, 21 seconds).","turnDirection":"LEFT","streetName":"Grovestile
+        Waye","distance":95,"cumulativeDistance":159,"skyDirection":346,"cumulativeTravelTime":138,"latitude":-0.43573359002,"longitude":51.451931885,"pathAttribute":{"$type":"Tfl.Api.Presentation.Entities.PathAttribute,
+        Tfl.Api.Presentation.Entities"}}]},"obstacles":[],"departureTime":"2014-09-03T22:12:00","arrivalTime":"2014-09-03T22:15:00","departurePoint":{"$type":"Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities","platformName":"M","modes":[],"icsCode":"1003790","commonName":"Bedfont
+        Library","placeType":"StopPoint","additionalProperties":[],"lat":51.45188230071,"lon":-0.43471343855},"arrivalPoint":{"$type":"Tfl.Api.Presentation.Entities.Place,
+        Tfl.Api.Presentation.Entities","commonName":"TW14 8EX","placeType":"PostCode","lat":51.451125602,"lon":-0.43528621085999997},"path":{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Path,
+        Tfl.Api.Presentation.Entities","lineString":"[[51.45188230071, -0.43471343855],[51.45214526251,
+        -0.43487715283],[51.451931885, -0.43573359002],[51.45157942641, -0.43560171477],[51.45124052845,
+        -0.43513836205],[51.45120399971, -0.43509643498],[51.451125602, -0.43528621086]]","stopPoints":[]},"routeOptions":[{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.RouteOption,
+        Tfl.Api.Presentation.Entities","name":"","directions":[""]}],"mode":{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.Mode,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"walking","name":"walking"},"disruptions":[],"plannedWorks":[],"distance":159.0,"isDisrupted":false,"hasFixedLocations":false}]},{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Journey,
+        Tfl.Api.Presentation.Entities","startDateTime":"2014-09-03T21:22:00","duration":21,"arrivalDateTime":"2014-09-03T21:43:00","legs":[{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Leg,
+        Tfl.Api.Presentation.Entities","duration":21,"instruction":{"$type":"Tfl.Api.Presentation.Entities.Instruction,
+        Tfl.Api.Presentation.Entities","summary":"Walk to TW14 8EX","detailed":"Walk
+        to TW14 8EX","steps":[{"$type":"Tfl.Api.Presentation.Entities.InstructionStep,
+        Tfl.Api.Presentation.Entities","description":"Continue along Fruen Road for
+        143 metres (2 minutes, 8 seconds).","turnDirection":"STRAIGHT","streetName":"Fruen
+        Road","distance":143,"cumulativeDistance":143,"skyDirection":27,"cumulativeTravelTime":128,"latitude":-0.41951598516,"longitude":51.451444620640004,"pathAttribute":{"$type":"Tfl.Api.Presentation.Entities.PathAttribute,
+        Tfl.Api.Presentation.Entities"}},{"$type":"Tfl.Api.Presentation.Entities.InstructionStep,
+        Tfl.Api.Presentation.Entities","description":"Turn right on to Bedfont Lane,
+        continue for 383 metres (5 minutes, 41 seconds).","turnDirection":"RIGHT","streetName":"Bedfont
+        Lane","distance":383,"cumulativeDistance":526,"skyDirection":129,"cumulativeTravelTime":469,"latitude":-0.4204904277,"longitude":51.450315730389995,"pathAttribute":{"$type":"Tfl.Api.Presentation.Entities.PathAttribute,
+        Tfl.Api.Presentation.Entities"}},{"$type":"Tfl.Api.Presentation.Entities.InstructionStep,
+        Tfl.Api.Presentation.Entities","description":"Turn left on to Southville Road,
+        continue for 121 metres (1 minute, 48 seconds).","turnDirection":"LEFT","streetName":"Southville
+        Road","distance":121,"cumulativeDistance":647,"skyDirection":39,"cumulativeTravelTime":577,"latitude":-0.42474702055999997,"longitude":51.45250417214,"pathAttribute":{"$type":"Tfl.Api.Presentation.Entities.PathAttribute,
+        Tfl.Api.Presentation.Entities"}},{"$type":"Tfl.Api.Presentation.Entities.InstructionStep,
+        Tfl.Api.Presentation.Entities","description":"Take a slight right on to Imperial
+        Road, continue for 210 metres (3 minutes, 9 seconds).","turnDirection":"SLIGHT_RIGHT","streetName":"Imperial
+        Road","distance":210,"cumulativeDistance":857,"skyDirection":105,"cumulativeTravelTime":766,"latitude":-0.42586939675,"longitude":51.45167397103,"pathAttribute":{"$type":"Tfl.Api.Presentation.Entities.PathAttribute,
+        Tfl.Api.Presentation.Entities"}},{"$type":"Tfl.Api.Presentation.Entities.InstructionStep,
+        Tfl.Api.Presentation.Entities","description":"Turn left on to Beech Road,
+        continue for 370 metres (5 minutes, 31 seconds).","turnDirection":"LEFT","streetName":"Beech
+        Road","distance":370,"cumulativeDistance":1227,"skyDirection":33,"cumulativeTravelTime":1097,"latitude":-0.42835370237000003,"longitude":51.45099690816,"pathAttribute":{"$type":"Tfl.Api.Presentation.Entities.PathAttribute,
+        Tfl.Api.Presentation.Entities"}},{"$type":"Tfl.Api.Presentation.Entities.InstructionStep,
+        Tfl.Api.Presentation.Entities","description":"Take a slight right on to Grovestile
+        Waye, continue for 175 metres (2 minutes, 37 seconds).","turnDirection":"SLIGHT_RIGHT","streetName":"Grovestile
+        Waye","distance":175,"cumulativeDistance":1402,"skyDirection":133,"cumulativeTravelTime":1254,"latitude":-0.43341502665000003,"longitude":51.450291308859995,"pathAttribute":{"$type":"Tfl.Api.Presentation.Entities.PathAttribute,
+        Tfl.Api.Presentation.Entities"}}]},"obstacles":[],"departureTime":"2014-09-03T21:22:00","arrivalTime":"2014-09-03T21:43:00","departurePoint":{"$type":"Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities","platformName":"","modes":[],"icsCode":"99999997","commonName":"TW14
+        9NT","placeType":"PostCode","additionalProperties":[],"lat":51.45151025215,"lon":-0.41971520833},"arrivalPoint":{"$type":"Tfl.Api.Presentation.Entities.Place,
+        Tfl.Api.Presentation.Entities","commonName":"TW14 8EX","placeType":"PostCode","lat":51.451125602,"lon":-0.43528621085999997},"path":{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Path,
+        Tfl.Api.Presentation.Entities","lineString":"[[51.45151025215, -0.41971520833],[51.45144462064,
+        -0.41951598516],[51.45031573039, -0.4204904277],[51.45054644033, -0.42092861212],[51.45077734235,
+        -0.42138118615],[51.45094358299, -0.42170646688],[51.45148859493, -0.42278147255],[51.45207032325,
+        -0.42391280827],[51.45250417214, -0.42474702056],[51.45167397103, -0.42586939675],[51.45177119056,
+        -0.4264129559],[51.45157257073, -0.42702425327],[51.45097237447, -0.42786521939],[51.45097681057,
+        -0.42819608129],[51.45099690816, -0.42835370237],[51.45087280943, -0.42848749055],[51.45063706946,
+        -0.42901368977],[51.45054629373, -0.42962126044],[51.45050796582, -0.4307883091],[51.45046924149,
+        -0.43192658573],[51.4504619848, -0.43205636014],[51.45029130886, -0.43341502665],[51.4505028417,
+        -0.43376758097],[51.45126211624, -0.43473464788],[51.45124052845, -0.43513836205],[51.45120399971,
+        -0.43509643498],[51.451125602, -0.43528621086]]","stopPoints":[]},"routeOptions":[{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.RouteOption,
+        Tfl.Api.Presentation.Entities","name":"","directions":[""]}],"mode":{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.Mode,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"walking","name":"walking"},"disruptions":[],"plannedWorks":[],"distance":1402.0,"isDisrupted":false,"hasFixedLocations":false}]}],"lines":[{"$type":"Tfl.Api.Presentation.Entities.Line,
+        Tfl.Api.Presentation.Entities","id":"116","name":"116","modeName":"bus","created":"2014-08-15T14:32:38.517","modified":"2014-08-15T14:32:38.517","lineStatuses":[{"$type":"Tfl.Api.Presentation.Entities.LineStatus,
+        Tfl.Api.Presentation.Entities","id":0,"statusSeverity":10,"statusSeverityDescription":"Good
+        Service","created":"0001-01-01T00:00:00","validityPeriods":[]}],"routeSections":[]},{"$type":"Tfl.Api.Presentation.Entities.Line,
+        Tfl.Api.Presentation.Entities","id":"h25","name":"H25","modeName":"bus","created":"2014-08-15T14:32:37.94","modified":"2014-08-15T14:32:37.94","lineStatuses":[{"$type":"Tfl.Api.Presentation.Entities.LineStatus,
+        Tfl.Api.Presentation.Entities","id":0,"statusSeverity":10,"statusSeverityDescription":"Good
+        Service","created":"0001-01-01T00:00:00","validityPeriods":[]}],"routeSections":[]}],"recommendedMaxAgeMinutes":5,"searchCriteria":{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.SearchCriteria,
+        Tfl.Api.Presentation.Entities","dateTime":"2014-09-03T21:22:00","dateTimeType":"Departing","timeAdjustments":{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.TimeAdjustments,
+        Tfl.Api.Presentation.Entities","earliest":{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.TimeAdjustment,
+        Tfl.Api.Presentation.Entities","date":"20140903","time":"0300","timeIs":"departing","uri":"/journey/journeyresults/%7bfrom%7d/to/%7bto%7d/via/%7bvia%7d?app_key=c381b49216f90558cf148c53cd5205b8&app_id=a09e631e&from=tw14%209nt&to=tw14%208ex&via=&nationalsearch=false&timeIs=departing&journeypreference=&mode=&fromname=&toname=&vianame=&maxtransferminutes=&maxwalkingminutes=&cyclepreference=&adjustment=&alternativecycle=false&alternativewalking=true&applyhtmlmarkup=false&time=0300&date=20140903"},"earlier":{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.TimeAdjustment,
+        Tfl.Api.Presentation.Entities","date":"20140903","time":"2137","timeIs":"arriving","uri":"/journey/journeyresults/%7bfrom%7d/to/%7bto%7d/via/%7bvia%7d?app_key=c381b49216f90558cf148c53cd5205b8&app_id=a09e631e&from=tw14%209nt&to=tw14%208ex&via=&nationalsearch=false&timeIs=arriving&journeypreference=&mode=&fromname=&toname=&vianame=&maxtransferminutes=&maxwalkingminutes=&cyclepreference=&adjustment=&alternativecycle=false&alternativewalking=true&applyhtmlmarkup=false&time=2137&date=20140903"},"later":{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.TimeAdjustment,
+        Tfl.Api.Presentation.Entities","date":"20140903","time":"2158","timeIs":"departing","uri":"/journey/journeyresults/%7bfrom%7d/to/%7bto%7d/via/%7bvia%7d?app_key=c381b49216f90558cf148c53cd5205b8&app_id=a09e631e&from=tw14%209nt&to=tw14%208ex&via=&nationalsearch=false&timeIs=departing&journeypreference=&mode=&fromname=&toname=&vianame=&maxtransferminutes=&maxwalkingminutes=&cyclepreference=&adjustment=&alternativecycle=false&alternativewalking=true&applyhtmlmarkup=false&time=2158&date=20140903"},"latest":{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.TimeAdjustment,
+        Tfl.Api.Presentation.Entities","date":"20140904","time":"0300","timeIs":"arriving","uri":"/journey/journeyresults/%7bfrom%7d/to/%7bto%7d/via/%7bvia%7d?app_key=c381b49216f90558cf148c53cd5205b8&app_id=a09e631e&from=tw14%209nt&to=tw14%208ex&via=&nationalsearch=false&timeIs=arriving&journeypreference=&mode=&fromname=&toname=&vianame=&maxtransferminutes=&maxwalkingminutes=&cyclepreference=&adjustment=&alternativecycle=false&alternativewalking=true&applyhtmlmarkup=false&time=0300&date=20140904"}}},"journeyVector":{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.JourneyVector,
+        Tfl.Api.Presentation.Entities","from":"tw149nt","to":"tw148ex","via":"","uri":"/journey/journeyresults/%7bfrom%7d/to/%7bto%7d/via/%7bvia%7d?app_key=c381b49216f90558cf148c53cd5205b8&app_id=a09e631e&from=tw14%209nt&to=tw14%208ex&via=&nationalsearch=false&timeis=departing&journeypreference=&mode=&fromname=&toname=&vianame=&maxtransferminutes=&maxwalkingminutes=&cyclepreference=&adjustment=&alternativecycle=false&alternativewalking=true&applyhtmlmarkup=false"}}'
+    http_version: 
+  recorded_at: Wed, 03 Sep 2014 20:21:53 GMT
 recorded_with: VCR 2.9.2
