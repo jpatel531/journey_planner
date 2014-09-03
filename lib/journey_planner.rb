@@ -1,4 +1,4 @@
-require "tfl_jp/version"
+require "journey_planner/version"
 require "httparty"
 require 'json'
 require 'ostruct'
