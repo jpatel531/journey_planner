@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = TFLJourneyPlanner::VERSION
   spec.authors       = ["jpatel531"]
   spec.email         = ["jamie@notespublication.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
+  spec.summary       = %q{An unofficial wrapper for the TFL Journey Planner API}
+  spec.description   = %q{An unofficial wrapper for the TFL Journey Planner API}
   spec.homepage      = ""
   spec.license       = "MIT"
 
