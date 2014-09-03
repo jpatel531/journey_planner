@@ -1,6 +1,6 @@
-# TflJp
+# TFL Journey Planner
 
-TODO: Write a gem description
+A Ruby-wrapper for the TFL Journey Planner API.
 
 ## Installation
 

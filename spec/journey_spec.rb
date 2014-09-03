@@ -16,7 +16,15 @@ describe TFLJourneyPlanner::Journey do
 		end
 	end
 
+	# it "should return the average duration of a journey" do 
+	# 	VCR.use_cassette "hello", record: :none do 
+	# 		client = TFLJourneyPlanner::Client.new(app_id: ENV["TFL_ID"], app_key: ENV["TFL_KEY"])
+	# 		results =  client.get_journeys(from: "tw14 9nt", to: "tw14 8ex")
+	# 		journeys = client.process_journeys_from results
+	# 		expect(journeys[0].average_duration).to eq 13.5
+	# 	end
 
+	# end
 
 
 
