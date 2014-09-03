@@ -1,0 +1,28 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.github.com/users/jpatel531
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 403
+      message: Forbidden
+    headers:
+      Cache-Control:
+      - no-cache
+      Connection:
+      - close
+      Content-Type:
+      - text/html
+    body:
+      encoding: UTF-8
+      string: Request forbidden by administrative rules. Please make sure your request
+        has a User-Agent header (http://developer.github.com/v3/#user-agent-required).
+        Check https://developer.github.com for other possible causes.
+    http_version: 
+  recorded_at: Wed, 03 Sep 2014 12:05:41 GMT
+recorded_with: VCR 2.9.2
