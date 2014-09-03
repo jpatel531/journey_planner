@@ -1,0 +1,621 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.tfl.gov.uk/Journey/JourneyResults/%7Bfrom%7D/to/%7Bto%7D/via/%7Bvia%7D?accessibilityPreference=&adjustment=&alternativeCycle=False&alternativeWalking=True&app_id=&app_key=&applyHtmlMarkup=False&bikeProficiency=&cyclePreference=&date=&from=tw14%209nt&fromName=&journeyPreference=&maxTransferMinutes=&maxWalkingMinutes=&mode=&nationalSearch=False&time=&timeIs=Departing&to=tw3%203tu&toName=&via=&viaName=&walkingSpeed=
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - s-maxage=300
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept-Encoding
+      Server:
+      - Microsoft-IIS/8.0
+      Api-Entity-Payload:
+      - itineraryresult, disambiguationresult, mode, stoppoint, place, disruption,
+        plannedworks, line, linestatus
+      X-Aspnet-Version:
+      - 4.0.30319
+      Access-Control-Allow-Headers:
+      - Content-Type
+      Access-Control-Allow-Methods:
+      - GET,POST,PUT,DELETE,OPTIONS
+      X-Ttl-Rule:
+      - '0'
+      X-Cacheable:
+      - Yes. Cacheable
+      X-Ttl:
+      - '300.000'
+      X-Backend:
+      - api
+      X-Varnish:
+      - 10.73.2.164
+      - 597535194 597499177
+      X-Backend-Url:
+      - "/Journey/JourneyResults/%7Bfrom%7D/to/%7Bto%7D/via/%7Bvia%7D?from=tw14+9nt&to=tw3+3tu&via=&nationalSearch=False&date=&time=&timeIs=Departing&journeyPreference=&mode=&accessibilityPreference=&fromName=&toName=&viaName=&maxTransferMinutes=&maxWalkingMinutes=&walkingSpeed=&cyclePreference=&adjustment=&bikeProficiency=&alternativeCycle=False&alternativeWalking=True&applyHtmlMarkup=False&app_id=&app_key="
+      X-Hash-Url:
+      - "/Journey/JourneyResults/%7Bfrom%7D/to/%7Bto%7D/via/%7Bvia%7D?from=tw14+9nt&to=tw3+3tu&via=&nationalSearch=False&date=&time=&timeIs=Departing&journeyPreference=&mode=&accessibilityPreference=&fromName=&toName=&viaName=&maxTransferMinutes=&maxWalkingMinutes=&walkingSpeed=&cyclePreference=&adjustment=&bikeProficiency=&alternativeCycle=False&alternativeWalking=True&applyHtmlMarkup=False&app_id=&app_key="
+      Access-Control-Allow-Origin:
+      - "*"
+      Transfer-Encoding:
+      - chunked
+      Date:
+      - Wed, 03 Sep 2014 13:29:46 GMT
+      Age:
+      - '105'
+      Via:
+      - 1.1 varnish
+      Connection:
+      - keep-alive
+      X-Banning:
+      - ''
+      X-Cache:
+      - HIT
+      X-Cache-Hits:
+      - '1'
+    body:
+      encoding: UTF-8
+      string: '{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.ItineraryResult,
+        Tfl.Api.Presentation.Entities","journeys":[{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Journey,
+        Tfl.Api.Presentation.Entities","startDateTime":"2014-09-03T14:39:00","duration":30,"arrivalDateTime":"2014-09-03T15:09:00","legs":[{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Leg,
+        Tfl.Api.Presentation.Entities","duration":11,"instruction":{"$type":"Tfl.Api.Presentation.Entities.Instruction,
+        Tfl.Api.Presentation.Entities","summary":"Walk to Engleheart Drive (TW14)","detailed":"Walk
+        to Engleheart Drive (TW14)","steps":[{"$type":"Tfl.Api.Presentation.Entities.InstructionStep,
+        Tfl.Api.Presentation.Entities","description":"Continue along Fruen Road for
+        104 metres (1 minute, 32 seconds).","turnDirection":"STRAIGHT","streetName":"Fruen
+        Road","distance":104,"cumulativeDistance":104,"skyDirection":207,"cumulativeTravelTime":92,"latitude":-0.41951598516,"longitude":51.451444620640004,"pathAttribute":{"$type":"Tfl.Api.Presentation.Entities.PathAttribute,
+        Tfl.Api.Presentation.Entities"}},{"$type":"Tfl.Api.Presentation.Entities.InstructionStep,
+        Tfl.Api.Presentation.Entities","description":"Turn left on to Link Road, continue
+        for 77 metres (1 minute, 9 seconds).","turnDirection":"LEFT","streetName":"Link
+        Road","distance":77,"cumulativeDistance":181,"skyDirection":118,"cumulativeTravelTime":161,"latitude":-0.41881099495999996,"longitude":51.452271398869996,"pathAttribute":{"$type":"Tfl.Api.Presentation.Entities.PathAttribute,
+        Tfl.Api.Presentation.Entities"}},{"$type":"Tfl.Api.Presentation.Entities.InstructionStep,
+        Tfl.Api.Presentation.Entities","description":"Turn right on to Tachbrook Road,
+        continue for 237 metres (3 minutes, 32 seconds).","turnDirection":"RIGHT","streetName":"Tachbrook
+        Road","distance":237,"cumulativeDistance":418,"skyDirection":208,"cumulativeTravelTime":373,"latitude":-0.41977804741,"longitude":51.4526081595,"pathAttribute":{"$type":"Tfl.Api.Presentation.Entities.PathAttribute,
+        Tfl.Api.Presentation.Entities"}},{"$type":"Tfl.Api.Presentation.Entities.InstructionStep,
+        Tfl.Api.Presentation.Entities","description":"Continue along Burns Avenue
+        for 104 metres (1 minute, 33 seconds).","turnDirection":"STRAIGHT","streetName":"Burns
+        Avenue","distance":104,"cumulativeDistance":522,"skyDirection":209,"cumulativeTravelTime":466,"latitude":-0.4181303776,"longitude":51.4544743232,"pathAttribute":{"$type":"Tfl.Api.Presentation.Entities.PathAttribute,
+        Tfl.Api.Presentation.Entities"}},{"$type":"Tfl.Api.Presentation.Entities.InstructionStep,
+        Tfl.Api.Presentation.Entities","description":"Turn left on to Shakespeare
+        Avenue, continue for 122 metres (1 minute, 49 seconds).","turnDirection":"LEFT","streetName":"Shakespeare
+        Avenue","distance":122,"cumulativeDistance":644,"skyDirection":156,"cumulativeTravelTime":575,"latitude":-0.41698896860999995,"longitude":51.45501644038,"pathAttribute":{"$type":"Tfl.Api.Presentation.Entities.PathAttribute,
+        Tfl.Api.Presentation.Entities"}},{"$type":"Tfl.Api.Presentation.Entities.InstructionStep,
+        Tfl.Api.Presentation.Entities","description":"Turn left on to Staines Road,
+        continue for 23 metres (0 minutes, 20 seconds).","turnDirection":"LEFT","streetName":"Staines
+        Road","distance":23,"cumulativeDistance":667,"skyDirection":72,"cumulativeTravelTime":595,"latitude":-0.41794870117,"longitude":51.455982577540006,"pathAttribute":{"$type":"Tfl.Api.Presentation.Entities.PathAttribute,
+        Tfl.Api.Presentation.Entities"}}]},"obstacles":[],"departureTime":"2014-09-03T14:39:00","arrivalTime":"2014-09-03T14:50:00","departurePoint":{"$type":"Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities","platformName":"","modes":[],"icsCode":"99999997","commonName":"TW14
+        9NT","placeType":"PostCode","additionalProperties":[],"lat":51.45151025215,"lon":-0.41971520833},"arrivalPoint":{"$type":"Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities","platformName":"K","modes":[],"icsCode":"1006595","commonName":"Engleheart
+        Drive (TW14)","placeType":"StopPoint","additionalProperties":[],"lat":51.45601872407,"lon":-0.41796184508},"path":{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Path,
+        Tfl.Api.Presentation.Entities","lineString":"[[51.45151025215, -0.41971520833],[51.45144462064,
+        -0.41951598516],[51.45227139887, -0.41881099496],[51.4526081595, -0.41977804741],[51.4544743232,
+        -0.4181303776],[51.45475844846, -0.41786148044],[51.45501644038, -0.41698896861],[51.45567898064,
+        -0.4174410335],[51.45604122309, -0.417630016],[51.45598257754, -0.41794870117],[51.45601872407,
+        -0.41796184508]]","stopPoints":[]},"routeOptions":[{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.RouteOption,
+        Tfl.Api.Presentation.Entities","name":"","directions":[""]}],"mode":{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.Mode,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"walking","name":"walking"},"disruptions":[],"plannedWorks":[],"distance":667.0,"isDisrupted":false,"hasFixedLocations":true},{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Leg,
+        Tfl.Api.Presentation.Entities","duration":13,"instruction":{"$type":"Tfl.Api.Presentation.Entities.Instruction,
+        Tfl.Api.Presentation.Entities","summary":"116 bus to Treaty Centre","detailed":"116
+        bus towards Hounslow Bus Station","steps":[]},"obstacles":[],"departureTime":"2014-09-03T14:50:00","arrivalTime":"2014-09-03T15:03:00","departurePoint":{"$type":"Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities","naptanId":"490006595E","platformName":"K","modes":[],"icsCode":"1006595","commonName":"Engleheart
+        Drive (TW14) - Stop K","placeType":"StopPoint","additionalProperties":[],"lat":51.455982577540006,"lon":-0.41794870117},"arrivalPoint":{"$type":"Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities","naptanId":"490013777P","platformName":"P","modes":[],"icsCode":"1013777","commonName":"Treaty
+        Centre","placeType":"StopPoint","additionalProperties":[],"lat":51.46718385075,"lon":-0.36334192111},"path":{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Path,
+        Tfl.Api.Presentation.Entities","lineString":"[[51.45598257754, -0.41794870117],[51.45604122309,
+        -0.417630016],[51.4562922181, -0.41623955015],[51.45666105345, -0.4142548438],[51.45671128463,
+        -0.41397962191],[51.45676972464, -0.41364653978],[51.45682816369, -0.41331345682],[51.45682816369,
+        -0.41331345682],[51.45722254866, -0.41122705848],[51.45739862244, -0.41028533713],[51.45742363587,
+        -0.41014052836],[51.45763272486, -0.40898174009],[51.45772475942, -0.40847474743],[51.45772475942,
+        -0.40847474743],[51.45779979239, -0.40804031472],[51.45806767117, -0.40657718228],[51.45846134781,
+        -0.4044475093],[51.45846115202, -0.40443312181],[51.45846115202, -0.40443312181],[51.45867038003,
+        -0.40328866988],[51.45873738549, -0.40292647161],[51.45876297772, -0.40282481748],[51.45882958966,
+        -0.40243384265],[51.4588719812, -0.40224523478],[51.45921341714, -0.40024686352],[51.4592962292,
+        -0.39972576316],[51.45933041388, -0.39959501623],[51.45954038034, -0.39850807254],[51.4601179979,
+        -0.3966884994],[51.46029067398, -0.39616423211],[51.46038560545, -0.39587300582],[51.46054128636,
+        -0.39542130326],[51.46078329993, -0.394707458],[51.46087842473, -0.39443061379],[51.46087842473,
+        -0.39443061379],[51.46134426201, -0.39298913802],[51.46153410816, -0.39240665791],[51.46157687795,
+        -0.39224680666],[51.46174113793, -0.39176598744],[51.46174113793, -0.39176598744],[51.46186203525,
+        -0.39140185265],[51.46189621051, -0.39127109234],[51.46198273397, -0.39102332746],[51.46214659383,
+        -0.39051372256],[51.46294887252, -0.38803822111],[51.463283968, -0.38690353725],[51.463283968,
+        -0.38690353725],[51.46331833613, -0.38678715849],[51.46339566401, -0.38652530564],[51.46358290244,
+        -0.38575571651],[51.4637433701, -0.38500146204],[51.4637433701, -0.38500146204],[51.4638364893,
+        -0.3845806897],[51.46393020183, -0.38420308288],[51.46411563934, -0.38330397346],[51.4641921656,
+        -0.38298455375],[51.46432743814, -0.38236073596],[51.46438678014, -0.38209950577],[51.46447149666,
+        -0.3817222074],[51.46451405307, -0.38154794694],[51.46451405307, -0.38154794694],[51.46458997853,
+        -0.38118535384],[51.46469167439, -0.38073546952],[51.46475960315, -0.38044513842],[51.46499714923,
+        -0.37941458351],[51.46514158943, -0.37880481545],[51.46529441725, -0.37815155661],[51.46536873941,
+        -0.37767383611],[51.46540250094, -0.37751427683],[51.46540250094, -0.37751427683],[51.46548660507,
+        -0.37709379337],[51.46553774406, -0.37689042694],[51.46570714197, -0.37613579121],[51.46574929138,
+        -0.37593274185],[51.46592687335, -0.37512022145],[51.46607908194, -0.37442377046],[51.46614659584,
+        -0.3741046421],[51.46662815644, -0.37187039779],[51.46662815644, -0.37187039779],[51.46684785048,
+        -0.37085478782],[51.46696628204, -0.37031787919],[51.46715301265, -0.36951938576],[51.46733853655,
+        -0.36863454575],[51.46742240824, -0.36819963875],[51.46751566678, -0.36779318963],[51.46764387352,
+        -0.36731350516],[51.46771136785, -0.36699435577],[51.46761808208, -0.36675293267],[51.4673640167,
+        -0.36658923788],[51.46671846082, -0.36607960107],[51.46683105275, -0.3651253766],[51.46688955331,
+        -0.3648065511],[51.46708282464, -0.36383503696],[51.46718385075, -0.36334192111]]","stopPoints":[{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"490012027E","name":"Shaftesbury
+        Avenue/Staines Rd","uri":"/StopPoint/490012027E"},{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"490007813E","name":"Faggs
+        Road (TW14)","uri":"/StopPoint/490007813E"},{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"490008401E","name":"Hounslow
+        Road (TW14)","uri":"/StopPoint/490008401E"},{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"490007467E","name":"Green
+        Lane (TW4)","uri":"/StopPoint/490007467E"},{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"490008506E","name":"Islay
+        Gardens (TW4)","uri":"/StopPoint/490008506E"},{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"490008395E","name":"Frampton
+        Road (TW4)","uri":"/StopPoint/490008395E"},{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"490009702E","name":"Staines
+        Road / Martindale Road","uri":"/StopPoint/490009702E"},{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"490005698E","name":"Cranbrook
+        Road (TW4)","uri":"/StopPoint/490005698E"},{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"490014362E","name":"Wellington
+        Road South","uri":"/StopPoint/490014362E"},{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"490008125E","name":"Hibernia
+        Road / Staines Road","uri":"/StopPoint/490008125E"},{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"490013259V","name":"The
+        Bell (TW3)","uri":"/StopPoint/490013259V"},{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"490013777P","name":"Treaty
+        Centre","uri":"/StopPoint/490013777P"}]},"routeOptions":[{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.RouteOption,
+        Tfl.Api.Presentation.Entities","name":"116","directions":["Hounslow Bus Station"],"lineIdentifier":{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.Line,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"116","name":"116","uri":"/Line/116"}}],"mode":{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.Mode,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"bus","name":"bus"},"disruptions":[],"plannedWorks":[],"isDisrupted":false,"hasFixedLocations":true},{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Leg,
+        Tfl.Api.Presentation.Entities","duration":6,"instruction":{"$type":"Tfl.Api.Presentation.Entities.Instruction,
+        Tfl.Api.Presentation.Entities","summary":"Walk to TW3 3TU","detailed":"Walk
+        to TW3 3TU","steps":[{"$type":"Tfl.Api.Presentation.Entities.InstructionStep,
+        Tfl.Api.Presentation.Entities","description":"Continue along Grove Road for
+        10 metres (0 minutes, 9 seconds).","turnDirection":"STRAIGHT","streetName":"Grove
+        Road","distance":10,"cumulativeDistance":10,"skyDirection":251,"cumulativeTravelTime":9,"latitude":-0.36334192111,"longitude":51.46718385075,"pathAttribute":{"$type":"Tfl.Api.Presentation.Entities.PathAttribute,
+        Tfl.Api.Presentation.Entities"}},{"$type":"Tfl.Api.Presentation.Entities.InstructionStep,
+        Tfl.Api.Presentation.Entities","description":"Take a slight right, continue
+        for 47 metres (0 minutes, 43 seconds).","turnDirection":"SLIGHT_RIGHT","streetName":"","distance":47,"cumulativeDistance":57,"skyDirection":278,"cumulativeTravelTime":52,"latitude":-0.36319705690000004,"longitude":51.46720880565,"pathAttribute":{"$type":"Tfl.Api.Presentation.Entities.PathAttribute,
+        Tfl.Api.Presentation.Entities"}},{"$type":"Tfl.Api.Presentation.Entities.InstructionStep,
+        Tfl.Api.Presentation.Entities","description":"Take a slight right on to Hanworth
+        Road, continue for 270 metres (3 minutes, 56 seconds).","turnDirection":"SLIGHT_RIGHT","streetName":"Hanworth
+        Road","distance":270,"cumulativeDistance":327,"skyDirection":0,"cumulativeTravelTime":288,"latitude":-0.36265828179,"longitude":51.4669764752,"pathAttribute":{"$type":"Tfl.Api.Presentation.Entities.PathAttribute,
+        Tfl.Api.Presentation.Entities"}}]},"obstacles":[],"departureTime":"2014-09-03T15:03:00","arrivalTime":"2014-09-03T15:09:00","departurePoint":{"$type":"Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities","platformName":"P","modes":[],"icsCode":"1013777","commonName":"Treaty
+        Centre","placeType":"StopPoint","additionalProperties":[],"lat":51.467392177940006,"lon":-0.36344964484000003},"arrivalPoint":{"$type":"Tfl.Api.Presentation.Entities.Place,
+        Tfl.Api.Presentation.Entities","commonName":"TW3 3TU","placeType":"PostCode","lat":51.464824110260004,"lon":-0.36436210977},"path":{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Path,
+        Tfl.Api.Presentation.Entities","lineString":"[[51.46739217794, -0.36344964484],[51.46718385075,
+        -0.36334192111],[51.46720880565, -0.3631970569],[51.46718801757, -0.36299624094],[51.4669764752,
+        -0.36265828179],[51.4667338035, -0.36266696788],[51.46623651155, -0.36311667225],[51.46553651336,
+        -0.36386155009],[51.46488024522, -0.36451846313],[51.46482411026, -0.36436210977]]","stopPoints":[]},"routeOptions":[{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.RouteOption,
+        Tfl.Api.Presentation.Entities","name":"","directions":[""]}],"mode":{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.Mode,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"walking","name":"walking"},"disruptions":[],"plannedWorks":[],"distance":327.0,"isDisrupted":false,"hasFixedLocations":false}]},{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Journey,
+        Tfl.Api.Presentation.Entities","startDateTime":"2014-09-03T14:39:00","duration":32,"arrivalDateTime":"2014-09-03T15:11:00","legs":[{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Leg,
+        Tfl.Api.Presentation.Entities","duration":11,"instruction":{"$type":"Tfl.Api.Presentation.Entities.Instruction,
+        Tfl.Api.Presentation.Entities","summary":"Walk to Engleheart Drive (TW14)","detailed":"Walk
+        to Engleheart Drive (TW14)","steps":[{"$type":"Tfl.Api.Presentation.Entities.InstructionStep,
+        Tfl.Api.Presentation.Entities","description":"Continue along Fruen Road for
+        104 metres (1 minute, 32 seconds).","turnDirection":"STRAIGHT","streetName":"Fruen
+        Road","distance":104,"cumulativeDistance":104,"skyDirection":207,"cumulativeTravelTime":92,"latitude":-0.41951598516,"longitude":51.451444620640004,"pathAttribute":{"$type":"Tfl.Api.Presentation.Entities.PathAttribute,
+        Tfl.Api.Presentation.Entities"}},{"$type":"Tfl.Api.Presentation.Entities.InstructionStep,
+        Tfl.Api.Presentation.Entities","description":"Turn left on to Link Road, continue
+        for 77 metres (1 minute, 9 seconds).","turnDirection":"LEFT","streetName":"Link
+        Road","distance":77,"cumulativeDistance":181,"skyDirection":118,"cumulativeTravelTime":161,"latitude":-0.41881099495999996,"longitude":51.452271398869996,"pathAttribute":{"$type":"Tfl.Api.Presentation.Entities.PathAttribute,
+        Tfl.Api.Presentation.Entities"}},{"$type":"Tfl.Api.Presentation.Entities.InstructionStep,
+        Tfl.Api.Presentation.Entities","description":"Turn right on to Tachbrook Road,
+        continue for 237 metres (3 minutes, 32 seconds).","turnDirection":"RIGHT","streetName":"Tachbrook
+        Road","distance":237,"cumulativeDistance":418,"skyDirection":208,"cumulativeTravelTime":373,"latitude":-0.41977804741,"longitude":51.4526081595,"pathAttribute":{"$type":"Tfl.Api.Presentation.Entities.PathAttribute,
+        Tfl.Api.Presentation.Entities"}},{"$type":"Tfl.Api.Presentation.Entities.InstructionStep,
+        Tfl.Api.Presentation.Entities","description":"Continue along Burns Avenue
+        for 104 metres (1 minute, 33 seconds).","turnDirection":"STRAIGHT","streetName":"Burns
+        Avenue","distance":104,"cumulativeDistance":522,"skyDirection":209,"cumulativeTravelTime":466,"latitude":-0.4181303776,"longitude":51.4544743232,"pathAttribute":{"$type":"Tfl.Api.Presentation.Entities.PathAttribute,
+        Tfl.Api.Presentation.Entities"}},{"$type":"Tfl.Api.Presentation.Entities.InstructionStep,
+        Tfl.Api.Presentation.Entities","description":"Turn left on to Shakespeare
+        Avenue, continue for 122 metres (1 minute, 49 seconds).","turnDirection":"LEFT","streetName":"Shakespeare
+        Avenue","distance":122,"cumulativeDistance":644,"skyDirection":156,"cumulativeTravelTime":575,"latitude":-0.41698896860999995,"longitude":51.45501644038,"pathAttribute":{"$type":"Tfl.Api.Presentation.Entities.PathAttribute,
+        Tfl.Api.Presentation.Entities"}},{"$type":"Tfl.Api.Presentation.Entities.InstructionStep,
+        Tfl.Api.Presentation.Entities","description":"Turn left on to Staines Road,
+        continue for 23 metres (0 minutes, 20 seconds).","turnDirection":"LEFT","streetName":"Staines
+        Road","distance":23,"cumulativeDistance":667,"skyDirection":72,"cumulativeTravelTime":595,"latitude":-0.41794870117,"longitude":51.455982577540006,"pathAttribute":{"$type":"Tfl.Api.Presentation.Entities.PathAttribute,
+        Tfl.Api.Presentation.Entities"}}]},"obstacles":[],"departureTime":"2014-09-03T14:39:00","arrivalTime":"2014-09-03T14:50:00","departurePoint":{"$type":"Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities","platformName":"","modes":[],"icsCode":"99999997","commonName":"TW14
+        9NT","placeType":"PostCode","additionalProperties":[],"lat":51.45151025215,"lon":-0.41971520833},"arrivalPoint":{"$type":"Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities","platformName":"K","modes":[],"icsCode":"1006595","commonName":"Engleheart
+        Drive (TW14)","placeType":"StopPoint","additionalProperties":[],"lat":51.45601872407,"lon":-0.41796184508},"path":{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Path,
+        Tfl.Api.Presentation.Entities","lineString":"[[51.45151025215, -0.41971520833],[51.45144462064,
+        -0.41951598516],[51.45227139887, -0.41881099496],[51.4526081595, -0.41977804741],[51.4544743232,
+        -0.4181303776],[51.45475844846, -0.41786148044],[51.45501644038, -0.41698896861],[51.45567898064,
+        -0.4174410335],[51.45604122309, -0.417630016],[51.45598257754, -0.41794870117],[51.45601872407,
+        -0.41796184508]]","stopPoints":[]},"routeOptions":[{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.RouteOption,
+        Tfl.Api.Presentation.Entities","name":"","directions":[""]}],"mode":{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.Mode,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"walking","name":"walking"},"disruptions":[],"plannedWorks":[],"distance":667.0,"isDisrupted":false,"hasFixedLocations":true},{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Leg,
+        Tfl.Api.Presentation.Entities","duration":13,"instruction":{"$type":"Tfl.Api.Presentation.Entities.Instruction,
+        Tfl.Api.Presentation.Entities","summary":"116 bus to Treaty Centre","detailed":"116
+        bus towards Hounslow Bus Station","steps":[]},"obstacles":[],"departureTime":"2014-09-03T14:50:00","arrivalTime":"2014-09-03T15:03:00","departurePoint":{"$type":"Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities","naptanId":"490006595E","platformName":"K","modes":[],"icsCode":"1006595","commonName":"Engleheart
+        Drive (TW14) - Stop K","placeType":"StopPoint","additionalProperties":[],"lat":51.455982577540006,"lon":-0.41794870117},"arrivalPoint":{"$type":"Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities","naptanId":"490013777P","platformName":"P","modes":[],"icsCode":"1013777","commonName":"Treaty
+        Centre","placeType":"StopPoint","additionalProperties":[],"lat":51.46718385075,"lon":-0.36334192111},"path":{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Path,
+        Tfl.Api.Presentation.Entities","lineString":"[[51.45598257754, -0.41794870117],[51.45604122309,
+        -0.417630016],[51.4562922181, -0.41623955015],[51.45666105345, -0.4142548438],[51.45671128463,
+        -0.41397962191],[51.45676972464, -0.41364653978],[51.45682816369, -0.41331345682],[51.45682816369,
+        -0.41331345682],[51.45722254866, -0.41122705848],[51.45739862244, -0.41028533713],[51.45742363587,
+        -0.41014052836],[51.45763272486, -0.40898174009],[51.45772475942, -0.40847474743],[51.45772475942,
+        -0.40847474743],[51.45779979239, -0.40804031472],[51.45806767117, -0.40657718228],[51.45846134781,
+        -0.4044475093],[51.45846115202, -0.40443312181],[51.45846115202, -0.40443312181],[51.45867038003,
+        -0.40328866988],[51.45873738549, -0.40292647161],[51.45876297772, -0.40282481748],[51.45882958966,
+        -0.40243384265],[51.4588719812, -0.40224523478],[51.45921341714, -0.40024686352],[51.4592962292,
+        -0.39972576316],[51.45933041388, -0.39959501623],[51.45954038034, -0.39850807254],[51.4601179979,
+        -0.3966884994],[51.46029067398, -0.39616423211],[51.46038560545, -0.39587300582],[51.46054128636,
+        -0.39542130326],[51.46078329993, -0.394707458],[51.46087842473, -0.39443061379],[51.46087842473,
+        -0.39443061379],[51.46134426201, -0.39298913802],[51.46153410816, -0.39240665791],[51.46157687795,
+        -0.39224680666],[51.46174113793, -0.39176598744],[51.46174113793, -0.39176598744],[51.46186203525,
+        -0.39140185265],[51.46189621051, -0.39127109234],[51.46198273397, -0.39102332746],[51.46214659383,
+        -0.39051372256],[51.46294887252, -0.38803822111],[51.463283968, -0.38690353725],[51.463283968,
+        -0.38690353725],[51.46331833613, -0.38678715849],[51.46339566401, -0.38652530564],[51.46358290244,
+        -0.38575571651],[51.4637433701, -0.38500146204],[51.4637433701, -0.38500146204],[51.4638364893,
+        -0.3845806897],[51.46393020183, -0.38420308288],[51.46411563934, -0.38330397346],[51.4641921656,
+        -0.38298455375],[51.46432743814, -0.38236073596],[51.46438678014, -0.38209950577],[51.46447149666,
+        -0.3817222074],[51.46451405307, -0.38154794694],[51.46451405307, -0.38154794694],[51.46458997853,
+        -0.38118535384],[51.46469167439, -0.38073546952],[51.46475960315, -0.38044513842],[51.46499714923,
+        -0.37941458351],[51.46514158943, -0.37880481545],[51.46529441725, -0.37815155661],[51.46536873941,
+        -0.37767383611],[51.46540250094, -0.37751427683],[51.46540250094, -0.37751427683],[51.46548660507,
+        -0.37709379337],[51.46553774406, -0.37689042694],[51.46570714197, -0.37613579121],[51.46574929138,
+        -0.37593274185],[51.46592687335, -0.37512022145],[51.46607908194, -0.37442377046],[51.46614659584,
+        -0.3741046421],[51.46662815644, -0.37187039779],[51.46662815644, -0.37187039779],[51.46684785048,
+        -0.37085478782],[51.46696628204, -0.37031787919],[51.46715301265, -0.36951938576],[51.46733853655,
+        -0.36863454575],[51.46742240824, -0.36819963875],[51.46751566678, -0.36779318963],[51.46764387352,
+        -0.36731350516],[51.46771136785, -0.36699435577],[51.46761808208, -0.36675293267],[51.4673640167,
+        -0.36658923788],[51.46671846082, -0.36607960107],[51.46683105275, -0.3651253766],[51.46688955331,
+        -0.3648065511],[51.46708282464, -0.36383503696],[51.46718385075, -0.36334192111]]","stopPoints":[{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"490012027E","name":"Shaftesbury
+        Avenue/Staines Rd","uri":"/StopPoint/490012027E"},{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"490007813E","name":"Faggs
+        Road (TW14)","uri":"/StopPoint/490007813E"},{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"490008401E","name":"Hounslow
+        Road (TW14)","uri":"/StopPoint/490008401E"},{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"490007467E","name":"Green
+        Lane (TW4)","uri":"/StopPoint/490007467E"},{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"490008506E","name":"Islay
+        Gardens (TW4)","uri":"/StopPoint/490008506E"},{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"490008395E","name":"Frampton
+        Road (TW4)","uri":"/StopPoint/490008395E"},{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"490009702E","name":"Staines
+        Road / Martindale Road","uri":"/StopPoint/490009702E"},{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"490005698E","name":"Cranbrook
+        Road (TW4)","uri":"/StopPoint/490005698E"},{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"490014362E","name":"Wellington
+        Road South","uri":"/StopPoint/490014362E"},{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"490008125E","name":"Hibernia
+        Road / Staines Road","uri":"/StopPoint/490008125E"},{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"490013259V","name":"The
+        Bell (TW3)","uri":"/StopPoint/490013259V"},{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"490013777P","name":"Treaty
+        Centre","uri":"/StopPoint/490013777P"}]},"routeOptions":[{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.RouteOption,
+        Tfl.Api.Presentation.Entities","name":"116","directions":["Hounslow Bus Station"],"lineIdentifier":{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.Line,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"116","name":"116","uri":"/Line/116"}}],"mode":{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.Mode,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"bus","name":"bus"},"disruptions":[],"plannedWorks":[],"isDisrupted":false,"hasFixedLocations":true},{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Leg,
+        Tfl.Api.Presentation.Entities","duration":6,"instruction":{"$type":"Tfl.Api.Presentation.Entities.Instruction,
+        Tfl.Api.Presentation.Entities","summary":"Walk to TW3 3TU","detailed":"Walk
+        to TW3 3TU","steps":[{"$type":"Tfl.Api.Presentation.Entities.InstructionStep,
+        Tfl.Api.Presentation.Entities","description":"Continue along Grove Road for
+        10 metres (0 minutes, 9 seconds).","turnDirection":"STRAIGHT","streetName":"Grove
+        Road","distance":10,"cumulativeDistance":10,"skyDirection":251,"cumulativeTravelTime":9,"latitude":-0.36334192111,"longitude":51.46718385075,"pathAttribute":{"$type":"Tfl.Api.Presentation.Entities.PathAttribute,
+        Tfl.Api.Presentation.Entities"}},{"$type":"Tfl.Api.Presentation.Entities.InstructionStep,
+        Tfl.Api.Presentation.Entities","description":"Take a slight right, continue
+        for 47 metres (0 minutes, 43 seconds).","turnDirection":"SLIGHT_RIGHT","streetName":"","distance":47,"cumulativeDistance":57,"skyDirection":278,"cumulativeTravelTime":52,"latitude":-0.36319705690000004,"longitude":51.46720880565,"pathAttribute":{"$type":"Tfl.Api.Presentation.Entities.PathAttribute,
+        Tfl.Api.Presentation.Entities"}},{"$type":"Tfl.Api.Presentation.Entities.InstructionStep,
+        Tfl.Api.Presentation.Entities","description":"Take a slight right on to Hanworth
+        Road, continue for 270 metres (3 minutes, 56 seconds).","turnDirection":"SLIGHT_RIGHT","streetName":"Hanworth
+        Road","distance":270,"cumulativeDistance":327,"skyDirection":0,"cumulativeTravelTime":288,"latitude":-0.36265828179,"longitude":51.4669764752,"pathAttribute":{"$type":"Tfl.Api.Presentation.Entities.PathAttribute,
+        Tfl.Api.Presentation.Entities"}}]},"obstacles":[],"departureTime":"2014-09-03T15:05:00","arrivalTime":"2014-09-03T15:11:00","departurePoint":{"$type":"Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities","platformName":"P","modes":[],"icsCode":"1013777","commonName":"Treaty
+        Centre","placeType":"StopPoint","additionalProperties":[],"lat":51.467392177940006,"lon":-0.36344964484000003},"arrivalPoint":{"$type":"Tfl.Api.Presentation.Entities.Place,
+        Tfl.Api.Presentation.Entities","commonName":"TW3 3TU","placeType":"PostCode","lat":51.464824110260004,"lon":-0.36436210977},"path":{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Path,
+        Tfl.Api.Presentation.Entities","lineString":"[[51.46739217794, -0.36344964484],[51.46718385075,
+        -0.36334192111],[51.46720880565, -0.3631970569],[51.46718801757, -0.36299624094],[51.4669764752,
+        -0.36265828179],[51.4667338035, -0.36266696788],[51.46623651155, -0.36311667225],[51.46553651336,
+        -0.36386155009],[51.46488024522, -0.36451846313],[51.46482411026, -0.36436210977]]","stopPoints":[]},"routeOptions":[{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.RouteOption,
+        Tfl.Api.Presentation.Entities","name":"","directions":[""]}],"mode":{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.Mode,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"walking","name":"walking"},"disruptions":[],"plannedWorks":[],"distance":327.0,"isDisrupted":false,"hasFixedLocations":false}]},{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Journey,
+        Tfl.Api.Presentation.Entities","startDateTime":"2014-09-03T14:51:00","duration":31,"arrivalDateTime":"2014-09-03T15:22:00","legs":[{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Leg,
+        Tfl.Api.Presentation.Entities","duration":11,"instruction":{"$type":"Tfl.Api.Presentation.Entities.Instruction,
+        Tfl.Api.Presentation.Entities","summary":"Walk to Engleheart Drive (TW14)","detailed":"Walk
+        to Engleheart Drive (TW14)","steps":[{"$type":"Tfl.Api.Presentation.Entities.InstructionStep,
+        Tfl.Api.Presentation.Entities","description":"Continue along Fruen Road for
+        104 metres (1 minute, 32 seconds).","turnDirection":"STRAIGHT","streetName":"Fruen
+        Road","distance":104,"cumulativeDistance":104,"skyDirection":207,"cumulativeTravelTime":92,"latitude":-0.41951598516,"longitude":51.451444620640004,"pathAttribute":{"$type":"Tfl.Api.Presentation.Entities.PathAttribute,
+        Tfl.Api.Presentation.Entities"}},{"$type":"Tfl.Api.Presentation.Entities.InstructionStep,
+        Tfl.Api.Presentation.Entities","description":"Turn left on to Link Road, continue
+        for 77 metres (1 minute, 9 seconds).","turnDirection":"LEFT","streetName":"Link
+        Road","distance":77,"cumulativeDistance":181,"skyDirection":118,"cumulativeTravelTime":161,"latitude":-0.41881099495999996,"longitude":51.452271398869996,"pathAttribute":{"$type":"Tfl.Api.Presentation.Entities.PathAttribute,
+        Tfl.Api.Presentation.Entities"}},{"$type":"Tfl.Api.Presentation.Entities.InstructionStep,
+        Tfl.Api.Presentation.Entities","description":"Turn right on to Tachbrook Road,
+        continue for 237 metres (3 minutes, 32 seconds).","turnDirection":"RIGHT","streetName":"Tachbrook
+        Road","distance":237,"cumulativeDistance":418,"skyDirection":208,"cumulativeTravelTime":373,"latitude":-0.41977804741,"longitude":51.4526081595,"pathAttribute":{"$type":"Tfl.Api.Presentation.Entities.PathAttribute,
+        Tfl.Api.Presentation.Entities"}},{"$type":"Tfl.Api.Presentation.Entities.InstructionStep,
+        Tfl.Api.Presentation.Entities","description":"Continue along Burns Avenue
+        for 104 metres (1 minute, 33 seconds).","turnDirection":"STRAIGHT","streetName":"Burns
+        Avenue","distance":104,"cumulativeDistance":522,"skyDirection":209,"cumulativeTravelTime":466,"latitude":-0.4181303776,"longitude":51.4544743232,"pathAttribute":{"$type":"Tfl.Api.Presentation.Entities.PathAttribute,
+        Tfl.Api.Presentation.Entities"}},{"$type":"Tfl.Api.Presentation.Entities.InstructionStep,
+        Tfl.Api.Presentation.Entities","description":"Turn left on to Shakespeare
+        Avenue, continue for 122 metres (1 minute, 49 seconds).","turnDirection":"LEFT","streetName":"Shakespeare
+        Avenue","distance":122,"cumulativeDistance":644,"skyDirection":156,"cumulativeTravelTime":575,"latitude":-0.41698896860999995,"longitude":51.45501644038,"pathAttribute":{"$type":"Tfl.Api.Presentation.Entities.PathAttribute,
+        Tfl.Api.Presentation.Entities"}},{"$type":"Tfl.Api.Presentation.Entities.InstructionStep,
+        Tfl.Api.Presentation.Entities","description":"Turn left on to Staines Road,
+        continue for 23 metres (0 minutes, 20 seconds).","turnDirection":"LEFT","streetName":"Staines
+        Road","distance":23,"cumulativeDistance":667,"skyDirection":72,"cumulativeTravelTime":595,"latitude":-0.41794870117,"longitude":51.455982577540006,"pathAttribute":{"$type":"Tfl.Api.Presentation.Entities.PathAttribute,
+        Tfl.Api.Presentation.Entities"}}]},"obstacles":[],"departureTime":"2014-09-03T14:51:00","arrivalTime":"2014-09-03T15:02:00","departurePoint":{"$type":"Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities","platformName":"","modes":[],"icsCode":"99999997","commonName":"TW14
+        9NT","placeType":"PostCode","additionalProperties":[],"lat":51.45151025215,"lon":-0.41971520833},"arrivalPoint":{"$type":"Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities","platformName":"K","modes":[],"icsCode":"1006595","commonName":"Engleheart
+        Drive (TW14)","placeType":"StopPoint","additionalProperties":[],"lat":51.45601872407,"lon":-0.41796184508},"path":{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Path,
+        Tfl.Api.Presentation.Entities","lineString":"[[51.45151025215, -0.41971520833],[51.45144462064,
+        -0.41951598516],[51.45227139887, -0.41881099496],[51.4526081595, -0.41977804741],[51.4544743232,
+        -0.4181303776],[51.45475844846, -0.41786148044],[51.45501644038, -0.41698896861],[51.45567898064,
+        -0.4174410335],[51.45604122309, -0.417630016],[51.45598257754, -0.41794870117],[51.45601872407,
+        -0.41796184508]]","stopPoints":[]},"routeOptions":[{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.RouteOption,
+        Tfl.Api.Presentation.Entities","name":"","directions":[""]}],"mode":{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.Mode,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"walking","name":"walking"},"disruptions":[],"plannedWorks":[],"distance":667.0,"isDisrupted":false,"hasFixedLocations":true},{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Leg,
+        Tfl.Api.Presentation.Entities","duration":14,"instruction":{"$type":"Tfl.Api.Presentation.Entities.Instruction,
+        Tfl.Api.Presentation.Entities","summary":"116 bus to Treaty Centre","detailed":"116
+        bus towards Hounslow Bus Station","steps":[]},"obstacles":[],"departureTime":"2014-09-03T15:02:00","arrivalTime":"2014-09-03T15:16:00","departurePoint":{"$type":"Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities","naptanId":"490006595E","platformName":"K","modes":[],"icsCode":"1006595","commonName":"Engleheart
+        Drive (TW14) - Stop K","placeType":"StopPoint","additionalProperties":[],"lat":51.455982577540006,"lon":-0.41794870117},"arrivalPoint":{"$type":"Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities","naptanId":"490013777P","platformName":"P","modes":[],"icsCode":"1013777","commonName":"Treaty
+        Centre","placeType":"StopPoint","additionalProperties":[],"lat":51.46718385075,"lon":-0.36334192111},"path":{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Path,
+        Tfl.Api.Presentation.Entities","lineString":"[[51.45598257754, -0.41794870117],[51.45604122309,
+        -0.417630016],[51.4562922181, -0.41623955015],[51.45666105345, -0.4142548438],[51.45671128463,
+        -0.41397962191],[51.45676972464, -0.41364653978],[51.45682816369, -0.41331345682],[51.45682816369,
+        -0.41331345682],[51.45722254866, -0.41122705848],[51.45739862244, -0.41028533713],[51.45742363587,
+        -0.41014052836],[51.45763272486, -0.40898174009],[51.45772475942, -0.40847474743],[51.45772475942,
+        -0.40847474743],[51.45779979239, -0.40804031472],[51.45806767117, -0.40657718228],[51.45846134781,
+        -0.4044475093],[51.45846115202, -0.40443312181],[51.45846115202, -0.40443312181],[51.45867038003,
+        -0.40328866988],[51.45873738549, -0.40292647161],[51.45876297772, -0.40282481748],[51.45882958966,
+        -0.40243384265],[51.4588719812, -0.40224523478],[51.45921341714, -0.40024686352],[51.4592962292,
+        -0.39972576316],[51.45933041388, -0.39959501623],[51.45954038034, -0.39850807254],[51.4601179979,
+        -0.3966884994],[51.46029067398, -0.39616423211],[51.46038560545, -0.39587300582],[51.46054128636,
+        -0.39542130326],[51.46078329993, -0.394707458],[51.46087842473, -0.39443061379],[51.46087842473,
+        -0.39443061379],[51.46134426201, -0.39298913802],[51.46153410816, -0.39240665791],[51.46157687795,
+        -0.39224680666],[51.46174113793, -0.39176598744],[51.46174113793, -0.39176598744],[51.46186203525,
+        -0.39140185265],[51.46189621051, -0.39127109234],[51.46198273397, -0.39102332746],[51.46214659383,
+        -0.39051372256],[51.46294887252, -0.38803822111],[51.463283968, -0.38690353725],[51.463283968,
+        -0.38690353725],[51.46331833613, -0.38678715849],[51.46339566401, -0.38652530564],[51.46358290244,
+        -0.38575571651],[51.4637433701, -0.38500146204],[51.4637433701, -0.38500146204],[51.4638364893,
+        -0.3845806897],[51.46393020183, -0.38420308288],[51.46411563934, -0.38330397346],[51.4641921656,
+        -0.38298455375],[51.46432743814, -0.38236073596],[51.46438678014, -0.38209950577],[51.46447149666,
+        -0.3817222074],[51.46451405307, -0.38154794694],[51.46451405307, -0.38154794694],[51.46458997853,
+        -0.38118535384],[51.46469167439, -0.38073546952],[51.46475960315, -0.38044513842],[51.46499714923,
+        -0.37941458351],[51.46514158943, -0.37880481545],[51.46529441725, -0.37815155661],[51.46536873941,
+        -0.37767383611],[51.46540250094, -0.37751427683],[51.46540250094, -0.37751427683],[51.46548660507,
+        -0.37709379337],[51.46553774406, -0.37689042694],[51.46570714197, -0.37613579121],[51.46574929138,
+        -0.37593274185],[51.46592687335, -0.37512022145],[51.46607908194, -0.37442377046],[51.46614659584,
+        -0.3741046421],[51.46662815644, -0.37187039779],[51.46662815644, -0.37187039779],[51.46684785048,
+        -0.37085478782],[51.46696628204, -0.37031787919],[51.46715301265, -0.36951938576],[51.46733853655,
+        -0.36863454575],[51.46742240824, -0.36819963875],[51.46751566678, -0.36779318963],[51.46764387352,
+        -0.36731350516],[51.46771136785, -0.36699435577],[51.46761808208, -0.36675293267],[51.4673640167,
+        -0.36658923788],[51.46671846082, -0.36607960107],[51.46683105275, -0.3651253766],[51.46688955331,
+        -0.3648065511],[51.46708282464, -0.36383503696],[51.46718385075, -0.36334192111]]","stopPoints":[{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"490012027E","name":"Shaftesbury
+        Avenue/Staines Rd","uri":"/StopPoint/490012027E"},{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"490007813E","name":"Faggs
+        Road (TW14)","uri":"/StopPoint/490007813E"},{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"490008401E","name":"Hounslow
+        Road (TW14)","uri":"/StopPoint/490008401E"},{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"490007467E","name":"Green
+        Lane (TW4)","uri":"/StopPoint/490007467E"},{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"490008506E","name":"Islay
+        Gardens (TW4)","uri":"/StopPoint/490008506E"},{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"490008395E","name":"Frampton
+        Road (TW4)","uri":"/StopPoint/490008395E"},{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"490009702E","name":"Staines
+        Road / Martindale Road","uri":"/StopPoint/490009702E"},{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"490005698E","name":"Cranbrook
+        Road (TW4)","uri":"/StopPoint/490005698E"},{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"490014362E","name":"Wellington
+        Road South","uri":"/StopPoint/490014362E"},{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"490008125E","name":"Hibernia
+        Road / Staines Road","uri":"/StopPoint/490008125E"},{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"490013259V","name":"The
+        Bell (TW3)","uri":"/StopPoint/490013259V"},{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"490013777P","name":"Treaty
+        Centre","uri":"/StopPoint/490013777P"}]},"routeOptions":[{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.RouteOption,
+        Tfl.Api.Presentation.Entities","name":"116","directions":["Hounslow Bus Station"],"lineIdentifier":{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.Line,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"116","name":"116","uri":"/Line/116"}}],"mode":{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.Mode,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"bus","name":"bus"},"disruptions":[],"plannedWorks":[],"isDisrupted":false,"hasFixedLocations":true},{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Leg,
+        Tfl.Api.Presentation.Entities","duration":6,"instruction":{"$type":"Tfl.Api.Presentation.Entities.Instruction,
+        Tfl.Api.Presentation.Entities","summary":"Walk to TW3 3TU","detailed":"Walk
+        to TW3 3TU","steps":[{"$type":"Tfl.Api.Presentation.Entities.InstructionStep,
+        Tfl.Api.Presentation.Entities","description":"Continue along Grove Road for
+        10 metres (0 minutes, 9 seconds).","turnDirection":"STRAIGHT","streetName":"Grove
+        Road","distance":10,"cumulativeDistance":10,"skyDirection":251,"cumulativeTravelTime":9,"latitude":-0.36334192111,"longitude":51.46718385075,"pathAttribute":{"$type":"Tfl.Api.Presentation.Entities.PathAttribute,
+        Tfl.Api.Presentation.Entities"}},{"$type":"Tfl.Api.Presentation.Entities.InstructionStep,
+        Tfl.Api.Presentation.Entities","description":"Take a slight right, continue
+        for 47 metres (0 minutes, 43 seconds).","turnDirection":"SLIGHT_RIGHT","streetName":"","distance":47,"cumulativeDistance":57,"skyDirection":278,"cumulativeTravelTime":52,"latitude":-0.36319705690000004,"longitude":51.46720880565,"pathAttribute":{"$type":"Tfl.Api.Presentation.Entities.PathAttribute,
+        Tfl.Api.Presentation.Entities"}},{"$type":"Tfl.Api.Presentation.Entities.InstructionStep,
+        Tfl.Api.Presentation.Entities","description":"Take a slight right on to Hanworth
+        Road, continue for 270 metres (3 minutes, 56 seconds).","turnDirection":"SLIGHT_RIGHT","streetName":"Hanworth
+        Road","distance":270,"cumulativeDistance":327,"skyDirection":0,"cumulativeTravelTime":288,"latitude":-0.36265828179,"longitude":51.4669764752,"pathAttribute":{"$type":"Tfl.Api.Presentation.Entities.PathAttribute,
+        Tfl.Api.Presentation.Entities"}}]},"obstacles":[],"departureTime":"2014-09-03T15:16:00","arrivalTime":"2014-09-03T15:22:00","departurePoint":{"$type":"Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities","platformName":"P","modes":[],"icsCode":"1013777","commonName":"Treaty
+        Centre","placeType":"StopPoint","additionalProperties":[],"lat":51.467392177940006,"lon":-0.36344964484000003},"arrivalPoint":{"$type":"Tfl.Api.Presentation.Entities.Place,
+        Tfl.Api.Presentation.Entities","commonName":"TW3 3TU","placeType":"PostCode","lat":51.464824110260004,"lon":-0.36436210977},"path":{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Path,
+        Tfl.Api.Presentation.Entities","lineString":"[[51.46739217794, -0.36344964484],[51.46718385075,
+        -0.36334192111],[51.46720880565, -0.3631970569],[51.46718801757, -0.36299624094],[51.4669764752,
+        -0.36265828179],[51.4667338035, -0.36266696788],[51.46623651155, -0.36311667225],[51.46553651336,
+        -0.36386155009],[51.46488024522, -0.36451846313],[51.46482411026, -0.36436210977]]","stopPoints":[]},"routeOptions":[{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.RouteOption,
+        Tfl.Api.Presentation.Entities","name":"","directions":[""]}],"mode":{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.Mode,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"walking","name":"walking"},"disruptions":[],"plannedWorks":[],"distance":327.0,"isDisrupted":false,"hasFixedLocations":false}]},{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Journey,
+        Tfl.Api.Presentation.Entities","startDateTime":"2014-09-03T14:53:00","duration":34,"arrivalDateTime":"2014-09-03T15:27:00","legs":[{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Leg,
+        Tfl.Api.Presentation.Entities","duration":18,"instruction":{"$type":"Tfl.Api.Presentation.Entities.Instruction,
+        Tfl.Api.Presentation.Entities","summary":"Walk to Feltham","detailed":"Walk
+        to Feltham","steps":[{"$type":"Tfl.Api.Presentation.Entities.InstructionStep,
+        Tfl.Api.Presentation.Entities","description":"Continue along Fruen Road for
+        143 metres (2 minutes, 8 seconds).","turnDirection":"STRAIGHT","streetName":"Fruen
+        Road","distance":143,"cumulativeDistance":143,"skyDirection":27,"cumulativeTravelTime":128,"latitude":-0.41951598516,"longitude":51.451444620640004,"pathAttribute":{"$type":"Tfl.Api.Presentation.Entities.PathAttribute,
+        Tfl.Api.Presentation.Entities"}},{"$type":"Tfl.Api.Presentation.Entities.InstructionStep,
+        Tfl.Api.Presentation.Entities","description":"Turn left on to Bedfont Lane,
+        continue for 701 metres (10 minutes, 21 seconds).","turnDirection":"LEFT","streetName":"Bedfont
+        Lane","distance":701,"cumulativeDistance":844,"skyDirection":308,"cumulativeTravelTime":749,"latitude":-0.4204904277,"longitude":51.450315730389995,"pathAttribute":{"$type":"Tfl.Api.Presentation.Entities.PathAttribute,
+        Tfl.Api.Presentation.Entities"}},{"$type":"Tfl.Api.Presentation.Entities.InstructionStep,
+        Tfl.Api.Presentation.Entities","description":"Turn left on to New Road, continue
+        for 27 metres (0 minutes, 23 seconds).","turnDirection":"LEFT","streetName":"New
+        Road","distance":27,"cumulativeDistance":871,"skyDirection":232,"cumulativeTravelTime":772,"latitude":-0.41142392547,"longitude":51.4478192645,"pathAttribute":{"$type":"Tfl.Api.Presentation.Entities.PathAttribute,
+        Tfl.Api.Presentation.Entities"}},{"$type":"Tfl.Api.Presentation.Entities.InstructionStep,
+        Tfl.Api.Presentation.Entities","description":"Continue along  for 35 metres
+        (0 minutes, 31 seconds).","turnDirection":"STRAIGHT","streetName":"","distance":35,"cumulativeDistance":906,"skyDirection":309,"cumulativeTravelTime":803,"latitude":-0.41105024849000005,"longitude":51.447805208350005,"pathAttribute":{"$type":"Tfl.Api.Presentation.Entities.PathAttribute,
+        Tfl.Api.Presentation.Entities"}}]},"obstacles":[{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Obstacle,
+        Tfl.Api.Presentation.Entities","type":"WALKWAY","incline":"LEVEL","stopId":1001107,"position":"IDEST"}],"departureTime":"2014-09-03T14:53:00","arrivalTime":"2014-09-03T15:11:00","departurePoint":{"$type":"Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities","platformName":"","modes":[],"icsCode":"99999997","commonName":"TW14
+        9NT","placeType":"PostCode","additionalProperties":[],"lat":51.45151025215,"lon":-0.41971520833},"arrivalPoint":{"$type":"Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities","platformName":"","modes":[],"icsCode":"1001107","commonName":"Feltham","placeType":"StopPoint","additionalProperties":[],"lat":51.44806355458,"lon":-0.40954461317999996},"path":{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Path,
+        Tfl.Api.Presentation.Entities","lineString":"[[51.45151025215, -0.41971520833],[51.45144462064,
+        -0.41951598516],[51.45031573039, -0.4204904277],[51.45012174671, -0.42010854664],[51.45005618423,
+        -0.41924731072],[51.44994625704, -0.418430785],[51.4498099423, -0.41765835007],[51.44948161998,
+        -0.41598589767],[51.44932886852, -0.41532917812],[51.44917747493, -0.41477315553],[51.44872795077,
+        -0.41345033788],[51.44851421589, -0.41293966366],[51.44814378535, -0.41214660746],[51.44798592209,
+        -0.41177791713],[51.4478192645, -0.41142392547],[51.44790661147, -0.41123381145],[51.44784213541,
+        -0.41112092153],[51.44780520835, -0.41105024849],[51.44790799609, -0.41067251495],[51.44793320531,
+        -0.41054212075],[51.44793320531, -0.41054212075],[51.44806355458, -0.40954461318]]","stopPoints":[]},"routeOptions":[{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.RouteOption,
+        Tfl.Api.Presentation.Entities","name":"","directions":[""]}],"mode":{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.Mode,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"walking","name":"walking"},"disruptions":[],"plannedWorks":[],"distance":906.0,"isDisrupted":false,"hasFixedLocations":true},{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Leg,
+        Tfl.Api.Presentation.Entities","duration":5,"instruction":{"$type":"Tfl.Api.Presentation.Entities.Instruction,
+        Tfl.Api.Presentation.Entities","summary":"South West Trains to Hounslow","detailed":"South
+        West Trains towards London Waterloo","steps":[]},"obstacles":[],"departureTime":"2014-09-03T15:11:00","arrivalTime":"2014-09-03T15:16:00","departurePoint":{"$type":"Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities","platformName":"","modes":[],"icsCode":"1001107","commonName":"Feltham
+        Rail Station","placeType":"StopPoint","additionalProperties":[],"lat":51.44809989715,"lon":-0.40957213257},"arrivalPoint":{"$type":"Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities","platformName":"","modes":[],"icsCode":"1001156","commonName":"Hounslow
+        Rail Station","placeType":"StopPoint","additionalProperties":[],"lat":51.46201949503,"lon":-0.36185679151},"path":{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Path,
+        Tfl.Api.Presentation.Entities","lineString":"[[51.44809989715, -0.40957213257],[51.44832891165,
+        -0.40855679717],[51.44889515479, -0.40588911102],[51.44935563495, -0.40338335336],[51.45144615732,
+        -0.39054461886],[51.451676681, -0.38899654677],[51.45188960384, -0.38747786347],[51.45202616958,
+        -0.38629288186],[51.45226408748, -0.38202434354],[51.45230237285, -0.38023833066],[51.45227370093,
+        -0.37881449696],[51.45218809763, -0.37717679742],[51.45221229841, -0.37632678811],[51.45233536015,
+        -0.37547326879],[51.45248837064, -0.37483456845],[51.45268012186, -0.3743959832],[51.45293498631,
+        -0.37396954454],[51.45320842365, -0.37358561915],[51.45504376072, -0.37170683831],[51.45564674461,
+        -0.37109525061],[51.45692999245, -0.36961018319],[51.45849682733, -0.36782703003],[51.45940614911,
+        -0.36661423063],[51.46023336348, -0.36531794611],[51.46201949503, -0.36185679151]]","stopPoints":[{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","name":"Hounslow
+        Rail Station","uri":"/StopPoint/"}]},"routeOptions":[{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.RouteOption,
+        Tfl.Api.Presentation.Entities","name":"South West Trains","directions":["London
+        Waterloo Rail Station"]}],"mode":{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.Mode,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"national-rail","name":"national-rail"},"disruptions":[],"plannedWorks":[],"isDisrupted":false,"hasFixedLocations":true},{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Leg,
+        Tfl.Api.Presentation.Entities","duration":11,"instruction":{"$type":"Tfl.Api.Presentation.Entities.Instruction,
+        Tfl.Api.Presentation.Entities","summary":"Walk to TW3 3TU","detailed":"Walk
+        to TW3 3TU","steps":[{"$type":"Tfl.Api.Presentation.Entities.InstructionStep,
+        Tfl.Api.Presentation.Entities","description":"Continue along Whitton Road
+        for 179 metres (2 minutes, 41 seconds).","turnDirection":"STRAIGHT","streetName":"Whitton
+        Road","distance":179,"cumulativeDistance":179,"skyDirection":56,"cumulativeTravelTime":161,"latitude":-0.36194978665000005,"longitude":51.462236610420007,"pathAttribute":{"$type":"Tfl.Api.Presentation.Entities.PathAttribute,
+        Tfl.Api.Presentation.Entities"}},{"$type":"Tfl.Api.Presentation.Entities.InstructionStep,
+        Tfl.Api.Presentation.Entities","description":"Take a slight left on to Cross
+        Lances Road, continue for 186 metres (2 minutes, 47 seconds).","turnDirection":"SLIGHT_LEFT","streetName":"Cross
+        Lances Road","distance":186,"cumulativeDistance":365,"skyDirection":112,"cumulativeTravelTime":328,"latitude":-0.36273896117000004,"longitude":51.46351555264,"pathAttribute":{"$type":"Tfl.Api.Presentation.Entities.PathAttribute,
+        Tfl.Api.Presentation.Entities"}},{"$type":"Tfl.Api.Presentation.Entities.InstructionStep,
+        Tfl.Api.Presentation.Entities","description":"Turn right on to Hanworth Road,
+        continue for 71 metres (0 minutes, 56 seconds).","turnDirection":"RIGHT","streetName":"Hanworth
+        Road","distance":71,"cumulativeDistance":436,"skyDirection":211,"cumulativeTravelTime":384,"latitude":-0.36505606932,"longitude":51.464339210259993,"pathAttribute":{"$type":"Tfl.Api.Presentation.Entities.PathAttribute,
+        Tfl.Api.Presentation.Entities"}}]},"obstacles":[{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Obstacle,
+        Tfl.Api.Presentation.Entities","type":"WALKWAY","incline":"LEVEL","stopId":1001156,"position":"IDEST"}],"departureTime":"2014-09-03T15:16:00","arrivalTime":"2014-09-03T15:27:00","departurePoint":{"$type":"Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities","platformName":"","modes":[],"icsCode":"1001156","commonName":"Hounslow","placeType":"StopPoint","additionalProperties":[],"lat":51.46205625048,"lon":-0.36191305754},"arrivalPoint":{"$type":"Tfl.Api.Presentation.Entities.Place,
+        Tfl.Api.Presentation.Entities","commonName":"TW3 3TU","placeType":"PostCode","lat":51.464824110260004,"lon":-0.36436210977},"path":{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Path,
+        Tfl.Api.Presentation.Entities","lineString":"[[51.46205625048, -0.36191305754],[51.46222762258,
+        -0.36195010844],[51.46222762258, -0.36195010844],[51.46222782359, -0.36196449682],[51.46238147653,
+        -0.36266438079],[51.46273260536, -0.36269500172],[51.46296669123, -0.3627154159],[51.46351555264,
+        -0.36273896117],[51.46372433319, -0.36352327147],[51.46433921026, -0.36505606932],[51.46442788496,
+        -0.36496652271],[51.46459664763, -0.36481652799],[51.46479157089, -0.3646080115],[51.46488024522,
+        -0.36451846313],[51.46482411026, -0.36436210977]]","stopPoints":[]},"routeOptions":[{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.RouteOption,
+        Tfl.Api.Presentation.Entities","name":"","directions":[""]}],"mode":{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.Mode,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"walking","name":"walking"},"disruptions":[],"plannedWorks":[],"distance":436.0,"isDisrupted":false,"hasFixedLocations":false}]},{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Journey,
+        Tfl.Api.Presentation.Entities","startDateTime":"2014-09-03T14:28:00","duration":72,"arrivalDateTime":"2014-09-03T15:40:00","legs":[{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Leg,
+        Tfl.Api.Presentation.Entities","duration":72,"instruction":{"$type":"Tfl.Api.Presentation.Entities.Instruction,
+        Tfl.Api.Presentation.Entities","summary":"Walk to TW3 3TU","detailed":"Walk
+        to TW3 3TU","steps":[{"$type":"Tfl.Api.Presentation.Entities.InstructionStep,
+        Tfl.Api.Presentation.Entities","description":"Continue along Fruen Road for
+        104 metres (1 minute, 32 seconds).","turnDirection":"STRAIGHT","streetName":"Fruen
+        Road","distance":104,"cumulativeDistance":104,"skyDirection":207,"cumulativeTravelTime":92,"latitude":-0.41951598516,"longitude":51.451444620640004,"pathAttribute":{"$type":"Tfl.Api.Presentation.Entities.PathAttribute,
+        Tfl.Api.Presentation.Entities"}},{"$type":"Tfl.Api.Presentation.Entities.InstructionStep,
+        Tfl.Api.Presentation.Entities","description":"Turn left on to Link Road, continue
+        for 77 metres (1 minute, 9 seconds).","turnDirection":"LEFT","streetName":"Link
+        Road","distance":77,"cumulativeDistance":181,"skyDirection":118,"cumulativeTravelTime":161,"latitude":-0.41881099495999996,"longitude":51.452271398869996,"pathAttribute":{"$type":"Tfl.Api.Presentation.Entities.PathAttribute,
+        Tfl.Api.Presentation.Entities"}},{"$type":"Tfl.Api.Presentation.Entities.InstructionStep,
+        Tfl.Api.Presentation.Entities","description":"Turn right on to Tachbrook Road,
+        continue for 237 metres (3 minutes, 32 seconds).","turnDirection":"RIGHT","streetName":"Tachbrook
+        Road","distance":237,"cumulativeDistance":418,"skyDirection":208,"cumulativeTravelTime":373,"latitude":-0.41977804741,"longitude":51.4526081595,"pathAttribute":{"$type":"Tfl.Api.Presentation.Entities.PathAttribute,
+        Tfl.Api.Presentation.Entities"}},{"$type":"Tfl.Api.Presentation.Entities.InstructionStep,
+        Tfl.Api.Presentation.Entities","description":"Continue along Burns Avenue
+        for 643 metres (9 minutes, 34 seconds).","turnDirection":"STRAIGHT","streetName":"Burns
+        Avenue","distance":643,"cumulativeDistance":1061,"skyDirection":209,"cumulativeTravelTime":947,"latitude":-0.4181303776,"longitude":51.4544743232,"pathAttribute":{"$type":"Tfl.Api.Presentation.Entities.PathAttribute,
+        Tfl.Api.Presentation.Entities"}},{"$type":"Tfl.Api.Presentation.Entities.InstructionStep,
+        Tfl.Api.Presentation.Entities","description":"Turn left on to Harlington Road
+        West, continue for 59 metres (0 minutes, 54 seconds).","turnDirection":"LEFT","streetName":"Harlington
+        Road West","distance":59,"cumulativeDistance":1120,"skyDirection":150,"cumulativeTravelTime":1001,"latitude":-0.40986964993999997,"longitude":51.45693437831,"pathAttribute":{"$type":"Tfl.Api.Presentation.Entities.PathAttribute,
+        Tfl.Api.Presentation.Entities"}},{"$type":"Tfl.Api.Presentation.Entities.InstructionStep,
+        Tfl.Api.Presentation.Entities","description":"Turn right on to Staines Road,
+        continue for 3228 metres (47 minutes, 55 seconds).","turnDirection":"RIGHT","streetName":"Staines
+        Road","distance":3228,"cumulativeDistance":4348,"skyDirection":253,"cumulativeTravelTime":3876,"latitude":-0.41028533713,"longitude":51.45739862244,"pathAttribute":{"$type":"Tfl.Api.Presentation.Entities.PathAttribute,
+        Tfl.Api.Presentation.Entities"}},{"$type":"Tfl.Api.Presentation.Entities.InstructionStep,
+        Tfl.Api.Presentation.Entities","description":"Take a slight right, continue
+        for 132 metres (1 minute, 58 seconds).","turnDirection":"SLIGHT_RIGHT","streetName":"","distance":132,"cumulativeDistance":4480,"skyDirection":300,"cumulativeTravelTime":3994,"latitude":-0.36699435577,"longitude":51.46771136785,"pathAttribute":{"$type":"Tfl.Api.Presentation.Entities.PathAttribute,
+        Tfl.Api.Presentation.Entities"}},{"$type":"Tfl.Api.Presentation.Entities.InstructionStep,
+        Tfl.Api.Presentation.Entities","description":"Take a slight left on to Grove
+        Road, continue for 67 metres (1 minute, 1 second).","turnDirection":"SLIGHT_LEFT","streetName":"Grove
+        Road","distance":67,"cumulativeDistance":4547,"skyDirection":258,"cumulativeTravelTime":4055,"latitude":-0.36607960107,"longitude":51.46671846082,"pathAttribute":{"$type":"Tfl.Api.Presentation.Entities.PathAttribute,
+        Tfl.Api.Presentation.Entities"}},{"$type":"Tfl.Api.Presentation.Entities.InstructionStep,
+        Tfl.Api.Presentation.Entities","description":"Turn right on to Bell Road,
+        continue for 172 metres (2 minutes, 33 seconds).","turnDirection":"RIGHT","streetName":"Bell
+        Road","distance":172,"cumulativeDistance":4719,"skyDirection":333,"cumulativeTravelTime":4208,"latitude":-0.3651253766,"longitude":51.466831052749995,"pathAttribute":{"$type":"Tfl.Api.Presentation.Entities.PathAttribute,
+        Tfl.Api.Presentation.Entities"}},{"$type":"Tfl.Api.Presentation.Entities.InstructionStep,
+        Tfl.Api.Presentation.Entities","description":"Turn right on to Hanworth Road,
+        continue for 86 metres (1 minute, 17 seconds).","turnDirection":"RIGHT","streetName":"Hanworth
+        Road","distance":86,"cumulativeDistance":4805,"skyDirection":31,"cumulativeTravelTime":4285,"latitude":-0.36451846312999997,"longitude":51.46488024522,"pathAttribute":{"$type":"Tfl.Api.Presentation.Entities.PathAttribute,
+        Tfl.Api.Presentation.Entities"}}]},"obstacles":[],"departureTime":"2014-09-03T14:28:00","arrivalTime":"2014-09-03T15:40:00","departurePoint":{"$type":"Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities","platformName":"","modes":[],"icsCode":"99999997","commonName":"TW14
+        9NT","placeType":"PostCode","additionalProperties":[],"lat":51.45151025215,"lon":-0.41971520833},"arrivalPoint":{"$type":"Tfl.Api.Presentation.Entities.Place,
+        Tfl.Api.Presentation.Entities","commonName":"TW3 3TU","placeType":"PostCode","lat":51.464824110260004,"lon":-0.36436210977},"path":{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Path,
+        Tfl.Api.Presentation.Entities","lineString":"[[51.45151025215, -0.41971520833],[51.45144462064,
+        -0.41951598516],[51.45227139887, -0.41881099496],[51.4526081595, -0.41977804741],[51.4544743232,
+        -0.4181303776],[51.45475844846, -0.41786148044],[51.45501644038, -0.41698896861],[51.45539384459,
+        -0.41563733397],[51.45595846131, -0.41350193996],[51.45693437831, -0.40986964994],[51.45739862244,
+        -0.41028533713],[51.45742363587, -0.41014052836],[51.45763272486, -0.40898174009],[51.45779979239,
+        -0.40804031472],[51.45806767117, -0.40657718228],[51.45846134781, -0.4044475093],[51.45867038003,
+        -0.40328866988],[51.45873738549, -0.40292647161],[51.45876297772, -0.40282481748],[51.45882958966,
+        -0.40243384265],[51.4588719812, -0.40224523478],[51.45921341714, -0.40024686352],[51.4592962292,
+        -0.39972576316],[51.45933041388, -0.39959501623],[51.45954038034, -0.39850807254],[51.4601179979,
+        -0.3966884994],[51.46029067398, -0.39616423211],[51.46038560545, -0.39587300582],[51.46054128636,
+        -0.39542130326],[51.46078329993, -0.394707458],[51.46134426201, -0.39298913802],[51.46153410816,
+        -0.39240665791],[51.46157687795, -0.39224680666],[51.46186203525, -0.39140185265],[51.46189621051,
+        -0.39127109234],[51.46198273397, -0.39102332746],[51.46214659383, -0.39051372256],[51.46294887252,
+        -0.38803822111],[51.46331833613, -0.38678715849],[51.46339566401, -0.38652530564],[51.46358290244,
+        -0.38575571651],[51.4638364893, -0.3845806897],[51.46393020183, -0.38420308288],[51.46411563934,
+        -0.38330397346],[51.4641921656, -0.38298455375],[51.46432743814, -0.38236073596],[51.46438678014,
+        -0.38209950577],[51.46447149666, -0.3817222074],[51.46458997853, -0.38118535384],[51.46469167439,
+        -0.38073546952],[51.46475960315, -0.38044513842],[51.46499714923, -0.37941458351],[51.46514158943,
+        -0.37880481545],[51.46529441725, -0.37815155661],[51.46536873941, -0.37767383611],[51.46548660507,
+        -0.37709379337],[51.46553774406, -0.37689042694],[51.46570714197, -0.37613579121],[51.46574929138,
+        -0.37593274185],[51.46592687335, -0.37512022145],[51.46607908194, -0.37442377046],[51.46614659584,
+        -0.3741046421],[51.46684785048, -0.37085478782],[51.46696628204, -0.37031787919],[51.46715301265,
+        -0.36951938576],[51.46733853655, -0.36863454575],[51.46742240824, -0.36819963875],[51.46751566678,
+        -0.36779318963],[51.46764387352, -0.36731350516],[51.46771136785, -0.36699435577],[51.46761808208,
+        -0.36675293267],[51.4673640167, -0.36658923788],[51.46709257679, -0.36646935663],[51.46678358141,
+        -0.36623564201],[51.46671846082, -0.36607960107],[51.46683105275, -0.3651253766],[51.46631292612,
+        -0.36472638534],[51.46587669244, -0.36439645838],[51.46569432592, -0.36421582222],[51.46553651336,
+        -0.36386155009],[51.46488024522, -0.36451846313],[51.46482411026, -0.36436210977]]","stopPoints":[]},"routeOptions":[{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.RouteOption,
+        Tfl.Api.Presentation.Entities","name":"","directions":[""]}],"mode":{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.Mode,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"walking","name":"walking"},"disruptions":[],"plannedWorks":[],"distance":4805.0,"isDisrupted":false,"hasFixedLocations":false}]}],"lines":[{"$type":"Tfl.Api.Presentation.Entities.Line,
+        Tfl.Api.Presentation.Entities","id":"116","name":"116","modeName":"bus","created":"2014-08-15T14:32:38.517","modified":"2014-08-15T14:32:38.517","lineStatuses":[{"$type":"Tfl.Api.Presentation.Entities.LineStatus,
+        Tfl.Api.Presentation.Entities","id":0,"statusSeverity":10,"statusSeverityDescription":"Good
+        Service","created":"0001-01-01T00:00:00","validityPeriods":[]}],"routeSections":[]}],"recommendedMaxAgeMinutes":5,"searchCriteria":{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.SearchCriteria,
+        Tfl.Api.Presentation.Entities","dateTime":"2014-09-03T14:28:00","dateTimeType":"Departing","timeAdjustments":{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.TimeAdjustments,
+        Tfl.Api.Presentation.Entities","earliest":{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.TimeAdjustment,
+        Tfl.Api.Presentation.Entities","date":"20140903","time":"0300","timeIs":"departing","uri":"/journey/journeyresults/%7bfrom%7d/to/%7bto%7d/via/%7bvia%7d?from=tw14+9nt&to=tw3+3tu&via=&nationalsearch=false&date=20140903&time=0300&timeIs=departing&journeypreference=&mode=&accessibilitypreference=&fromname=&toname=&vianame=&maxtransferminutes=&maxwalkingminutes=&walkingspeed=&cyclepreference=&adjustment=&bikeproficiency=&alternativecycle=false&alternativewalking=true&applyhtmlmarkup=false&app_id=&app_key="},"earlier":{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.TimeAdjustment,
+        Tfl.Api.Presentation.Entities","date":"20140903","time":"1509","timeIs":"arriving","uri":"/journey/journeyresults/%7bfrom%7d/to/%7bto%7d/via/%7bvia%7d?from=tw14+9nt&to=tw3+3tu&via=&nationalsearch=false&date=20140903&time=1509&timeIs=arriving&journeypreference=&mode=&accessibilitypreference=&fromname=&toname=&vianame=&maxtransferminutes=&maxwalkingminutes=&walkingspeed=&cyclepreference=&adjustment=&bikeproficiency=&alternativecycle=false&alternativewalking=true&applyhtmlmarkup=false&app_id=&app_key="},"later":{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.TimeAdjustment,
+        Tfl.Api.Presentation.Entities","date":"20140903","time":"1453","timeIs":"departing","uri":"/journey/journeyresults/%7bfrom%7d/to/%7bto%7d/via/%7bvia%7d?from=tw14+9nt&to=tw3+3tu&via=&nationalsearch=false&date=20140903&time=1453&timeIs=departing&journeypreference=&mode=&accessibilitypreference=&fromname=&toname=&vianame=&maxtransferminutes=&maxwalkingminutes=&walkingspeed=&cyclepreference=&adjustment=&bikeproficiency=&alternativecycle=false&alternativewalking=true&applyhtmlmarkup=false&app_id=&app_key="},"latest":{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.TimeAdjustment,
+        Tfl.Api.Presentation.Entities","date":"20140904","time":"0300","timeIs":"arriving","uri":"/journey/journeyresults/%7bfrom%7d/to/%7bto%7d/via/%7bvia%7d?from=tw14+9nt&to=tw3+3tu&via=&nationalsearch=false&date=20140904&time=0300&timeIs=arriving&journeypreference=&mode=&accessibilitypreference=&fromname=&toname=&vianame=&maxtransferminutes=&maxwalkingminutes=&walkingspeed=&cyclepreference=&adjustment=&bikeproficiency=&alternativecycle=false&alternativewalking=true&applyhtmlmarkup=false&app_id=&app_key="}}},"journeyVector":{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.JourneyVector,
+        Tfl.Api.Presentation.Entities","from":"tw149nt","to":"tw33tu","via":"","uri":"/journey/journeyresults/%7bfrom%7d/to/%7bto%7d/via/%7bvia%7d?from=tw14+9nt&to=tw3+3tu&via=&nationalsearch=false&date=&time=&timeis=departing&journeypreference=&mode=&accessibilitypreference=&fromname=&toname=&vianame=&maxtransferminutes=&maxwalkingminutes=&walkingspeed=&cyclepreference=&adjustment=&bikeproficiency=&alternativecycle=false&alternativewalking=true&applyhtmlmarkup=false&app_id=&app_key="}}'
+    http_version: 
+  recorded_at: Wed, 03 Sep 2014 13:29:46 GMT
+recorded_with: VCR 2.9.2
