@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'tfl_jp/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "tfl_jp"
+  spec.name          = "journey_planner"
   spec.version       = TFLJourneyPlanner::VERSION
   spec.authors       = ["jpatel531"]
   spec.email         = ["jamie@notespublication.com"]

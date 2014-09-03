@@ -7,7 +7,7 @@ A Ruby-wrapper for the TFL Journey Planner API.
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'tfl_jp'
+gem 'journey_planner'
 ```
 
 And then execute:
@@ -16,7 +16,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install tfl_jp
+    $ gem install journey_planner
 
 ## Usage
 
