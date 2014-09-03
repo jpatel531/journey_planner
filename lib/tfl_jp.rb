@@ -1,4 +1,4 @@
-# require "tfl_jp/version"
+require "tfl_jp/version"
 require "httparty"
 require 'json'
 require 'ostruct'
