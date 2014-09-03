@@ -1,4 +1,4 @@
-# TFL Journey Planner
+# Unofficial TFL Journey Planner Gem
 
 A Ruby-wrapper for the TFL Journey Planner API.
 
