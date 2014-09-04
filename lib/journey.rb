@@ -13,6 +13,14 @@ module TFLJourneyPlanner
 			return array
 		end
 
+		def map_path
+			array = []
+			legs.each do |leg|
+				array += JSON.parse(leg.path.line_string)
+			end
+			return array
+		end
+
 	end
 
 end

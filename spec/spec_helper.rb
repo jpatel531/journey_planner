@@ -1,4 +1,4 @@
-require 'tfl_jp'
+require 'journey_planner'
 
 require 'webmock'
 require 'vcr'

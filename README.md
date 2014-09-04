@@ -18,13 +18,19 @@ Or install it yourself as:
 
     $ gem install journey_planner
 
-## Usage
+## Usage Examples
 
-TODO: Write usage instructions here
+```
+irb
+```
+```ruby
+require 'journey_planner'
+
+client = TFLJourneyPlanner::Client.new(app_id: your_app_id, app_key: your_app_key)
 
 ## Contributing
 
-1. Fork it ( https://github.com/[my-github-username]/tfl_jp/fork )
+1. Fork it ( https://github.com/[my-github-username]/journey_planner_gem/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
