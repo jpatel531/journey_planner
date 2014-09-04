@@ -28,6 +28,21 @@ require 'journey_planner'
 
 client = TFLJourneyPlanner::Client.new(app_id: your_app_id, app_key: your_app_key)
 
+journeys = client.get_journeys from: "old street underground station", to: "oxford circus underground station"
+
+# => returns an array of Journey objects, each representing one of the possible journeys
+
+```
+
+Methods you can play with:
+
+```ruby
+journeys.first.instructions
+# => ["Northern line to Euston / Northern line towards Edgware, or High Barnet", "Victoria line to Oxford Circus / Victoria line towards Brixton"]
+```
+
+
+
 ## Contributing
 
 1. Fork it ( https://github.com/[my-github-username]/journey_planner_gem/fork )
