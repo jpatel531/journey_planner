@@ -2,10 +2,11 @@ require_relative 'spec_helper'
 
 describe TFLJourneyPlanner::Journey do
 
+	let(:client) {client = TFLJourneyPlanner::Client.new(app_id: ENV["TFL_ID"], app_key: ENV["TFL_KEY"])}
+	let(:journeys) {journeys =  client.get_journeys(from: "tw14 9nt", to: "tw14 8ex")}
+
 	it "should return an array of instructions" do 
 		VCR.use_cassette "hello", record: :none do 
-			client = TFLJourneyPlanner::Client.new(app_id: ENV["TFL_ID"], app_key: ENV["TFL_KEY"])
-			journeys = client.get_journeys(from: "tw14 9nt", to: "tw14 8ex")
 			array = ["Continue along Fruen Road for 143 metres (2 minutes, 8 seconds).", 
 				"Turn right on to Bedfont Lane, continue for 172 metres (2 minutes, 33 seconds).",
 				"H25 bus to Bedfont Library / H25 bus towards Hatton Cross",
@@ -17,8 +18,6 @@ describe TFLJourneyPlanner::Journey do
 
 	it "should return a map path as an array of coordinates" do 
 		VCR.use_cassette "hello", record: :none do 
-			client = TFLJourneyPlanner::Client.new(app_id: ENV["TFL_ID"], app_key: ENV["TFL_KEY"])
-			journeys =  client.get_journeys(from: "tw14 9nt", to: "tw14 8ex")
 			expect(journeys[0].map_path).to eq [[51.45151025215, -0.41971520833],[51.45144462064, -0.41951598516],[51.45031573039, -0.4204904277],[51.45054644033, -0.42092861212],[51.45077734235, -0.42138118615],[51.45094358299, -0.42170646688],[51.45129461858, -0.42239957193],[51.45127683589, -0.42241457688], [51.45129461858, -0.42239957193],[51.45148859493,
         -0.42278147255],[51.45207032325, -0.42391280827],[51.45250417214, -0.42474702056],[51.45324177029,
         -0.42610332716],[51.45343573478, -0.42648525981],[51.45343573478, -0.42648525981],[51.45368497803,
