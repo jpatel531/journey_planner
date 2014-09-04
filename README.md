@@ -41,6 +41,62 @@ journeys.first.instructions
 # => ["Northern line to Euston / Northern line towards Edgware, or High Barnet", "Victoria line to Oxford Circus / Victoria line towards Brixton"]
 ```
 
+### Integrating with Google Maps
+
+Setting up a simple Sinatra app:
+
+```ruby
+
+require 'sinatra'
+require 'sinatra/json'
+require 'journey_planner'
+
+get '/' do 
+	erb :index
+end
+
+get '/maps' do 
+	client = TFLJourneyPlanner::Client.new(app_id: ENV["TFL_ID"], app_key: ENV["TFL_KEY"])
+	journeys = client.get_journeys from: "old street underground station", to: "oxford circus underground station"
+	json journeys.first.map_path
+end
+
+```
+
+Your HTML and Javascript (assuming JQuery, the Google Maps API, and GMapsJS have already been linked)
+
+```html
+<div id="map" style="height: 500px; width: 500px"></div>
+```
+
+```javascript
+	$(document).ready(function(){
+
+		$.get('/maps', function(coordinates){
+
+			var map = new GMaps({
+	  			div: '#map',
+	  			lat: coordinates[0][0],
+	  			lng: coordinates[0][1]
+
+			});
+
+			map.drawPolyline({
+			  path: coordinates,
+			  strokeColor: '#131540',
+			  strokeOpacity: 0.6,
+			  strokeWeight: 6
+			});
+		})
+
+	})
+```
+
+On launching your app, you should find that GMaps has created a polyline from the TFL Journey Planner path coordinates.
+
+![Image1](https://raw.githubusercontent.com/jpatel531/journey_planner/master/screenshots/jp_gmaps_ex.jpg)
+
+
 
 
 ## Contributing
