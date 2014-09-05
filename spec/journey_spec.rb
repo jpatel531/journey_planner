@@ -29,6 +29,23 @@ describe TFLJourneyPlanner::Journey do
 
 	end
 
+	it 'should return an array of disruptions' do 
+		VCR.use_cassette "disruptions", record: :none do 
+			journeys = client.get_journeys from: "fulham broadway underground station", to: 'edgware road underground station circle line'
+			expect(journeys[0].find_disruptions).to include "District Line: Severe delays between Edgware Road and Wimbledon only, while we fix a signal failure at East Putney. Tickets will be accepted on London Buses via any reasonable route and on Southwest trains between Wimbledon and Waterloo. GOOD SERVICE on the rest of the line."
+			
+		end
+	end
+
+	it 'should allow you to filter disruptions' do 
+		VCR.use_cassette "disruptions", record: :none do 
+			journeys = client.get_journeys from: "fulham broadway underground station", to: 'edgware road underground station circle line'
+			disruptions = journeys[0].find_disruptions(filter: :realtime)
+			expect(disruptions).to include "District Line: Severe delays between Edgware Road and Wimbledon only, while we fix a signal failure at East Putney. Tickets will be accepted on London Buses via any reasonable route and on Southwest trains between Wimbledon and Waterloo. GOOD SERVICE on the rest of the line."
+			expect(disruptions).not_to include 'FULHAM BROADWAY, WIMBLEDON, SOUTHFIELDS, EARLS COURT AND WESTMINSTER STATIONS: A ramp is provided at these stations providing step-free access onto District line trains (as well as Circle line trains at Westminster). Please ask staff in the ticket hall for assistance.'
+		end
+	end 
+
 
 
 

@@ -20,4 +20,12 @@ describe TFLJourneyPlanner::Results, vcr: true do
 		end
 	end
 
+	# it 'must calculate an average duration of the journeys found' do 
+	# 	VCR.use_cassette "hello", record: :none do
+	# 		expect(journeys)
+
+	# 	end
+
+	# end
+
 end

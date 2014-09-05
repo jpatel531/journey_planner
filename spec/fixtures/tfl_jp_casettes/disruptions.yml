@@ -1,0 +1,574 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.tfl.gov.uk/Journey/JourneyResults/%7Bfrom%7D/to/%7Bto%7D/via/%7Bvia%7D?adjustment=&alternativeCycle=false&alternativeWalking=true&app_id=a09e631e&app_key=c381b49216f90558cf148c53cd5205b8&applyHtmlMarkup=false&cyclePreference=&from=fulham%2Bbroadway%2Bunderground%2Bstation&fromName=&journeyPreference=&maxTransferMinutes=&maxWalkingMinutes=&mode=&nationalSearch=false&timeIs=Departing&to=edgware%2Broad%2Bstation%2Bcircle%2Bline&toName=&via=&viaName=
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - s-maxage=86400
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept-Encoding
+      Server:
+      - Microsoft-IIS/8.0
+      Api-Entity-Payload:
+      - itineraryresult, disambiguationresult, mode, stoppoint, place, disruption,
+        plannedworks, line, linestatus
+      X-Aspnet-Version:
+      - 4.0.30319
+      Access-Control-Allow-Headers:
+      - Content-Type
+      Access-Control-Allow-Methods:
+      - GET,POST,PUT,DELETE,OPTIONS
+      X-Ttl-Rule:
+      - '0'
+      X-Cacheable:
+      - Yes. Cacheable
+      X-Ttl:
+      - '86400.000'
+      X-Backend:
+      - api
+      X-Varnish:
+      - 10.73.2.241
+      - '1840430546'
+      X-Backend-Url:
+      - "/Journey/JourneyResults/%7Bfrom%7D/to/%7Bto%7D/via/%7Bvia%7D?app_key=c381b49216f90558cf148c53cd5205b8&app_id=a09e631e&from=fulham%2Bbroadway%2Bunderground%2Bstation&to=edgware%2Broad%2Bstation%2Bcircle%2Bline&via=&nationalSearch=false&timeIs=Departing&journeyPreference=&mode=&fromName=&toName=&viaName=&maxTransferMinutes=&maxWalkingMinutes=&cyclePreference=&adjustment=&alternativeCycle=false&alternativeWalking=true&applyHtmlMarkup=false"
+      X-Hash-Url:
+      - "/Journey/JourneyResults/%7Bfrom%7D/to/%7Bto%7D/via/%7Bvia%7D?app_key=c381b49216f90558cf148c53cd5205b8&app_id=a09e631e&from=fulham%2Bbroadway%2Bunderground%2Bstation&to=edgware%2Broad%2Bstation%2Bcircle%2Bline&via=&nationalSearch=false&timeIs=Departing&journeyPreference=&mode=&fromName=&toName=&viaName=&maxTransferMinutes=&maxWalkingMinutes=&cyclePreference=&adjustment=&alternativeCycle=false&alternativeWalking=true&applyHtmlMarkup=false"
+      Access-Control-Allow-Origin:
+      - "*"
+      Transfer-Encoding:
+      - chunked
+      Date:
+      - Fri, 05 Sep 2014 18:08:25 GMT
+      Age:
+      - '0'
+      Via:
+      - 1.1 varnish
+      Connection:
+      - keep-alive
+      X-Banning:
+      - ''
+      X-Cache:
+      - MISS
+    body:
+      encoding: UTF-8
+      string: '{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.DisambiguationResult,
+        Tfl.Api.Presentation.Entities","toLocationDisambiguation":{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Disambiguation,
+        Tfl.Api.Presentation.Entities","disambiguationOptions":[{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.DisambiguationOption,
+        Tfl.Api.Presentation.Entities","parameterValue":"1000072","uri":"/journey/journeyresults/%7bfrom%7d/to/%7bto%7d/via/%7bvia%7d?app_key=c381b49216f90558cf148c53cd5205b8&app_id=a09e631e&from=fulham%2bbroadway%2bunderground%2bstation&to=edgware%2broad%2bstation%2bcircle%2bline&via=&nationalsearch=false&timeis=departing&journeypreference=&mode=&fromname=&toname=&vianame=&maxtransferminutes=&maxwalkingminutes=&cyclepreference=&adjustment=&alternativecycle=false&alternativewalking=true&applyhtmlmarkup=false","place":{"$type":"Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities","naptanId":"940GZZLUERC","modes":["tube","bus"],"icsCode":"1000072","stopType":"stop","url":"http://api.prod3.live.tfl.gov.uk/StopPoint/940GZZLUERC","commonName":"Edgware
+        Road, Edgware Road (Circle Line) Station","placeType":"StopPoint","additionalProperties":[],"lat":51.51980119415,"lon":-0.16774821282},"matchQuality":1000}],"matchStatus":"list"},"fromLocationDisambiguation":{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Disambiguation,
+        Tfl.Api.Presentation.Entities","matchStatus":"identified"},"viaLocationDisambiguation":{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Disambiguation,
+        Tfl.Api.Presentation.Entities","matchStatus":"empty"},"recommendedMaxAgeMinutes":1440,"searchCriteria":{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.SearchCriteria,
+        Tfl.Api.Presentation.Entities","dateTime":"2014-09-05T19:08:00","dateTimeType":"Departing"},"journeyVector":{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.JourneyVector,
+        Tfl.Api.Presentation.Entities","from":"fulham+broadway+underground+station","to":"edgware+road+station+circle+line","via":"","uri":"/journey/journeyresults/%7bfrom%7d/to/%7bto%7d/via/%7bvia%7d?app_key=c381b49216f90558cf148c53cd5205b8&app_id=a09e631e&from=fulham%2bbroadway%2bunderground%2bstation&to=edgware%2broad%2bstation%2bcircle%2bline&via=&nationalsearch=false&timeis=departing&journeypreference=&mode=&fromname=&toname=&vianame=&maxtransferminutes=&maxwalkingminutes=&cyclepreference=&adjustment=&alternativecycle=false&alternativewalking=true&applyhtmlmarkup=false"}}'
+    http_version: 
+  recorded_at: Fri, 05 Sep 2014 18:08:25 GMT
+- request:
+    method: get
+    uri: http://api.tfl.gov.uk/Journey/JourneyResults/%7Bfrom%7D/to/%7Bto%7D/via/%7Bvia%7D?adjustment=&alternativeCycle=false&alternativeWalking=true&app_id=a09e631e&app_key=c381b49216f90558cf148c53cd5205b8&applyHtmlMarkup=false&cyclePreference=&from=fulham%2Bbroadway%2Bunderground%2Bstation&fromName=&journeyPreference=&maxTransferMinutes=&maxWalkingMinutes=&mode=&nationalSearch=false&timeIs=Departing&to=edgware%2Broad%2Bunderground%2Bstation%2Bcircle%2Bline&toName=&via=&viaName=
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - s-maxage=120
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept-Encoding
+      Server:
+      - Microsoft-IIS/8.0
+      Api-Entity-Payload:
+      - itineraryresult, disambiguationresult, mode, stoppoint, place, disruption,
+        plannedworks, line, linestatus
+      X-Aspnet-Version:
+      - 4.0.30319
+      Access-Control-Allow-Headers:
+      - Content-Type
+      Access-Control-Allow-Methods:
+      - GET,POST,PUT,DELETE,OPTIONS
+      X-Ttl-Rule:
+      - '0'
+      X-Cacheable:
+      - Yes. Cacheable
+      X-Ttl:
+      - '120.000'
+      X-Backend:
+      - api
+      X-Varnish:
+      - 10.73.2.241
+      - '1840440220'
+      X-Backend-Url:
+      - "/Journey/JourneyResults/%7Bfrom%7D/to/%7Bto%7D/via/%7Bvia%7D?app_key=c381b49216f90558cf148c53cd5205b8&app_id=a09e631e&from=fulham%2Bbroadway%2Bunderground%2Bstation&to=edgware%2Broad%2Bunderground%2Bstation%2Bcircle%2Bline&via=&nationalSearch=false&timeIs=Departing&journeyPreference=&mode=&fromName=&toName=&viaName=&maxTransferMinutes=&maxWalkingMinutes=&cyclePreference=&adjustment=&alternativeCycle=false&alternativeWalking=true&applyHtmlMarkup=false"
+      X-Hash-Url:
+      - "/Journey/JourneyResults/%7Bfrom%7D/to/%7Bto%7D/via/%7Bvia%7D?app_key=c381b49216f90558cf148c53cd5205b8&app_id=a09e631e&from=fulham%2Bbroadway%2Bunderground%2Bstation&to=edgware%2Broad%2Bunderground%2Bstation%2Bcircle%2Bline&via=&nationalSearch=false&timeIs=Departing&journeyPreference=&mode=&fromName=&toName=&viaName=&maxTransferMinutes=&maxWalkingMinutes=&cyclePreference=&adjustment=&alternativeCycle=false&alternativeWalking=true&applyHtmlMarkup=false"
+      Access-Control-Allow-Origin:
+      - "*"
+      Transfer-Encoding:
+      - chunked
+      Date:
+      - Fri, 05 Sep 2014 18:08:46 GMT
+      Age:
+      - '0'
+      Via:
+      - 1.1 varnish
+      Connection:
+      - keep-alive
+      X-Banning:
+      - ''
+      X-Cache:
+      - MISS
+    body:
+      encoding: UTF-8
+      string: '{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.ItineraryResult,
+        Tfl.Api.Presentation.Entities","journeys":[{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Journey,
+        Tfl.Api.Presentation.Entities","startDateTime":"2014-09-05T19:04:00","duration":20,"arrivalDateTime":"2014-09-05T19:24:00","legs":[{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Leg,
+        Tfl.Api.Presentation.Entities","duration":7,"instruction":{"$type":"Tfl.Api.Presentation.Entities.Instruction,
+        Tfl.Api.Presentation.Entities","summary":"District line to Gloucester Road","detailed":"District
+        line towards Upminster, or Tower Hill","steps":[]},"obstacles":[{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Obstacle,
+        Tfl.Api.Presentation.Entities","type":"WALKWAY","incline":"LEVEL","stopId":1000086,"position":"AFTER"}],"departureTime":"2014-09-05T19:04:00","arrivalTime":"2014-09-05T19:11:00","departurePoint":{"$type":"Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities","naptanId":"940GZZLUFBY","platformName":"","modes":[],"icsCode":"1000084","commonName":"Fulham
+        Broadway Underground Station","placeType":"StopPoint","additionalProperties":[],"lat":51.480450998719995,"lon":-0.19506139367},"arrivalPoint":{"$type":"Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities","naptanId":"940GZZLUGTR","platformName":"","modes":[],"icsCode":"1000086","commonName":"Gloucester
+        Road Underground Station","placeType":"StopPoint","additionalProperties":[],"lat":51.49429486422,"lon":-0.18311950336},"path":{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Path,
+        Tfl.Api.Presentation.Entities","lineString":"[[51.48045099872, -0.19506139367],[51.48096271821,
+        -0.19442191548],[51.48221892447, -0.19190953266],[51.48252747687, -0.19150846815],[51.48287530619,
+        -0.1913218794],[51.48323456445, -0.19129326273],[51.48376901583, -0.19154576645],[51.48432476984,
+        -0.19201347551],[51.4852554231, -0.19288406134],[51.48638166996, -0.19419346019],[51.4869247579,
+        -0.1950074147],[51.4869247579, -0.1950074147],[51.48735711678, -0.19563851015],[51.48760618899,
+        -0.19604638901],[51.48806151858, -0.19641732538],[51.48846903413, -0.19660290193],[51.48886623419,
+        -0.19670246323],[51.4892879602, -0.19664261041],[51.48977892556, -0.19640716989],[51.49009935842,
+        -0.19619285956],[51.49053241398, -0.19570040991],[51.49177165944, -0.1938364325],[51.49177165944,
+        -0.1938364325],[51.49250094582, -0.19272720411],[51.4940688846, -0.19060515021],[51.49446241221,
+        -0.18988367282],[51.49475396596, -0.18896453843],[51.49486799732, -0.18819649308],[51.49495269862,
+        -0.18669489221],[51.49488363497, -0.18571801418],[51.4946523523, -0.18471877111],[51.49429486422,
+        -0.18311950336]]","stopPoints":[{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"940GZZLUWBN","name":"West
+        Brompton Underground Station","uri":"/StopPoint/940GZZLUWBN"},{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"940GZZLUECT","name":"Earl''s
+        Court Underground Station","uri":"/StopPoint/940GZZLUECT"},{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"940GZZLUGTR","name":"Gloucester
+        Road Underground Station","uri":"/StopPoint/940GZZLUGTR"}]},"routeOptions":[{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.RouteOption,
+        Tfl.Api.Presentation.Entities","name":"District","directions":["Upminster
+        Underground Station","Tower Hill Underground Station"],"lineIdentifier":{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.Line,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"district","name":"District","uri":"/Line/district"}}],"mode":{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.Mode,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"tube","name":"tube"},"disruptions":[{"$type":"Tfl.Api.Presentation.Entities.Disruption,
+        Tfl.Api.Presentation.Entities","category":"Information","categoryDescription":"Information","description":"DISTRICT
+        LINE TO KENSINGTON (OLYMPIA): The all day District Line service to Kensington
+        (Olympia) has been withdrawn on Monday to Friday except for a very limited
+        number of early morning and evening trains and during some events. Journey
+        Planner will show when this service is operating.","created":"2012-03-02T10:24:00","lastUpdate":"2012-02-10T17:52:00"},{"$type":"Tfl.Api.Presentation.Entities.Disruption,
+        Tfl.Api.Presentation.Entities","category":"RealTime","categoryDescription":"RealTime","description":"District
+        Line: Severe delays between Edgware Road and Wimbledon only, while we fix
+        a signal failure at East Putney. Tickets will be accepted on London Buses
+        via any reasonable route and on Southwest trains between Wimbledon and Waterloo.
+        GOOD SERVICE on the rest of the line.","created":"2014-09-05T18:47:00","lastUpdate":"2014-09-05T18:47:00"},{"$type":"Tfl.Api.Presentation.Entities.Disruption,
+        Tfl.Api.Presentation.Entities","category":"Information","categoryDescription":"Information","description":"FULHAM
+        BROADWAY, WIMBLEDON, SOUTHFIELDS, EARLS COURT AND WESTMINSTER STATIONS: A
+        ramp is provided at these stations providing step-free access onto District
+        line trains (as well as Circle line trains at Westminster). Please ask staff
+        in the ticket hall for assistance.","created":"2014-04-30T05:43:00","lastUpdate":"2012-06-12T22:26:00"},{"$type":"Tfl.Api.Presentation.Entities.Disruption,
+        Tfl.Api.Presentation.Entities","category":"PlannedWork","categoryDescription":"PlannedWork","description":"GLOUCESTER
+        ROAD STATION: From Saturday 24 May until mid-December, Piccadilly line trains
+        will not stop due to lift works. District and Circle line trains stop as normal.","created":"2014-08-26T10:35:00","lastUpdate":"2014-04-16T14:32:00"},{"$type":"Tfl.Api.Presentation.Entities.Disruption,
+        Tfl.Api.Presentation.Entities","category":"RealTime","categoryDescription":"RealTime","description":"Gloucester
+        Road: Part Closed - The Piccadilly lines are not serving this station while
+        upgrade work takes place.","created":"2014-09-05T04:17:00","lastUpdate":"2014-09-05T04:17:00"}],"plannedWorks":[],"isDisrupted":true,"hasFixedLocations":true},{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Leg,
+        Tfl.Api.Presentation.Entities","duration":11,"instruction":{"$type":"Tfl.Api.Presentation.Entities.Instruction,
+        Tfl.Api.Presentation.Entities","summary":"Circle line to Edgware Road (Circle
+        Line)","detailed":"Circle line towards Edgware Road (Circle Line)","steps":[]},"obstacles":[],"departureTime":"2014-09-05T19:13:00","arrivalTime":"2014-09-05T19:24:00","departurePoint":{"$type":"Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities","naptanId":"940GZZLUGTR","platformName":"","modes":[],"icsCode":"1000086","commonName":"Gloucester
+        Road Underground Station","placeType":"StopPoint","additionalProperties":[],"lat":51.494314399429996,"lon":-0.18321956851},"arrivalPoint":{"$type":"Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities","naptanId":"940GZZLUERC","platformName":"","modes":[],"icsCode":"1000072","commonName":"Edgware
+        Road (Circle Line) Underground Station","placeType":"StopPoint","additionalProperties":[],"lat":51.51994924453,"lon":-0.16743957470999998},"path":{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Path,
+        Tfl.Api.Presentation.Entities","lineString":"[[51.49431439943, -0.18321956851],[51.4946523523,
+        -0.18471877111],[51.49567424271, -0.18741539129],[51.49604373353, -0.18804902733],[51.49645482004,
+        -0.18846492482],[51.49719775605, -0.18882445493],[51.49784250122, -0.1892311093],[51.49853640261,
+        -0.18990956589],[51.50040661377, -0.19222717745],[51.50040661377, -0.19222717745],[51.50042480969,
+        -0.19224086533],[51.50105489779, -0.19286429661],[51.50175710039, -0.19349930141],[51.50238363418,
+        -0.19389237202],[51.5087472661, -0.19603287631],[51.5087472661, -0.19603287631],[51.50940708187,
+        -0.19625179633],[51.5098472229, -0.19622000201],[51.51027726938, -0.19611655068],[51.51068668341,
+        -0.19584097878],[51.51100245984, -0.19532411078],[51.51130570001, -0.19457714987],[51.5114752396,
+        -0.19390752378],[51.51201611145, -0.19107587954],[51.51213758488, -0.19020637202],[51.51234821211,
+        -0.18812274491],[51.51234821211, -0.18812274491],[51.51237116779, -0.18786242397],[51.51299002903,
+        -0.18136693342],[51.51309725427, -0.18074295069],[51.51336740449, -0.17960805168],[51.51374717573,
+        -0.17858406319],[51.51415636015, -0.17771741836],[51.51511872331, -0.17599274192],[51.51538093702,
+        -0.1755066499],[51.51538093702, -0.1755066499],[51.51699933429, -0.17260258651],[51.51791376282,
+        -0.17126877579],[51.51851813044, -0.17023561253],[51.51950689036, -0.16848072256],[51.51994924453,
+        -0.16743957471]]","stopPoints":[{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"940GZZLUHSK","name":"High
+        Street Kensington Underground Station","uri":"/StopPoint/940GZZLUHSK"},{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"940GZZLUNHG","name":"Notting
+        Hill Gate Underground Station","uri":"/StopPoint/940GZZLUNHG"},{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"940GZZLUBWT","name":"Bayswater
+        Underground Station","uri":"/StopPoint/940GZZLUBWT"},{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"940GZZLUPAC","name":"Paddington
+        Underground Station","uri":"/StopPoint/940GZZLUPAC"},{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"940GZZLUERC","name":"Edgware
+        Road (Circle Line) Underground Station","uri":"/StopPoint/940GZZLUERC"}]},"routeOptions":[{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.RouteOption,
+        Tfl.Api.Presentation.Entities","name":"Circle","directions":["Edgware Road
+        (Circle Line) Underground Station"],"lineIdentifier":{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.Line,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"circle","name":"Circle","uri":"/Line/circle"}}],"mode":{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.Mode,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"tube","name":"tube"},"disruptions":[{"$type":"Tfl.Api.Presentation.Entities.Disruption,
+        Tfl.Api.Presentation.Entities","category":"RealTime","categoryDescription":"RealTime","description":"Circle
+        Line: Minor delays due to an earlier customer incident at Aldgate.","created":"2014-09-05T18:15:00","lastUpdate":"2014-09-05T18:15:00"},{"$type":"Tfl.Api.Presentation.Entities.Disruption,
+        Tfl.Api.Presentation.Entities","category":"PlannedWork","categoryDescription":"PlannedWork","description":"GLOUCESTER
+        ROAD STATION: From Saturday 24 May until mid-December, Piccadilly line trains
+        will not stop due to lift works. District and Circle line trains stop as normal.","created":"2014-08-26T10:35:00","lastUpdate":"2014-04-16T14:32:00"},{"$type":"Tfl.Api.Presentation.Entities.Disruption,
+        Tfl.Api.Presentation.Entities","category":"RealTime","categoryDescription":"RealTime","description":"Gloucester
+        Road: Part Closed - The Piccadilly lines are not serving this station while
+        upgrade work takes place.","created":"2014-09-05T04:17:00","lastUpdate":"2014-09-05T04:17:00"}],"plannedWorks":[],"isDisrupted":true,"hasFixedLocations":true}]},{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Journey,
+        Tfl.Api.Presentation.Entities","startDateTime":"2014-09-05T19:11:00","duration":18,"arrivalDateTime":"2014-09-05T19:29:00","legs":[{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Leg,
+        Tfl.Api.Presentation.Entities","duration":18,"instruction":{"$type":"Tfl.Api.Presentation.Entities.Instruction,
+        Tfl.Api.Presentation.Entities","summary":"District line to Edgware Road (Circle
+        Line)","detailed":"District line towards Edgware Road (Circle Line)","steps":[]},"obstacles":[],"departureTime":"2014-09-05T19:11:00","arrivalTime":"2014-09-05T19:29:00","departurePoint":{"$type":"Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities","naptanId":"940GZZLUFBY","platformName":"","modes":[],"icsCode":"1000084","commonName":"Fulham
+        Broadway Underground Station","placeType":"StopPoint","additionalProperties":[],"lat":51.480450998719995,"lon":-0.19506139367},"arrivalPoint":{"$type":"Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities","naptanId":"940GZZLUERC","platformName":"","modes":[],"icsCode":"1000072","commonName":"Edgware
+        Road (Circle Line) Underground Station","placeType":"StopPoint","additionalProperties":[],"lat":51.51994924453,"lon":-0.16743957470999998},"path":{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Path,
+        Tfl.Api.Presentation.Entities","lineString":"[[51.48045099872, -0.19506139367],[51.48096271821,
+        -0.19442191548],[51.48221892447, -0.19190953266],[51.48252747687, -0.19150846815],[51.48287530619,
+        -0.1913218794],[51.48323456445, -0.19129326273],[51.48376901583, -0.19154576645],[51.48432476984,
+        -0.19201347551],[51.4852554231, -0.19288406134],[51.48638166996, -0.19419346019],[51.4869247579,
+        -0.1950074147],[51.4869247579, -0.1950074147],[51.48735711678, -0.19563851015],[51.48760618899,
+        -0.19604638901],[51.48806151858, -0.19641732538],[51.48846903413, -0.19660290193],[51.48886623419,
+        -0.19670246323],[51.4892879602, -0.19664261041],[51.48977892556, -0.19640716989],[51.49009935842,
+        -0.19619285956],[51.49053241398, -0.19570040991],[51.49177165944, -0.1938364325],[51.49177165944,
+        -0.1938364325],[51.49250094582, -0.19272720411],[51.4940688846, -0.19060515021],[51.49512954593,
+        -0.18941065206],[51.49553627758, -0.18896234468],[51.49595399586, -0.18864325205],[51.49645482004,
+        -0.18846492482],[51.49719775605, -0.18882445493],[51.49784250122, -0.1892311093],[51.49853640261,
+        -0.18990956589],[51.50040661377, -0.19222717745],[51.50040661377, -0.19222717745],[51.50042480969,
+        -0.19224086533],[51.50105489779, -0.19286429661],[51.50175710039, -0.19349930141],[51.50238363418,
+        -0.19389237202],[51.5087472661, -0.19603287631],[51.5087472661, -0.19603287631],[51.50940708187,
+        -0.19625179633],[51.5098472229, -0.19622000201],[51.51027726938, -0.19611655068],[51.51068668341,
+        -0.19584097878],[51.51100245984, -0.19532411078],[51.51130570001, -0.19457714987],[51.5114752396,
+        -0.19390752378],[51.51201611145, -0.19107587954],[51.51213758488, -0.19020637202],[51.51234821211,
+        -0.18812274491],[51.51234821211, -0.18812274491],[51.51237116779, -0.18786242397],[51.51299002903,
+        -0.18136693342],[51.51309725427, -0.18074295069],[51.51336740449, -0.17960805168],[51.51374717573,
+        -0.17858406319],[51.51415636015, -0.17771741836],[51.51511872331, -0.17599274192],[51.51538093702,
+        -0.1755066499],[51.51538093702, -0.1755066499],[51.51699933429, -0.17260258651],[51.51791376282,
+        -0.17126877579],[51.51851813044, -0.17023561253],[51.51950689036, -0.16848072256],[51.51994924453,
+        -0.16743957471]]","stopPoints":[{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"940GZZLUWBN","name":"West
+        Brompton Underground Station","uri":"/StopPoint/940GZZLUWBN"},{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"940GZZLUECT","name":"Earl''s
+        Court Underground Station","uri":"/StopPoint/940GZZLUECT"},{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"940GZZLUHSK","name":"High
+        Street Kensington Underground Station","uri":"/StopPoint/940GZZLUHSK"},{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"940GZZLUNHG","name":"Notting
+        Hill Gate Underground Station","uri":"/StopPoint/940GZZLUNHG"},{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"940GZZLUBWT","name":"Bayswater
+        Underground Station","uri":"/StopPoint/940GZZLUBWT"},{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"940GZZLUPAC","name":"Paddington
+        Underground Station","uri":"/StopPoint/940GZZLUPAC"},{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"940GZZLUERC","name":"Edgware
+        Road (Circle Line) Underground Station","uri":"/StopPoint/940GZZLUERC"}]},"routeOptions":[{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.RouteOption,
+        Tfl.Api.Presentation.Entities","name":"District","directions":["Edgware Road
+        (Circle Line) Underground Station"],"lineIdentifier":{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.Line,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"district","name":"District","uri":"/Line/district"}}],"mode":{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.Mode,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"tube","name":"tube"},"disruptions":[{"$type":"Tfl.Api.Presentation.Entities.Disruption,
+        Tfl.Api.Presentation.Entities","category":"Information","categoryDescription":"Information","description":"DISTRICT
+        LINE TO KENSINGTON (OLYMPIA): The all day District Line service to Kensington
+        (Olympia) has been withdrawn on Monday to Friday except for a very limited
+        number of early morning and evening trains and during some events. Journey
+        Planner will show when this service is operating.","created":"2012-03-02T10:24:00","lastUpdate":"2012-02-10T17:52:00"},{"$type":"Tfl.Api.Presentation.Entities.Disruption,
+        Tfl.Api.Presentation.Entities","category":"RealTime","categoryDescription":"RealTime","description":"District
+        Line: Severe delays between Edgware Road and Wimbledon only, while we fix
+        a signal failure at East Putney. Tickets will be accepted on London Buses
+        via any reasonable route and on Southwest trains between Wimbledon and Waterloo.
+        GOOD SERVICE on the rest of the line.","created":"2014-09-05T18:47:00","lastUpdate":"2014-09-05T18:47:00"},{"$type":"Tfl.Api.Presentation.Entities.Disruption,
+        Tfl.Api.Presentation.Entities","category":"Information","categoryDescription":"Information","description":"FULHAM
+        BROADWAY, WIMBLEDON, SOUTHFIELDS, EARLS COURT AND WESTMINSTER STATIONS: A
+        ramp is provided at these stations providing step-free access onto District
+        line trains (as well as Circle line trains at Westminster). Please ask staff
+        in the ticket hall for assistance.","created":"2014-04-30T05:43:00","lastUpdate":"2012-06-12T22:26:00"}],"plannedWorks":[],"isDisrupted":true,"hasFixedLocations":true}]},{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Journey,
+        Tfl.Api.Presentation.Entities","startDateTime":"2014-09-05T19:22:00","duration":17,"arrivalDateTime":"2014-09-05T19:39:00","legs":[{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Leg,
+        Tfl.Api.Presentation.Entities","duration":17,"instruction":{"$type":"Tfl.Api.Presentation.Entities.Instruction,
+        Tfl.Api.Presentation.Entities","summary":"District line to Edgware Road (Circle
+        Line)","detailed":"District line towards Edgware Road (Circle Line)","steps":[]},"obstacles":[],"departureTime":"2014-09-05T19:22:00","arrivalTime":"2014-09-05T19:39:00","departurePoint":{"$type":"Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities","naptanId":"940GZZLUFBY","platformName":"","modes":[],"icsCode":"1000084","commonName":"Fulham
+        Broadway Underground Station","placeType":"StopPoint","additionalProperties":[],"lat":51.480450998719995,"lon":-0.19506139367},"arrivalPoint":{"$type":"Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities","naptanId":"940GZZLUERC","platformName":"","modes":[],"icsCode":"1000072","commonName":"Edgware
+        Road (Circle Line) Underground Station","placeType":"StopPoint","additionalProperties":[],"lat":51.51994924453,"lon":-0.16743957470999998},"path":{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Path,
+        Tfl.Api.Presentation.Entities","lineString":"[[51.48045099872, -0.19506139367],[51.48096271821,
+        -0.19442191548],[51.48221892447, -0.19190953266],[51.48252747687, -0.19150846815],[51.48287530619,
+        -0.1913218794],[51.48323456445, -0.19129326273],[51.48376901583, -0.19154576645],[51.48432476984,
+        -0.19201347551],[51.4852554231, -0.19288406134],[51.48638166996, -0.19419346019],[51.4869247579,
+        -0.1950074147],[51.4869247579, -0.1950074147],[51.48735711678, -0.19563851015],[51.48760618899,
+        -0.19604638901],[51.48806151858, -0.19641732538],[51.48846903413, -0.19660290193],[51.48886623419,
+        -0.19670246323],[51.4892879602, -0.19664261041],[51.48977892556, -0.19640716989],[51.49009935842,
+        -0.19619285956],[51.49053241398, -0.19570040991],[51.49177165944, -0.1938364325],[51.49177165944,
+        -0.1938364325],[51.49250094582, -0.19272720411],[51.4940688846, -0.19060515021],[51.49512954593,
+        -0.18941065206],[51.49553627758, -0.18896234468],[51.49595399586, -0.18864325205],[51.49645482004,
+        -0.18846492482],[51.49719775605, -0.18882445493],[51.49784250122, -0.1892311093],[51.49853640261,
+        -0.18990956589],[51.50040661377, -0.19222717745],[51.50040661377, -0.19222717745],[51.50042480969,
+        -0.19224086533],[51.50105489779, -0.19286429661],[51.50175710039, -0.19349930141],[51.50238363418,
+        -0.19389237202],[51.5087472661, -0.19603287631],[51.5087472661, -0.19603287631],[51.50940708187,
+        -0.19625179633],[51.5098472229, -0.19622000201],[51.51027726938, -0.19611655068],[51.51068668341,
+        -0.19584097878],[51.51100245984, -0.19532411078],[51.51130570001, -0.19457714987],[51.5114752396,
+        -0.19390752378],[51.51201611145, -0.19107587954],[51.51213758488, -0.19020637202],[51.51234821211,
+        -0.18812274491],[51.51234821211, -0.18812274491],[51.51237116779, -0.18786242397],[51.51299002903,
+        -0.18136693342],[51.51309725427, -0.18074295069],[51.51336740449, -0.17960805168],[51.51374717573,
+        -0.17858406319],[51.51415636015, -0.17771741836],[51.51511872331, -0.17599274192],[51.51538093702,
+        -0.1755066499],[51.51538093702, -0.1755066499],[51.51699933429, -0.17260258651],[51.51791376282,
+        -0.17126877579],[51.51851813044, -0.17023561253],[51.51950689036, -0.16848072256],[51.51994924453,
+        -0.16743957471]]","stopPoints":[{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"940GZZLUWBN","name":"West
+        Brompton Underground Station","uri":"/StopPoint/940GZZLUWBN"},{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"940GZZLUECT","name":"Earl''s
+        Court Underground Station","uri":"/StopPoint/940GZZLUECT"},{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"940GZZLUHSK","name":"High
+        Street Kensington Underground Station","uri":"/StopPoint/940GZZLUHSK"},{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"940GZZLUNHG","name":"Notting
+        Hill Gate Underground Station","uri":"/StopPoint/940GZZLUNHG"},{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"940GZZLUBWT","name":"Bayswater
+        Underground Station","uri":"/StopPoint/940GZZLUBWT"},{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"940GZZLUPAC","name":"Paddington
+        Underground Station","uri":"/StopPoint/940GZZLUPAC"},{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"940GZZLUERC","name":"Edgware
+        Road (Circle Line) Underground Station","uri":"/StopPoint/940GZZLUERC"}]},"routeOptions":[{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.RouteOption,
+        Tfl.Api.Presentation.Entities","name":"District","directions":["Edgware Road
+        (Circle Line) Underground Station"],"lineIdentifier":{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.Line,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"district","name":"District","uri":"/Line/district"}}],"mode":{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.Mode,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"tube","name":"tube"},"disruptions":[{"$type":"Tfl.Api.Presentation.Entities.Disruption,
+        Tfl.Api.Presentation.Entities","category":"Information","categoryDescription":"Information","description":"DISTRICT
+        LINE TO KENSINGTON (OLYMPIA): The all day District Line service to Kensington
+        (Olympia) has been withdrawn on Monday to Friday except for a very limited
+        number of early morning and evening trains and during some events. Journey
+        Planner will show when this service is operating.","created":"2012-03-02T10:24:00","lastUpdate":"2012-02-10T17:52:00"},{"$type":"Tfl.Api.Presentation.Entities.Disruption,
+        Tfl.Api.Presentation.Entities","category":"RealTime","categoryDescription":"RealTime","description":"District
+        Line: Severe delays between Edgware Road and Wimbledon only, while we fix
+        a signal failure at East Putney. Tickets will be accepted on London Buses
+        via any reasonable route and on Southwest trains between Wimbledon and Waterloo.
+        GOOD SERVICE on the rest of the line.","created":"2014-09-05T18:47:00","lastUpdate":"2014-09-05T18:47:00"},{"$type":"Tfl.Api.Presentation.Entities.Disruption,
+        Tfl.Api.Presentation.Entities","category":"Information","categoryDescription":"Information","description":"FULHAM
+        BROADWAY, WIMBLEDON, SOUTHFIELDS, EARLS COURT AND WESTMINSTER STATIONS: A
+        ramp is provided at these stations providing step-free access onto District
+        line trains (as well as Circle line trains at Westminster). Please ask staff
+        in the ticket hall for assistance.","created":"2014-04-30T05:43:00","lastUpdate":"2012-06-12T22:26:00"}],"plannedWorks":[],"isDisrupted":true,"hasFixedLocations":true}]},{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Journey,
+        Tfl.Api.Presentation.Entities","startDateTime":"2014-09-05T19:31:00","duration":17,"arrivalDateTime":"2014-09-05T19:48:00","legs":[{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Leg,
+        Tfl.Api.Presentation.Entities","duration":17,"instruction":{"$type":"Tfl.Api.Presentation.Entities.Instruction,
+        Tfl.Api.Presentation.Entities","summary":"District line to Edgware Road (Circle
+        Line)","detailed":"District line towards Edgware Road (Circle Line)","steps":[]},"obstacles":[],"departureTime":"2014-09-05T19:31:00","arrivalTime":"2014-09-05T19:48:00","departurePoint":{"$type":"Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities","naptanId":"940GZZLUFBY","platformName":"","modes":[],"icsCode":"1000084","commonName":"Fulham
+        Broadway Underground Station","placeType":"StopPoint","additionalProperties":[],"lat":51.480450998719995,"lon":-0.19506139367},"arrivalPoint":{"$type":"Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities","naptanId":"940GZZLUERC","platformName":"","modes":[],"icsCode":"1000072","commonName":"Edgware
+        Road (Circle Line) Underground Station","placeType":"StopPoint","additionalProperties":[],"lat":51.51994924453,"lon":-0.16743957470999998},"path":{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Path,
+        Tfl.Api.Presentation.Entities","lineString":"[[51.48045099872, -0.19506139367],[51.48096271821,
+        -0.19442191548],[51.48221892447, -0.19190953266],[51.48252747687, -0.19150846815],[51.48287530619,
+        -0.1913218794],[51.48323456445, -0.19129326273],[51.48376901583, -0.19154576645],[51.48432476984,
+        -0.19201347551],[51.4852554231, -0.19288406134],[51.48638166996, -0.19419346019],[51.4869247579,
+        -0.1950074147],[51.4869247579, -0.1950074147],[51.48735711678, -0.19563851015],[51.48760618899,
+        -0.19604638901],[51.48806151858, -0.19641732538],[51.48846903413, -0.19660290193],[51.48886623419,
+        -0.19670246323],[51.4892879602, -0.19664261041],[51.48977892556, -0.19640716989],[51.49009935842,
+        -0.19619285956],[51.49053241398, -0.19570040991],[51.49177165944, -0.1938364325],[51.49177165944,
+        -0.1938364325],[51.49250094582, -0.19272720411],[51.4940688846, -0.19060515021],[51.49512954593,
+        -0.18941065206],[51.49553627758, -0.18896234468],[51.49595399586, -0.18864325205],[51.49645482004,
+        -0.18846492482],[51.49719775605, -0.18882445493],[51.49784250122, -0.1892311093],[51.49853640261,
+        -0.18990956589],[51.50040661377, -0.19222717745],[51.50040661377, -0.19222717745],[51.50042480969,
+        -0.19224086533],[51.50105489779, -0.19286429661],[51.50175710039, -0.19349930141],[51.50238363418,
+        -0.19389237202],[51.5087472661, -0.19603287631],[51.5087472661, -0.19603287631],[51.50940708187,
+        -0.19625179633],[51.5098472229, -0.19622000201],[51.51027726938, -0.19611655068],[51.51068668341,
+        -0.19584097878],[51.51100245984, -0.19532411078],[51.51130570001, -0.19457714987],[51.5114752396,
+        -0.19390752378],[51.51201611145, -0.19107587954],[51.51213758488, -0.19020637202],[51.51234821211,
+        -0.18812274491],[51.51234821211, -0.18812274491],[51.51237116779, -0.18786242397],[51.51299002903,
+        -0.18136693342],[51.51309725427, -0.18074295069],[51.51336740449, -0.17960805168],[51.51374717573,
+        -0.17858406319],[51.51415636015, -0.17771741836],[51.51511872331, -0.17599274192],[51.51538093702,
+        -0.1755066499],[51.51538093702, -0.1755066499],[51.51699933429, -0.17260258651],[51.51791376282,
+        -0.17126877579],[51.51851813044, -0.17023561253],[51.51950689036, -0.16848072256],[51.51994924453,
+        -0.16743957471]]","stopPoints":[{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"940GZZLUWBN","name":"West
+        Brompton Underground Station","uri":"/StopPoint/940GZZLUWBN"},{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"940GZZLUECT","name":"Earl''s
+        Court Underground Station","uri":"/StopPoint/940GZZLUECT"},{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"940GZZLUHSK","name":"High
+        Street Kensington Underground Station","uri":"/StopPoint/940GZZLUHSK"},{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"940GZZLUNHG","name":"Notting
+        Hill Gate Underground Station","uri":"/StopPoint/940GZZLUNHG"},{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"940GZZLUBWT","name":"Bayswater
+        Underground Station","uri":"/StopPoint/940GZZLUBWT"},{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"940GZZLUPAC","name":"Paddington
+        Underground Station","uri":"/StopPoint/940GZZLUPAC"},{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"940GZZLUERC","name":"Edgware
+        Road (Circle Line) Underground Station","uri":"/StopPoint/940GZZLUERC"}]},"routeOptions":[{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.RouteOption,
+        Tfl.Api.Presentation.Entities","name":"District","directions":["Edgware Road
+        (Circle Line) Underground Station"],"lineIdentifier":{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.Line,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"district","name":"District","uri":"/Line/district"}}],"mode":{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.Mode,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"tube","name":"tube"},"disruptions":[{"$type":"Tfl.Api.Presentation.Entities.Disruption,
+        Tfl.Api.Presentation.Entities","category":"Information","categoryDescription":"Information","description":"DISTRICT
+        LINE TO KENSINGTON (OLYMPIA): The all day District Line service to Kensington
+        (Olympia) has been withdrawn on Monday to Friday except for a very limited
+        number of early morning and evening trains and during some events. Journey
+        Planner will show when this service is operating.","created":"2012-03-02T10:24:00","lastUpdate":"2012-02-10T17:52:00"},{"$type":"Tfl.Api.Presentation.Entities.Disruption,
+        Tfl.Api.Presentation.Entities","category":"RealTime","categoryDescription":"RealTime","description":"District
+        Line: Severe delays between Edgware Road and Wimbledon only, while we fix
+        a signal failure at East Putney. Tickets will be accepted on London Buses
+        via any reasonable route and on Southwest trains between Wimbledon and Waterloo.
+        GOOD SERVICE on the rest of the line.","created":"2014-09-05T18:47:00","lastUpdate":"2014-09-05T18:47:00"},{"$type":"Tfl.Api.Presentation.Entities.Disruption,
+        Tfl.Api.Presentation.Entities","category":"Information","categoryDescription":"Information","description":"FULHAM
+        BROADWAY, WIMBLEDON, SOUTHFIELDS, EARLS COURT AND WESTMINSTER STATIONS: A
+        ramp is provided at these stations providing step-free access onto District
+        line trains (as well as Circle line trains at Westminster). Please ask staff
+        in the ticket hall for assistance.","created":"2014-04-30T05:43:00","lastUpdate":"2012-06-12T22:26:00"}],"plannedWorks":[],"isDisrupted":true,"hasFixedLocations":true}]},{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Journey,
+        Tfl.Api.Presentation.Entities","startDateTime":"2014-09-05T19:09:00","duration":85,"arrivalDateTime":"2014-09-05T20:34:00","legs":[{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Leg,
+        Tfl.Api.Presentation.Entities","duration":85,"instruction":{"$type":"Tfl.Api.Presentation.Entities.Instruction,
+        Tfl.Api.Presentation.Entities","summary":"Walk to Edgware Road (Circle Line)
+        Underground Station","detailed":"Walk to Edgware Road (Circle Line) Underground
+        Station","steps":[{"$type":"Tfl.Api.Presentation.Entities.InstructionStep,
+        Tfl.Api.Presentation.Entities","description":"Continue along Fulham Road for
+        1756 metres (25 minutes, 58 seconds).","turnDirection":"STRAIGHT","streetName":"Fulham
+        Road","distance":1756,"cumulativeDistance":1756,"skyDirection":263,"cumulativeTravelTime":1558,"latitude":-0.19445669845,"longitude":51.48008198965,"pathAttribute":{"$type":"Tfl.Api.Presentation.Entities.PathAttribute,
+        Tfl.Api.Presentation.Entities"}},{"$type":"Tfl.Api.Presentation.Entities.InstructionStep,
+        Tfl.Api.Presentation.Entities","description":"Turn left on to Onslow Gardens,
+        continue for 358 metres (5 minutes, 17 seconds).","turnDirection":"LEFT","streetName":"Onslow
+        Gardens","distance":358,"cumulativeDistance":2114,"skyDirection":138,"cumulativeTravelTime":1875,"latitude":-0.17559463518,"longitude":51.48936705559,"pathAttribute":{"$type":"Tfl.Api.Presentation.Entities.PathAttribute,
+        Tfl.Api.Presentation.Entities"}},{"$type":"Tfl.Api.Presentation.Entities.InstructionStep,
+        Tfl.Api.Presentation.Entities","description":"Continue along Queen''s Gate
+        for 256 metres (3 minutes, 48 seconds).","turnDirection":"STRAIGHT","streetName":"Queen''s
+        Gate","distance":256,"cumulativeDistance":2370,"skyDirection":172,"cumulativeTravelTime":2103,"latitude":-0.17842672715,"longitude":51.49203689054,"pathAttribute":{"$type":"Tfl.Api.Presentation.Entities.PathAttribute,
+        Tfl.Api.Presentation.Entities"}},{"$type":"Tfl.Api.Presentation.Entities.InstructionStep,
+        Tfl.Api.Presentation.Entities","description":"Continue along Queens Gate for
+        114 metres (1 minute, 42 seconds).","turnDirection":"STRAIGHT","streetName":"Queens
+        Gate","distance":114,"cumulativeDistance":2484,"skyDirection":172,"cumulativeTravelTime":2205,"latitude":-0.17889793507,"longitude":51.49431031664,"pathAttribute":{"$type":"Tfl.Api.Presentation.Entities.PathAttribute,
+        Tfl.Api.Presentation.Entities"}},{"$type":"Tfl.Api.Presentation.Entities.InstructionStep,
+        Tfl.Api.Presentation.Entities","description":"Continue along Queen''s Gate
+        for 689 metres (10 minutes, 15 seconds).","turnDirection":"STRAIGHT","streetName":"Queen''s
+        Gate","distance":689,"cumulativeDistance":3173,"skyDirection":171,"cumulativeTravelTime":2820,"latitude":-0.1790734229,"longitude":51.495329192819995,"pathAttribute":{"$type":"Tfl.Api.Presentation.Entities.PathAttribute,
+        Tfl.Api.Presentation.Entities"}},{"$type":"Tfl.Api.Presentation.Entities.InstructionStep,
+        Tfl.Api.Presentation.Entities","description":"Turn right on to Kensington
+        Road, continue for 5 metres (0 minutes, 4 seconds).","turnDirection":"RIGHT","streetName":"Kensington
+        Road","distance":5,"cumulativeDistance":3178,"skyDirection":259,"cumulativeTravelTime":2824,"latitude":-0.18037057516000002,"longitude":51.50146421456,"pathAttribute":{"$type":"Tfl.Api.Presentation.Entities.PathAttribute,
+        Tfl.Api.Presentation.Entities"}},{"$type":"Tfl.Api.Presentation.Entities.InstructionStep,
+        Tfl.Api.Presentation.Entities","description":"Turn left, continue for 1255
+        metres (18 minutes, 48 seconds).","turnDirection":"LEFT","streetName":"","distance":1255,"cumulativeDistance":4433,"skyDirection":173,"cumulativeTravelTime":3952,"latitude":-0.18029822046000002,"longitude":51.5014720844,"pathAttribute":{"$type":"Tfl.Api.Presentation.Entities.PathAttribute,
+        Tfl.Api.Presentation.Entities"}},{"$type":"Tfl.Api.Presentation.Entities.InstructionStep,
+        Tfl.Api.Presentation.Entities","description":"Turn right on to North Walk,
+        continue for 15 metres (0 minutes, 13 seconds).","turnDirection":"RIGHT","streetName":"North
+        Walk","distance":15,"cumulativeDistance":4448,"skyDirection":250,"cumulativeTravelTime":3965,"latitude":-0.17603797651,"longitude":51.51109979423,"pathAttribute":{"$type":"Tfl.Api.Presentation.Entities.PathAttribute,
+        Tfl.Api.Presentation.Entities"}},{"$type":"Tfl.Api.Presentation.Entities.InstructionStep,
+        Tfl.Api.Presentation.Entities","description":"Turn left, continue for 52 metres
+        (0 minutes, 46 seconds).","turnDirection":"LEFT","streetName":"","distance":52,"cumulativeDistance":4500,"skyDirection":168,"cumulativeTravelTime":4011,"latitude":-0.17583454876000001,"longitude":51.51114159288,"pathAttribute":{"$type":"Tfl.Api.Presentation.Entities.PathAttribute,
+        Tfl.Api.Presentation.Entities"}},{"$type":"Tfl.Api.Presentation.Entities.InstructionStep,
+        Tfl.Api.Presentation.Entities","description":"Turn left on to Bayswater Road,
+        continue for 19 metres (0 minutes, 18 seconds).","turnDirection":"LEFT","streetName":"Bayswater
+        Road","distance":19,"cumulativeDistance":4519,"skyDirection":78,"cumulativeTravelTime":4029,"latitude":-0.17597466822,"longitude":51.511602387960004,"pathAttribute":{"$type":"Tfl.Api.Presentation.Entities.PathAttribute,
+        Tfl.Api.Presentation.Entities"}},{"$type":"Tfl.Api.Presentation.Entities.InstructionStep,
+        Tfl.Api.Presentation.Entities","description":"Continue along Lancaster Terrace
+        for 133 metres (1 minute, 59 seconds).","turnDirection":"SHARP_RIGHT","streetName":"Lancaster
+        Terrace","distance":133,"cumulativeDistance":4652,"skyDirection":227,"cumulativeTravelTime":4148,"latitude":-0.17624975147,"longitude":51.511570695749995,"pathAttribute":{"$type":"Tfl.Api.Presentation.Entities.PathAttribute,
+        Tfl.Api.Presentation.Entities"}},{"$type":"Tfl.Api.Presentation.Entities.InstructionStep,
+        Tfl.Api.Presentation.Entities","description":"Take a slight right, continue
+        for 33 metres (0 minutes, 28 seconds).","turnDirection":"SLIGHT_RIGHT","streetName":"","distance":33,"cumulativeDistance":4685,"skyDirection":225,"cumulativeTravelTime":4176,"latitude":-0.17574363713,"longitude":51.51269587595,"pathAttribute":{"$type":"Tfl.Api.Presentation.Entities.PathAttribute,
+        Tfl.Api.Presentation.Entities"}},{"$type":"Tfl.Api.Presentation.Entities.InstructionStep,
+        Tfl.Api.Presentation.Entities","description":"Continue along Westbourne Street
+        for 46 metres (0 minutes, 41 seconds).","turnDirection":"SHARP_LEFT","streetName":"Westbourne
+        Street","distance":46,"cumulativeDistance":4731,"skyDirection":147,"cumulativeTravelTime":4217,"latitude":-0.17532200450000002,"longitude":51.51278823451,"pathAttribute":{"$type":"Tfl.Api.Presentation.Entities.PathAttribute,
+        Tfl.Api.Presentation.Entities"}},{"$type":"Tfl.Api.Presentation.Entities.InstructionStep,
+        Tfl.Api.Presentation.Entities","description":"Take a slight right on to Sussex
+        Gardens, continue for 795 metres (11 minutes, 38 seconds).","turnDirection":"SLIGHT_RIGHT","streetName":"Sussex
+        Gardens","distance":795,"cumulativeDistance":5526,"skyDirection":205,"cumulativeTravelTime":4915,"latitude":-0.17556653511999998,"longitude":51.513160729570004,"pathAttribute":{"$type":"Tfl.Api.Presentation.Entities.PathAttribute,
+        Tfl.Api.Presentation.Entities"}},{"$type":"Tfl.Api.Presentation.Entities.InstructionStep,
+        Tfl.Api.Presentation.Entities","description":"Continue along Old Marylebone
+        Road for 52 metres (0 minutes, 47 seconds).","turnDirection":"STRAIGHT","streetName":"Old
+        Marylebone Road","distance":52,"cumulativeDistance":5578,"skyDirection":220,"cumulativeTravelTime":4962,"latitude":-0.16745518372,"longitude":51.51812401741,"pathAttribute":{"$type":"Tfl.Api.Presentation.Entities.PathAttribute,
+        Tfl.Api.Presentation.Entities"}},{"$type":"Tfl.Api.Presentation.Entities.InstructionStep,
+        Tfl.Api.Presentation.Entities","description":"Turn left on to Cabbell Street,
+        continue for 155 metres (2 minutes, 18 seconds).","turnDirection":"LEFT","streetName":"Cabbell
+        Street","distance":155,"cumulativeDistance":5733,"skyDirection":134,"cumulativeTravelTime":5100,"latitude":-0.16695099836,"longitude":51.518475838,"pathAttribute":{"$type":"Tfl.Api.Presentation.Entities.PathAttribute,
+        Tfl.Api.Presentation.Entities"}}]},"obstacles":[],"departureTime":"2014-09-05T19:09:00","arrivalTime":"2014-09-05T20:34:00","departurePoint":{"$type":"Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities","platformName":"","modes":[],"icsCode":"1000084","commonName":"Fulham
+        Broadway Underground Station","placeType":"StopPoint","additionalProperties":[],"lat":51.48021520613,"lon":-0.19844065678},"arrivalPoint":{"$type":"Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities","platformName":"","modes":[],"icsCode":"1000072","commonName":"Edgware
+        Road (Circle Line) Underground Station","placeType":"StopPoint","additionalProperties":[],"lat":51.51967066665,"lon":-0.16802731771999999},"path":{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Path,
+        Tfl.Api.Presentation.Entities","lineString":"[[51.48021520613, -0.19844065678],[51.48008198965,
+        -0.19445669845],[51.48008853879, -0.19429802356],[51.48020982102, -0.19341474086],[51.48025731178,
+        -0.19299521978],[51.48027229324, -0.19221694455],[51.48019152004, -0.19164407787],[51.4801177327,
+        -0.19094132333],[51.48019005541, -0.18980074172],[51.48028269046, -0.18939383055],[51.48043801078,
+        -0.18897003297],[51.48050812838, -0.18885204244],[51.48062251388, -0.18868909275],[51.48074566379,
+        -0.18851139326],[51.48087846752, -0.18837651546],[51.48167261666, -0.18739451403],[51.48210674866,
+        -0.18697404125],[51.48270851522, -0.186345278],[51.48308671719, -0.18579738297],[51.48333256205,
+        -0.18541316082],[51.48369256272, -0.1848515705],[51.48410581377, -0.18424464778],[51.4843514304,
+        -0.18384601473],[51.48448266776, -0.18361035443],[51.48461390463, -0.18337469279],[51.4846923343,
+        -0.18321314344],[51.48477952767, -0.1830368422],[51.48487548468, -0.18284578889],[51.48498042833,
+        -0.18265437749],[51.48517256387, -0.18228666103],[51.48523368751, -0.1821690054],[51.48533840685,
+        -0.18196319667],[51.48553952711, -0.18159511692],[51.48572378853, -0.1812997211],[51.48582872957,
+        -0.1811083026],[51.48596063114, -0.18091581026],[51.4861880388, -0.18050346411],[51.48625814754,
+        -0.18038544573],[51.4863896011, -0.1801641603],[51.48660846596, -0.17978095377],[51.48679272264,
+        -0.17948554373],[51.48707427026, -0.17908542958],[51.48741738353, -0.17859643427],[51.48771578364,
+        -0.17812361774],[51.48852356476, -0.17686706392],[51.4888835229, -0.17630534248],[51.48936705559,
+        -0.17559463518],[51.49012953843, -0.17663014328],[51.49043214984, -0.17700699867],[51.49097986817,
+        -0.17753253807],[51.4916271114, -0.17809733746],[51.49203689054, -0.17842672715],[51.49271314632,
+        -0.17854382565],[51.49382323394, -0.1788021],[51.49431031664, -0.17889793507],[51.49532919282,
+        -0.1790734229],[51.49643006863, -0.17931768368],[51.49690816388, -0.17941388712],[51.49702566446,
+        -0.17945242574],[51.49775628748, -0.17959619828],[51.49793691997, -0.17964662983],[51.49884795163,
+        -0.17982644271],[51.49964192947, -0.17999651766],[51.50004790521, -0.18008119923],[51.50146421456,
+        -0.18037057516],[51.5014720844, -0.18029822046],[51.50178752039, -0.18034328899],[51.50202832883,
+        -0.18079476644],[51.5023626319, -0.18089672163],[51.5026041621, -0.18081506054],[51.502827495,
+        -0.1807197146],[51.50426165374, -0.17984127566],[51.50453756619, -0.17965737072],[51.50574927928,
+        -0.17893182945],[51.50674709103, -0.17833005986],[51.50682842053, -0.17835563601],[51.50703176401,
+        -0.1781313759],[51.50750618581, -0.17567713509],[51.50798293903, -0.17568691256],[51.50865065689,
+        -0.17583316743],[51.50926714075, -0.17615440113],[51.50976119576, -0.17612025994],[51.51022560236,
+        -0.17591436974],[51.51047768319, -0.17593312336],[51.51109979423, -0.17603797651],[51.51114159288,
+        -0.17583454876],[51.51160238796, -0.17597466822],[51.51157069575, -0.17624975147],[51.511666864,
+        -0.1760729732],[51.51189041628, -0.17599198672],[51.51218586357, -0.17590812761],[51.51269587595,
+        -0.17574363713],[51.51278350455, -0.1755960182],[51.51278823451, -0.1753220045],[51.51304390011,
+        -0.17557120284],[51.51316072957, -0.17556653512],[51.51353369745, -0.17526339236],[51.51367569486,
+        -0.17514242117],[51.51382690312, -0.17503549325],[51.51390666448, -0.17496024459],[51.51404664432,
+        -0.17470964204],[51.51442299155, -0.1740460424],[51.5145279189, -0.17385448556],[51.51465935799,
+        -0.17363304258],[51.51481641137, -0.17332409883],[51.51491257498, -0.17314730177],[51.51521005102,
+        -0.17261654646],[51.51528891307, -0.17248367671],[51.51550752456, -0.17208578425],[51.51572613467,
+        -0.17168788798],[51.51583128258, -0.17151072408],[51.51585756952, -0.17146643297],[51.5159539548,
+        -0.17130403182],[51.51604966607, -0.17109841838],[51.51625995978, -0.17074408453],[51.51647901455,
+        -0.1703749833],[51.51656618671, -0.17019853377],[51.51668009441, -0.17000659893],[51.51669761865,
+        -0.1699770704],[51.51722266752, -0.16904799154],[51.51728422629, -0.16895904334],[51.5173540972,
+        -0.16882652168],[51.51745901574, -0.16863494059],[51.517913734, -0.16780954716],[51.51795731812,
+        -0.16772131727],[51.51812401741, -0.16745518372],[51.5183614853, -0.16711413923],[51.518475838,
+        -0.16695099836],[51.51871557298, -0.16733054326],[51.51939117485, -0.16798087738],[51.51952710228,
+        -0.16804749262],[51.51963651911, -0.16814400003],[51.51967066665, -0.16802731772]]","stopPoints":[]},"routeOptions":[{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.RouteOption,
+        Tfl.Api.Presentation.Entities","name":"","directions":[""]}],"mode":{"$type":"Tfl.Api.Presentation.Entities.Identifier`1[[Tfl.Api.Presentation.Entities.Mode,
+        Tfl.Api.Presentation.Entities]], Tfl.Api.Presentation.Entities","id":"walking","name":"walking"},"disruptions":[],"plannedWorks":[],"distance":5733.0,"isDisrupted":false,"hasFixedLocations":true}]}],"lines":[{"$type":"Tfl.Api.Presentation.Entities.Line,
+        Tfl.Api.Presentation.Entities","id":"circle","name":"Circle","modeName":"tube","created":"2014-08-15T14:32:38.407","modified":"2014-08-15T14:32:38.407","lineStatuses":[{"$type":"Tfl.Api.Presentation.Entities.LineStatus,
+        Tfl.Api.Presentation.Entities","id":0,"lineId":"circle","statusSeverity":9,"statusSeverityDescription":"Minor
+        Delays","reason":"Circle Line: Minor delays due to an earlier customer incident
+        at Aldgate.","created":"0001-01-01T00:00:00","validityPeriods":[{"$type":"Tfl.Api.Presentation.Entities.ValidityPeriod,
+        Tfl.Api.Presentation.Entities","fromDate":"2014-09-05T18:14:34","toDate":"2014-09-06T01:29:00","isNow":true}],"disruption":{"$type":"Tfl.Api.Presentation.Entities.Disruption,
+        Tfl.Api.Presentation.Entities","category":"RealTime","categoryDescription":"RealTime","description":"Circle
+        Line: Minor delays due to an earlier customer incident at Aldgate.","created":"2014-09-05T18:15:59","affectedRoutes":[],"affectedStops":[],"isWholeLine":true}}],"routeSections":[]},{"$type":"Tfl.Api.Presentation.Entities.Line,
+        Tfl.Api.Presentation.Entities","id":"district","name":"District","modeName":"tube","created":"2014-08-15T14:32:38.347","modified":"2014-08-15T14:32:38.347","lineStatuses":[{"$type":"Tfl.Api.Presentation.Entities.LineStatus,
+        Tfl.Api.Presentation.Entities","id":0,"lineId":"district","statusSeverity":6,"statusSeverityDescription":"Severe
+        Delays","reason":"District Line: Severe delays between Edgware Road and Wimbledon
+        only, while we fix a signal failure at East Putney. Tickets will be accepted
+        on London Buses via any reasonable route and on Southwest trains between Wimbledon
+        and Waterloo. GOOD SERVICE on the rest of the line.","created":"0001-01-01T00:00:00","validityPeriods":[{"$type":"Tfl.Api.Presentation.Entities.ValidityPeriod,
+        Tfl.Api.Presentation.Entities","fromDate":"2014-09-05T18:47:37","toDate":"2014-09-06T01:29:00","isNow":true}],"disruption":{"$type":"Tfl.Api.Presentation.Entities.Disruption,
+        Tfl.Api.Presentation.Entities","category":"RealTime","categoryDescription":"RealTime","description":"District
+        Line: Severe delays between Edgware Road and Wimbledon only, while we fix
+        a signal failure at East Putney. Tickets will be accepted on London Buses
+        via any reasonable route and on Southwest trains between Wimbledon and Waterloo.
+        GOOD SERVICE on the rest of the line.","created":"2014-09-05T18:47:59","affectedRoutes":[],"affectedStops":[]}}],"routeSections":[]}],"recommendedMaxAgeMinutes":2,"searchCriteria":{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.SearchCriteria,
+        Tfl.Api.Presentation.Entities","dateTime":"2014-09-05T19:09:00","dateTimeType":"Departing","timeAdjustments":{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.TimeAdjustments,
+        Tfl.Api.Presentation.Entities","earliest":{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.TimeAdjustment,
+        Tfl.Api.Presentation.Entities","date":"20140905","time":"0300","timeIs":"departing","uri":"/journey/journeyresults/%7bfrom%7d/to/%7bto%7d/via/%7bvia%7d?app_key=c381b49216f90558cf148c53cd5205b8&app_id=a09e631e&from=fulham%2bbroadway%2bunderground%2bstation&to=edgware%2broad%2bunderground%2bstation%2bcircle%2bline&via=&nationalsearch=false&timeIs=departing&journeypreference=&mode=&fromname=&toname=&vianame=&maxtransferminutes=&maxwalkingminutes=&cyclepreference=&adjustment=&alternativecycle=false&alternativewalking=true&applyhtmlmarkup=false&time=0300&date=20140905"},"earlier":{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.TimeAdjustment,
+        Tfl.Api.Presentation.Entities","date":"20140905","time":"1924","timeIs":"arriving","uri":"/journey/journeyresults/%7bfrom%7d/to/%7bto%7d/via/%7bvia%7d?app_key=c381b49216f90558cf148c53cd5205b8&app_id=a09e631e&from=fulham%2bbroadway%2bunderground%2bstation&to=edgware%2broad%2bunderground%2bstation%2bcircle%2bline&via=&nationalsearch=false&timeIs=arriving&journeypreference=&mode=&fromname=&toname=&vianame=&maxtransferminutes=&maxwalkingminutes=&cyclepreference=&adjustment=&alternativecycle=false&alternativewalking=true&applyhtmlmarkup=false&time=1924&date=20140905"},"later":{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.TimeAdjustment,
+        Tfl.Api.Presentation.Entities","date":"20140905","time":"1931","timeIs":"departing","uri":"/journey/journeyresults/%7bfrom%7d/to/%7bto%7d/via/%7bvia%7d?app_key=c381b49216f90558cf148c53cd5205b8&app_id=a09e631e&from=fulham%2bbroadway%2bunderground%2bstation&to=edgware%2broad%2bunderground%2bstation%2bcircle%2bline&via=&nationalsearch=false&timeIs=departing&journeypreference=&mode=&fromname=&toname=&vianame=&maxtransferminutes=&maxwalkingminutes=&cyclepreference=&adjustment=&alternativecycle=false&alternativewalking=true&applyhtmlmarkup=false&time=1931&date=20140905"},"latest":{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.TimeAdjustment,
+        Tfl.Api.Presentation.Entities","date":"20140906","time":"0300","timeIs":"arriving","uri":"/journey/journeyresults/%7bfrom%7d/to/%7bto%7d/via/%7bvia%7d?app_key=c381b49216f90558cf148c53cd5205b8&app_id=a09e631e&from=fulham%2bbroadway%2bunderground%2bstation&to=edgware%2broad%2bunderground%2bstation%2bcircle%2bline&via=&nationalsearch=false&timeIs=arriving&journeypreference=&mode=&fromname=&toname=&vianame=&maxtransferminutes=&maxwalkingminutes=&cyclepreference=&adjustment=&alternativecycle=false&alternativewalking=true&applyhtmlmarkup=false&time=0300&date=20140906"}}},"journeyVector":{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.JourneyVector,
+        Tfl.Api.Presentation.Entities","from":"fulham+broadway+underground+station","to":"edgware+road+underground+station+circle+line","via":"","uri":"/journey/journeyresults/%7bfrom%7d/to/%7bto%7d/via/%7bvia%7d?app_key=c381b49216f90558cf148c53cd5205b8&app_id=a09e631e&from=fulham%2bbroadway%2bunderground%2bstation&to=edgware%2broad%2bunderground%2bstation%2bcircle%2bline&via=&nationalsearch=false&timeis=departing&journeypreference=&mode=&fromname=&toname=&vianame=&maxtransferminutes=&maxwalkingminutes=&cyclepreference=&adjustment=&alternativecycle=false&alternativewalking=true&applyhtmlmarkup=false"}}'
+    http_version: 
+  recorded_at: Fri, 05 Sep 2014 18:08:46 GMT
+recorded_with: VCR 2.9.2
