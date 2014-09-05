@@ -18,7 +18,7 @@ Or install it yourself as:
 
     $ gem install journey_planner
 
-## Usage Examples
+## Usage
 
 ```
 irb
@@ -34,7 +34,7 @@ journeys = client.get_journeys from: "old street underground station", to: "oxfo
 
 ```
 
-### Methods you can play with:
+### Example Methods
 
 ####Journey Instructions
 
