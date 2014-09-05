@@ -1,13 +1,19 @@
+require_relative 'time_helpers'
+
 module TFLJourneyPlanner
 
 	class Journey < RecursiveOpenStruct
+
+		include TimeHelpers
+
+
 		def instructions
 			array = []
 			legs.each do |leg|
 				if leg.instruction.steps.any?
-					leg.instruction.steps.each {|step| array << [ "#{leg.departure_time} - #{leg.arrival_time}", step.description]}
+					leg.instruction.steps.each {|step| array << [ "#{prettify leg.departure_time} - #{prettify leg.arrival_time}", step.description]}
 				else
-					array << ["#{leg.departure_time} - #{leg.arrival_time}", leg.instruction.summary + " / " + leg.instruction.detailed]
+					array << ["#{prettify leg.departure_time} - #{prettify leg.arrival_time}", leg.instruction.summary + " / " + leg.instruction.detailed]
 				end
 			end
 			array.inject(Hash.new{ |h,k| h[k]=[] }){ |h,(k,v)| h[k] << v; h }

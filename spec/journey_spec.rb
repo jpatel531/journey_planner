@@ -7,8 +7,7 @@ describe TFLJourneyPlanner::Journey do
 
 	it "should return an array of instructions" do 
 		VCR.use_cassette "hello", record: :none do 
-	
-			hash = {"2014-09-03T16:58:00 - 2014-09-03T17:03:00"=>["Continue along Fruen Road for 143 metres (2 minutes, 8 seconds).", "Turn right on to Bedfont Lane, continue for 172 metres (2 minutes, 33 seconds)."], "2014-09-03T17:03:00 - 2014-09-03T17:06:00"=>["H25 bus to Bedfont Library / H25 bus towards Hatton Cross"], "2014-09-03T17:06:00 - 2014-09-03T17:09:00"=>["Continue along Staines Road for 64 metres (0 minutes, 57 seconds).", "Turn left on to Grovestile Waye, continue for 95 metres (1 minute, 21 seconds)."]}
+			hash = {"Sep 3 2014 16:58 - Sep 3 2014 17:03"=>["Continue along Fruen Road for 143 metres (2 minutes, 8 seconds).", "Turn right on to Bedfont Lane, continue for 172 metres (2 minutes, 33 seconds)."], "Sep 3 2014 17:03 - Sep 3 2014 17:06"=>["H25 bus to Bedfont Library / H25 bus towards Hatton Cross"], "Sep 3 2014 17:06 - Sep 3 2014 17:09"=>["Continue along Staines Road for 64 metres (0 minutes, 57 seconds).", "Turn left on to Grovestile Waye, continue for 95 metres (1 minute, 21 seconds)."]}	
 			expect(journeys[0].instructions).to eq hash
 		end
 	end
