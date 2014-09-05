@@ -99,8 +99,56 @@ On launching your app, you should find that GMaps has created a polyline from th
 
 ![Image1](https://raw.githubusercontent.com/jpatel531/journey_planner_gem/master/screenshots/jp_gmaps_ex.jpg)
 
+###Search Options
 
+```ruby
+client.get_journeys
 
+from: #=> 	Origin of the journey (if in coordinate format then must be "longitude,latitude")
+
+to: #=> Destination of the journey (if in coordinate format then must be "longitude,latitude")
+
+via: #=> Travel through (if in coordinate format then must be "longitude,latidude")
+
+national_search #=> Does the journey cover stops outside London? eg. "nationalSearch=true". Set to false by default
+
+date: #=> The date must be in yyyyMMdd format
+
+time: #=> The time must be in HHmm format
+
+time_is: #=> Does the time given relate to arrival or leaving time? Possible options: "departing" | "arriving". Set to Departing by default
+
+journey_preference: #=> The journey preference eg possible options: "leastinterchange" | "leasttime" | "leastwalking"
+
+mode: #=> The mode must be a comma separated list of modes. eg possible options: "public-bus,overground,train,tube,coach,dlr,cablecar,tram,river,walking,cycle"
+
+accessibility_preference: #=> The accessibility preference must be a comma separated list eg. "noSolidStairs,noEscalators,noElevators,stepFreeToVehicle,stepFreeToPlatform"
+
+from_name: #=> From name is the location name associated with a from coordinate
+
+to_name: #=> To name is the label location associated with a to coordinate
+
+via_name: #=> Via name is the location name associated with a via coordinate
+
+max_transfer_minutes: #=> The max walking time in minutes for transfer eg. "120"
+
+min_transfer_minutes: #=> The max walking time in minutes for journeys eg. "120"
+
+walking_speed: #=> The walking speed. eg possible options: "slow" | "average" | "fast"
+
+cycle_preference: #=> The cycle preference. eg possible options: "allTheWay" | "leaveAtStation" | "takeOnTransport" | "cycleHire"
+
+adjustment: #=> Time adjustment command. eg possible options: "TripFirst" | "TripLast"
+
+bike_proficiency: #=> A comma separated list of cycling proficiency levels. eg possible options: "easy,moderate,fast"
+
+alternative_cycle: #=> Set to True to generate an additional journey consisting of cycling only, if possible. Default value is false. eg. alternative_cycle: true
+
+alternative_walking: #=> Set to true to generate an additional journey consisting of walking only, if possible. Default value is false. eg. alternative_walking: true
+
+apply_html_marking: #=> Flag to determine whether certain text (e.g. walking instructions) should be output with HTML tags or not.
+
+```
 
 ## Contributing
 
