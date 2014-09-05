@@ -5,12 +5,12 @@ module TFLJourneyPlanner
 			array = []
 			legs.each do |leg|
 				if leg.instruction.steps.any?
-					leg.instruction.steps.each {|step| array << step.description}
+					leg.instruction.steps.each {|step| array << [ "#{leg.departure_time} - #{leg.arrival_time}", step.description]}
 				else
-					array << leg.instruction.summary + " / " + leg.instruction.detailed
+					array << ["#{leg.departure_time} - #{leg.arrival_time}", leg.instruction.summary + " / " + leg.instruction.detailed]
 				end
 			end
-			return array
+			array.inject(Hash.new{ |h,k| h[k]=[] }){ |h,(k,v)| h[k] << v; h }
 		end
 
 		def map_path
