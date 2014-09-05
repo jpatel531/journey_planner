@@ -150,6 +150,25 @@ apply_html_markup: #=> Flag to determine whether certain text (e.g. walking inst
 
 ```
 
+##Objectives
+
+* To learn about how to create a gem
+* To learn about making HTTP requests with HTTParty
+* To learn how to stub HTTP requests in your test suite with VCR and WebMock
+* To explore the TFL Journey Planner API
+
+
+##Technologies
+
+* Ruby
+* RSpec
+* VCR
+* WebMock
+* HTTParty
+* Recursive OpenStruct
+* TFL API
+
+
 ## Contributing
 
 1. Fork it ( https://github.com/[my-github-username]/journey_planner_gem/fork )
