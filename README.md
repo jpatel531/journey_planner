@@ -34,7 +34,7 @@ journeys = client.get_journeys from: "old street underground station", to: "oxfo
 
 ```
 
-Methods you can play with:
+### Methods you can play with:
 
 The `instructions` method returns a hash of instructions, with the keys as departure and arrival times, and the values as arrays of verbal instructions.
 
