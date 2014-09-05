@@ -33,9 +33,9 @@ describe TFLJourneyPlanner::Journey do
 		VCR.use_cassette "disruptions", record: :none do 
 			journeys = client.get_journeys from: "fulham broadway underground station", to: 'edgware road underground station circle line'
 			expect(journeys[0].find_disruptions).to include "District Line: Severe delays between Edgware Road and Wimbledon only, while we fix a signal failure at East Putney. Tickets will be accepted on London Buses via any reasonable route and on Southwest trains between Wimbledon and Waterloo. GOOD SERVICE on the rest of the line."
-			
 		end
 	end
+
 
 	it 'should allow you to filter disruptions' do 
 		VCR.use_cassette "disruptions", record: :none do 

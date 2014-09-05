@@ -28,14 +28,12 @@ module TFLJourneyPlanner
 		end
 
 		def find_disruptions(options = {filter: :all})
-			# puts options
 			array = []
 			legs.each do |leg|
 				leg.disruptions.each do |disruption|
 					array << disruption.description if (options[:filter] == :all || disruption.category.downcase == options[:filter].to_s.downcase )
 				end
 			end
-			# puts array
 			return array
 		end
 

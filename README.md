@@ -36,6 +36,8 @@ journeys = client.get_journeys from: "old street underground station", to: "oxfo
 
 ### Methods you can play with:
 
+####Instructions
+
 The `instructions` method returns a hash of instructions, with the keys as departure and arrival times, and the values as arrays of verbal instructions.
 
 ```ruby
@@ -43,6 +45,25 @@ journeys.first.instructions
 # {"Sep 5 2014 16:21 - Sep 5 2014 16:27"=>["Northern line to Euston / Northern line towards Edgware, Mill Hill East, or High Barnet"], 
 # "Sep 5 2014 16:32 - Sep 5 2014 16:35"=>["Victoria line to Oxford Circus / Victoria line towards Brixton"]} 
 ```
+
+####Disruptions
+
+The `find_disruptions` method returns an array of potential disruptions to a particular journey.
+
+```ruby
+journeys = client.get_journeys from: "fulham broadway underground station", to: 'edgware road underground station circle line'
+journey = journeys.first
+journeys.first.find_disruptions
+#=> ["DISTRICT LINE TO KENSINGTON (OLYMPIA): The all day District Line service to Kensington (Olympia) has been withdrawn on Monday to Friday except for a very limited number of early morning and evening trains and during some events. Journey Planner will show when this service is operating.", "District Line: Minor delays between Edgware Road and Wimbledon only, due to an earlier signal failure at East Putney. GOOD SERVICE on the rest of the line.", "FULHAM BROADWAY, WIMBLEDON, SOUTHFIELDS, EARLS COURT AND WESTMINSTER STATIONS: A ramp is provided at these stations providing step-free access onto District line trains (as well as Circle line trains at Westminster). Please ask staff in the ticket hall for assistance."] 
+```
+
+This method also comes with the filter options, `filter: :realtime`, `filter: information`.
+
+```ruby
+journey.find_disruptions filter: :realtime
+#=> ["District Line: Minor delays between Edgware Road and Wimbledon only, due to an earlier signal failure at East Putney. GOOD SERVICE on the rest of the line."] 
+```
+
 
 ### Integrating with Google Maps
 
