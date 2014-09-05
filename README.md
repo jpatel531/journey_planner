@@ -36,10 +36,12 @@ journeys = client.get_journeys from: "old street underground station", to: "oxfo
 
 Methods you can play with:
 
+The `instructions` method returns a hash of instructions, with the keys as departure and arrival times, and the values as arrays of verbal instructions.
+
 ```ruby
 journeys.first.instructions
-# {"2014-09-05T16:11:00 - 2014-09-05T16:18:00"=>["Northern line to Euston / Northern line towards High Barnet, or Edgware"], 
-# "2014-09-05T16:23:00 - 2014-09-05T16:26:00"=>["Victoria line to Oxford Circus / Victoria line towards Brixton"]} 
+# {"Sep 5 2014 16:21 - Sep 5 2014 16:27"=>["Northern line to Euston / Northern line towards Edgware, Mill Hill East, or High Barnet"], 
+# "Sep 5 2014 16:32 - Sep 5 2014 16:35"=>["Victoria line to Oxford Circus / Victoria line towards Brixton"]} 
 ```
 
 ### Integrating with Google Maps
