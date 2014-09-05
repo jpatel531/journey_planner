@@ -181,6 +181,7 @@ client.get_journeys from: "fulham broadway underground station", to: "edgware ro
 #=> Did you mean? 
 #=> Edgware Road, Edgware Road (Circle Line) Underground Station
 #=> false
+```
 
 ##Objectives
 
