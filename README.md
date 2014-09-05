@@ -38,7 +38,8 @@ Methods you can play with:
 
 ```ruby
 journeys.first.instructions
-# => ["Northern line to Euston / Northern line towards Edgware, or High Barnet", "Victoria line to Oxford Circus / Victoria line towards Brixton"]
+# {"2014-09-05T16:11:00 - 2014-09-05T16:18:00"=>["Northern line to Euston / Northern line towards High Barnet, or Edgware"], 
+# "2014-09-05T16:23:00 - 2014-09-05T16:26:00"=>["Victoria line to Oxford Circus / Victoria line towards Brixton"]} 
 ```
 
 ### Integrating with Google Maps
