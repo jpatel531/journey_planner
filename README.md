@@ -146,7 +146,7 @@ alternative_cycle: #=> Set to True to generate an additional journey consisting 
 
 alternative_walking: #=> Set to true to generate an additional journey consisting of walking only, if possible. Default value is false. eg. alternative_walking: true
 
-apply_html_marking: #=> Flag to determine whether certain text (e.g. walking instructions) should be output with HTML tags or not.
+apply_html_markup: #=> Flag to determine whether certain text (e.g. walking instructions) should be output with HTML tags or not.
 
 ```
 
