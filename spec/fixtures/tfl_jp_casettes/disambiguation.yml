@@ -1,0 +1,77 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.tfl.gov.uk/Journey/JourneyResults/%7Bfrom%7D/to/%7Bto%7D/via/%7Bvia%7D?adjustment=&alternativeCycle=false&alternativeWalking=true&app_id=a09e631e&app_key=c381b49216f90558cf148c53cd5205b8&applyHtmlMarkup=false&cyclePreference=&from=fulham%2Bbroadway%2Bunderground%2Bstation&fromName=&journeyPreference=&maxTransferMinutes=&maxWalkingMinutes=&mode=&nationalSearch=false&timeIs=Departing&to=edgware%2Broad%2Bunderground%2Bstation&toName=&via=&viaName=
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - s-maxage=86400
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept-Encoding
+      Server:
+      - Microsoft-IIS/8.0
+      Api-Entity-Payload:
+      - itineraryresult, disambiguationresult, mode, stoppoint, place, disruption,
+        plannedworks, line, linestatus
+      X-Aspnet-Version:
+      - 4.0.30319
+      Access-Control-Allow-Headers:
+      - Content-Type
+      Access-Control-Allow-Methods:
+      - GET,POST,PUT,DELETE,OPTIONS
+      X-Ttl-Rule:
+      - '0'
+      X-Cacheable:
+      - Yes. Cacheable
+      X-Ttl:
+      - '86400.000'
+      X-Backend:
+      - api
+      X-Varnish:
+      - 10.73.2.241
+      - '1842265924'
+      X-Backend-Url:
+      - "/Journey/JourneyResults/%7Bfrom%7D/to/%7Bto%7D/via/%7Bvia%7D?app_key=c381b49216f90558cf148c53cd5205b8&app_id=a09e631e&from=fulham%2Bbroadway%2Bunderground%2Bstation&to=edgware%2Broad%2Bunderground%2Bstation&via=&nationalSearch=false&timeIs=Departing&journeyPreference=&mode=&fromName=&toName=&viaName=&maxTransferMinutes=&maxWalkingMinutes=&cyclePreference=&adjustment=&alternativeCycle=false&alternativeWalking=true&applyHtmlMarkup=false"
+      X-Hash-Url:
+      - "/Journey/JourneyResults/%7Bfrom%7D/to/%7Bto%7D/via/%7Bvia%7D?app_key=c381b49216f90558cf148c53cd5205b8&app_id=a09e631e&from=fulham%2Bbroadway%2Bunderground%2Bstation&to=edgware%2Broad%2Bunderground%2Bstation&via=&nationalSearch=false&timeIs=Departing&journeyPreference=&mode=&fromName=&toName=&viaName=&maxTransferMinutes=&maxWalkingMinutes=&cyclePreference=&adjustment=&alternativeCycle=false&alternativeWalking=true&applyHtmlMarkup=false"
+      Access-Control-Allow-Origin:
+      - "*"
+      Transfer-Encoding:
+      - chunked
+      Date:
+      - Fri, 05 Sep 2014 19:42:32 GMT
+      Age:
+      - '0'
+      Via:
+      - 1.1 varnish
+      Connection:
+      - keep-alive
+      X-Banning:
+      - ''
+      X-Cache:
+      - MISS
+    body:
+      encoding: UTF-8
+      string: '{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.DisambiguationResult,
+        Tfl.Api.Presentation.Entities","toLocationDisambiguation":{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Disambiguation,
+        Tfl.Api.Presentation.Entities","disambiguationOptions":[{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.DisambiguationOption,
+        Tfl.Api.Presentation.Entities","parameterValue":"1000072","uri":"/journey/journeyresults/%7bfrom%7d/to/%7bto%7d/via/%7bvia%7d?app_key=c381b49216f90558cf148c53cd5205b8&app_id=a09e631e&from=fulham%2bbroadway%2bunderground%2bstation&to=edgware%2broad%2bunderground%2bstation&via=&nationalsearch=false&timeis=departing&journeypreference=&mode=&fromname=&toname=&vianame=&maxtransferminutes=&maxwalkingminutes=&cyclepreference=&adjustment=&alternativecycle=false&alternativewalking=true&applyhtmlmarkup=false","place":{"$type":"Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities","naptanId":"940GZZLUERC","modes":["tube","bus"],"icsCode":"1000072","stopType":"stop","url":"http://api.prod3.live.tfl.gov.uk/StopPoint/940GZZLUERC","commonName":"Edgware
+        Road, Edgware Road (Circle Line) Underground Station","placeType":"StopPoint","additionalProperties":[],"lat":51.51980119415,"lon":-0.16774821282},"matchQuality":972}],"matchStatus":"list"},"fromLocationDisambiguation":{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Disambiguation,
+        Tfl.Api.Presentation.Entities","matchStatus":"identified"},"viaLocationDisambiguation":{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Disambiguation,
+        Tfl.Api.Presentation.Entities","matchStatus":"empty"},"recommendedMaxAgeMinutes":1440,"searchCriteria":{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.SearchCriteria,
+        Tfl.Api.Presentation.Entities","dateTime":"2014-09-05T20:42:00","dateTimeType":"Departing"},"journeyVector":{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.JourneyVector,
+        Tfl.Api.Presentation.Entities","from":"fulham+broadway+underground+station","to":"edgware+road+underground+station","via":"","uri":"/journey/journeyresults/%7bfrom%7d/to/%7bto%7d/via/%7bvia%7d?app_key=c381b49216f90558cf148c53cd5205b8&app_id=a09e631e&from=fulham%2bbroadway%2bunderground%2bstation&to=edgware%2broad%2bunderground%2bstation&via=&nationalsearch=false&timeis=departing&journeypreference=&mode=&fromname=&toname=&vianame=&maxtransferminutes=&maxwalkingminutes=&cyclepreference=&adjustment=&alternativecycle=false&alternativewalking=true&applyhtmlmarkup=false"}}'
+    http_version: 
+  recorded_at: Fri, 05 Sep 2014 19:42:33 GMT
+recorded_with: VCR 2.9.2

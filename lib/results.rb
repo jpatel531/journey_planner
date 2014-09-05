@@ -1,4 +1,4 @@
-require_relative 'rubify_keys'
+require_relative 'rubyify_keys'
 
 module TFLJourneyPlanner
 
@@ -50,7 +50,18 @@ module TFLJourneyPlanner
 				alternativeCycle: alternative_cycle, 
 				alternativeWalking: alternative_walking, 
 				applyHtmlMarkup: apply_html_markup}).rubyify_keys!
-			process_journeys_from results
+
+			results["$type"].include?("DisambiguationResult") ? (disambiguate results) : (process_journeys_from results)
+		end
+
+		def disambiguate results
+			options = []
+			find_common_names = lambda { |option| options << option["place"]["common_name"] }
+			results["to_location_disambiguation"]["disambiguation_options"].each(&find_common_names) if results["to_location_disambiguation"]["disambiguation_options"]
+			results["from_location_disambiguation"]["disambiguation_options"].each(&find_common_names) if results["from_location_disambiguation"]["disambiguation_options"]
+			puts "Did you mean?\n\n"
+			options.each {|o| puts o + "\n"}
+			false
 		end
 
 		def process_journeys_from results

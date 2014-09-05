@@ -171,6 +171,17 @@ apply_html_markup: #=> Flag to determine whether certain text (e.g. walking inst
 
 ```
 
+#### Disambiguation
+
+When entering to- and from- locations, specificity is the best option. For instance, searching for "Fulham Broadway Underground Station" or "Feltham Rail Station" will work, whereas "Fulham Broadway", "Feltham", "Fulham Broadway Station" or "Feltham Station" will not. However, TFL does provide some disambiguation options in their API for less obvious entries, which the gem prints to the console when an ambiguous search has been entered.
+
+```ruby 
+client.get_journeys from: "fulham broadway underground station", to: "edgware road underground station"
+
+#=> Did you mean? 
+#=> Edgware Road, Edgware Road (Circle Line) Underground Station
+#=> false
+
 ##Objectives
 
 * To learn about how to create a gem

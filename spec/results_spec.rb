@@ -20,12 +20,13 @@ describe TFLJourneyPlanner::Results, vcr: true do
 		end
 	end
 
-	# it 'must calculate an average duration of the journeys found' do 
-	# 	VCR.use_cassette "hello", record: :none do
-	# 		expect(journeys)
+	it 'must provide disambiguation options' do 
+		VCR.use_cassette "disambiguation", record: :none do
+			expect(STDOUT).to receive(:puts).with "Did you mean?\n\n"
+			expect(STDOUT).to receive(:puts).with "Edgware Road, Edgware Road (Circle Line) Underground Station\n"
+			journeys = client.get_journeys from: "fulham broadway underground station", to: "edgware road underground station"
+		end
 
-	# 	end
-
-	# end
+	end
 
 end
