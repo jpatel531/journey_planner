@@ -36,7 +36,7 @@ journeys = client.get_journeys from: "old street underground station", to: "oxfo
 
 ### Methods you can play with:
 
-####Instructions
+####Journey Instructions
 
 The `instructions` method returns a hash of instructions, with the keys as departure and arrival times, and the values as arrays of verbal instructions.
 
@@ -57,7 +57,7 @@ journeys.first.find_disruptions
 #=> ["DISTRICT LINE TO KENSINGTON (OLYMPIA): The all day District Line service to Kensington (Olympia) has been withdrawn on Monday to Friday except for a very limited number of early morning and evening trains and during some events. Journey Planner will show when this service is operating.", "District Line: Minor delays between Edgware Road and Wimbledon only, due to an earlier signal failure at East Putney. GOOD SERVICE on the rest of the line.", "FULHAM BROADWAY, WIMBLEDON, SOUTHFIELDS, EARLS COURT AND WESTMINSTER STATIONS: A ramp is provided at these stations providing step-free access onto District line trains (as well as Circle line trains at Westminster). Please ask staff in the ticket hall for assistance."] 
 ```
 
-This method also comes with the filter options, `filter: :realtime`, `filter: information`.
+This method also comes with the filter options, `filter: :realtime`, `filter: information`. The former represents live updates regarding delays and closures, where the latter provides more general information.
 
 ```ruby
 journey.find_disruptions filter: :realtime
