@@ -110,7 +110,7 @@ to: #=> Destination of the journey (if in coordinate format then must be "longit
 
 via: #=> Travel through (if in coordinate format then must be "longitude,latidude")
 
-national_search #=> Does the journey cover stops outside London? eg. "nationalSearch=true". Set to false by default
+national_search: #=> Does the journey cover stops outside London? eg. "nationalSearch=true". Set to false by default
 
 date: #=> The date must be in yyyyMMdd format
 
