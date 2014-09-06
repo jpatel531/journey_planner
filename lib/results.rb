@@ -38,7 +38,7 @@ module TFLJourneyPlanner
 				to: to, 
 				via: via, 
 				nationalSearch: national_search,
-				time: time
+				time: time,
 				timeIs: time_is,
 				journeyPreference: journey_preference,
 				mode: mode,
