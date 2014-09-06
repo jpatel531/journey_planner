@@ -201,6 +201,12 @@ client.get_journeys from: "fulham broadway underground station", to: "edgware ro
 * Recursive OpenStruct
 * TFL API
 
+##Usage Examples
+
+###Last Train
+
+[Last Train](http://github.com/jpatel531/last-train) is a simple app that allows you to search for late night trains and buses, and sends you an SMS with directions, either now or an hour before departure. This app combines the journey_planner gem with GMaps to show paths, and with Twilio to communicate instructions.
+
 
 ## Contributing
 
