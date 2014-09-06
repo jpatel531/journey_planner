@@ -1,5 +1,7 @@
 # Unofficial TFL Journey Planner Gem
 
+[![Gem Version](https://badge.fury.io/rb/journey_planner.svg)](http://badge.fury.io/rb/journey_planner)
+
 A Ruby-wrapper for the TFL Journey Planner API.
 
 ## Installation
