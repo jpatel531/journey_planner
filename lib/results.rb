@@ -17,6 +17,7 @@ module TFLJourneyPlanner
 			via = options[:via]
 			national_search = options[:national_search] || false
 			time  = options[:time]
+			date = options[:date]
 			time_is = options[:time_is] || "Departing"
 			journey_preference = options[:journey_preference]
 			mode = options[:mode]
@@ -39,6 +40,7 @@ module TFLJourneyPlanner
 				via: via, 
 				nationalSearch: national_search,
 				time: time,
+				date: date,
 				timeIs: time_is,
 				journeyPreference: journey_preference,
 				mode: mode,
