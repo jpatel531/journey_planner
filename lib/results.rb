@@ -16,6 +16,7 @@ module TFLJourneyPlanner
 			to = options[:to].gsub(" ", "+")
 			via = options[:via]
 			national_search = options[:national_search] || false
+			time  = options[:time]
 			time_is = options[:time_is] || "Departing"
 			journey_preference = options[:journey_preference]
 			mode = options[:mode]
@@ -36,7 +37,8 @@ module TFLJourneyPlanner
 				from: from, 
 				to: to, 
 				via: via, 
-				nationalSearch: national_search, 
+				nationalSearch: national_search,
+				time: time
 				timeIs: time_is,
 				journeyPreference: journey_preference,
 				mode: mode,
