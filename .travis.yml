@@ -3,5 +3,5 @@ rvm:
   - 2.1.2
 install: gem install bundler
 script: 
-	bundle install
-	rspec
+	- bundle install
+	- rspec
