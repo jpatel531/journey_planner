@@ -4,6 +4,9 @@
 
 A Ruby-wrapper for the TFL Journey Planner API.
 
+![Map](http://cdn.londonandpartners.com/images/explorer-map/tubemap-2012-12.png)
+
+
 ## Installation
 
 Add this line to your application's Gemfile:
