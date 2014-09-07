@@ -191,6 +191,7 @@ client.get_journeys from: "fulham broadway underground station", to: "edgware ro
 * To learn about making HTTP requests with HTTParty
 * To learn how to stub HTTP requests in your test suite with VCR and WebMock
 * To explore the TFL Journey Planner API
+* To learn how to use Travis CI
 
 
 ##Technologies
@@ -202,6 +203,7 @@ client.get_journeys from: "fulham broadway underground station", to: "edgware ro
 * HTTParty
 * Recursive OpenStruct
 * TFL API
+* Travis CI
 
 ##Usage Examples
 
