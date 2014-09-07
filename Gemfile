@@ -6,6 +6,7 @@ gemspec
 gem 'httparty'
 gem 'recursive-open-struct'
 gem 'activesupport'
+gem 'rake'
 
 group :test do 
 	gem 'webmock'
