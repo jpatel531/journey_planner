@@ -40,7 +40,7 @@ journeys = client.get_journeys from: "old street underground station", to: "oxfo
 
 ####Instructions
 
-The `instructions` method returns a hash of instructions, with the keys as departure and arrival times, and the values as arrays of verbal instructions.
+The `instructions` method on a journey instance returns a hash of instructions, with the keys as departure and arrival times, and the values as arrays of verbal instructions.
 
 ```ruby
 journeys.first.instructions
@@ -97,7 +97,7 @@ leg.planned_works #=> returns an array of planned works for this section of the 
 
 leg.path.line_string #=> returns a JSON array of coordinates travelled through, e.g. "[[51.45151025215, -0.41971520833],[51.45144462064, -0.41951598516],[51.45227139887, -0.41881099496]]" 
 
-leg.instruction #=> returns an object representing instructions for the leg itself, not the whole journey.
+leg.instruction #=> returns an object representing instructions for the leg itself.
 
 ```
 
@@ -116,11 +116,14 @@ instruction.steps #=> if the instructions describe public transportations, this 
 steps = instruction.steps
 step = steps.first
 
-step.description #=> returns a textual instruction, e.g. "Continue along Epworth Street for 17 metres (0 minutes, 15 seconds)."
+step.description #=> returns textual instruction, e.g. "Continue along Epworth Street for 17 metres (0 minutes, 15 seconds)."
 
 step.turn_direction #=> e.g. "STRAIGHT"
 
 step.distance #=> e.g. 17
+
+step.latitude #=> e.g. -0.08704303829
+step.longitude #=> e.g. 51.523251804
 
 step.sky_direction #=> 27
 ```
