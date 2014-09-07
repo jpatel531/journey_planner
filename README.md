@@ -38,7 +38,7 @@ journeys = client.get_journeys from: "old street underground station", to: "oxfo
 
 ### Example Methods
 
-####Journey Instructions
+####Instructions
 
 The `instructions` method returns a hash of instructions, with the keys as departure and arrival times, and the values as arrays of verbal instructions.
 
@@ -63,9 +63,67 @@ This method also comes with the filter options, `filter: :realtime`, `filter: :i
 
 ```ruby
 journey.find_disruptions filter: :realtime
-#=> ["District Line: Minor delays between Edgware Road and Wimbledon only, due to an earlier signal failure at East Putney. GOOD SERVICE on the rest of the line."] 
+#=> ["District Line: Minor delays between Edgware Road and Wimbledon only, due to an earlier signal failure at East Putney. GOOD SERVICE on the rest of the line."]
 ```
 
+####Journey Methods
+
+```ruby
+journey.start_date_time #=> returns the time at which a journey begins, e.g. "2014-09-07T17:52:00"
+journey.arrival_date_time #=> returns the time of arrival, e.g. "2014-09-07T18:10:00"
+
+journey.duration #=> returns the duration of a journey in minutes, e.g. 18
+
+journey.legs #=> returns an array of legs, into which journeys are divided.
+```
+
+####Leg Methods
+
+As journeys are divided into legs, most of the more substiantial data is contained within these objects. The following is an overview of what I consider the more interesting methods:
+
+```ruby
+leg = journey.legs.first
+
+leg.duration #=> returns the duration of a particular leg in minutes, e.g. 5
+
+leg.departure_time #=> the time that leg begins
+leg.arrival_time #=> the time that leg is completed
+
+leg.distance #=> returns the distance of that leg in metres, e.g. 906.0
+
+leg.disruptions #=> returns an array of disruptions to the leg, and potential obstacles for those who need assistance. e.g. leg.disruptions.first.description => "OXFORD CIRCUS STATION: A ramp is provided at this station providing step-free interchange between northbound Bakerloo and northbound Victoria line trains, and between southbound Bakerloo and southbound Victoria line trains. Please ask staff in the ticket hall for assistance."
+
+leg.planned_works #=> returns an array of planned works for this section of the journey
+
+leg.path.line_string #=> returns a JSON array of coordinates travelled through, e.g. "[[51.45151025215, -0.41971520833],[51.45144462064, -0.41951598516],[51.45227139887, -0.41881099496]]" 
+
+leg.instruction #=> returns an object representing instructions for the leg itself, not the whole journey.
+
+```
+
+#####Leg Instructions
+
+```ruby
+
+instruction = leg.instruction
+
+instruction.summary #=> returns a plain instruction of what to do, e.g. "Victoria line to Oxford Circus"
+
+instruction.detailed #=> gives more information about which train or bus to take (if the instructions pertain to walking, summary and detailed versions are identical), e.g. "Victoria line towards Walthamstow Central, or Seven Sisters"
+
+instruction.steps #=> if the instructions describe public transportations, this returns an empty array. If they are walking instructions, this returns an array of steps.
+
+steps = instruction.steps
+step = steps.first
+
+step.description #=> returns a textual instruction, e.g. "Continue along Epworth Street for 17 metres (0 minutes, 15 seconds)."
+
+step.turn_direction #=> e.g. "STRAIGHT"
+
+step.distance #=> e.g. 17
+
+step.sky_direction #=> 27
+```
 
 ### Integrating with Google Maps
 

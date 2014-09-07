@@ -2,8 +2,8 @@ require_relative 'spec_helper'
 
 describe TFLJourneyPlanner::Results, vcr: true do
 
-	let(:client) {client = TFLJourneyPlanner::Client.new(app_id: ENV["TFL_ID"], app_key: ENV["TFL_KEY"])}
-	let(:journeys) {journeys =  client.get_journeys(from: "tw14 9nt", to: "tw14 8ex")}
+	let(:client) {TFLJourneyPlanner::Client.new(app_id: ENV["TFL_ID"], app_key: ENV["TFL_KEY"])}
+	let(:journeys) {client.get_journeys(from: "tw14 9nt", to: "tw14 8ex")}
 	
 
 	it "must work" do 
