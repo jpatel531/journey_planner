@@ -177,9 +177,9 @@ Your HTML and Javascript (assuming JQuery, the Google Maps API, and GMapsJS have
 			  strokeOpacity: 0.6,
 			  strokeWeight: 6
 			});
-		})
+		});
 
-	})
+	});
 ```
 
 On launching your app, you should find that GMaps has created a polyline from the TFL Journey Planner path coordinates.
