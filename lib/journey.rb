@@ -16,7 +16,7 @@ module TFLJourneyPlanner
 					array << ["#{prettify leg.departure_time} - #{prettify leg.arrival_time}", leg.instruction.summary + " / " + leg.instruction.detailed]
 				end
 			end
-			array.inject(Hash.new{ |h,k| h[k]=[] }){ |h,(k,v)| h[k] << v; h }
+			array.inject(Hash.new{ |hash,key| hash[key]=[] }){ |hash,(key,value)| hash[key] << value; hash }
 		end
 
 		def map_path
