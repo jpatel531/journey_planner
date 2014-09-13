@@ -1,10 +1,12 @@
 require_relative 'rubyify_keys'
+require_relative 'disambiguation'
 
 module TFLJourneyPlanner
 
 	module Results
 
 		include HTTParty
+		include TFLJourneyPlanner::Results::Disambiguation
 
 		BASE_URI = 'http://api.tfl.gov.uk/Journey/JourneyResults/%7Bfrom%7D/to/%7Bto%7D/via/%7Bvia%7D'
 
@@ -58,15 +60,6 @@ module TFLJourneyPlanner
 			results["$type"].include?("DisambiguationResult") ? (disambiguate results) : (process_journeys_from results)
 		end
 
-		def disambiguate results
-			options = []
-			find_common_names = lambda { |option| options << option["place"]["common_name"] }
-			results["to_location_disambiguation"]["disambiguation_options"].each(&find_common_names) if results["to_location_disambiguation"]["disambiguation_options"]
-			results["from_location_disambiguation"]["disambiguation_options"].each(&find_common_names) if results["from_location_disambiguation"]["disambiguation_options"]
-			puts "Did you mean?\n\n"
-			options.each {|o| puts o + "\n"}
-			false
-		end
 
 		def process_journeys_from results
 			array = []
