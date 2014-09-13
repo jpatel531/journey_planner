@@ -20,11 +20,7 @@ module TFLJourneyPlanner
 		end
 
 		def map_path
-			array = []
-			legs.each do |leg|
-				array += JSON.parse(leg.path.line_string)
-			end
-			return array
+			legs.map { |leg| JSON.parse(leg.path.line_string)}.flatten(1)
 		end
 
 		def find_disruptions(options = {filter: :all})
