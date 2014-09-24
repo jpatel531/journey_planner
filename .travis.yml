@@ -3,7 +3,7 @@ rvm:
   - 2.1.2
 install: gem install bundler
 addons:
-  - codeclimate:
+  codeclimate:
     repo_token: c6f3050691513fe190dee1b60b55e62d9883f19b9fc50658cc95f359a1e93f38 
 script:
   - bundle install
