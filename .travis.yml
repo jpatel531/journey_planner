@@ -4,4 +4,5 @@ rvm:
 install: gem install bundler
 script:
   - bundle install
+  - export CODECLIMATE_REPO_TOKEN=c6f3050691513fe190dee1b60b55e62d9883f19b9fc50658cc95f359a1e93f38 
   - rspec

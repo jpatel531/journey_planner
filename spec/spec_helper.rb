@@ -1,7 +1,9 @@
 require 'journey_planner'
-
 require 'webmock'
 require 'vcr'
+
+require "codeclimate-test-reporter"
+CodeClimate::TestReporter.start
 
 
 
