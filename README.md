@@ -1,6 +1,6 @@
 # Unofficial TFL Journey Planner Gem
 
-[![Gem Version](https://badge.fury.io/rb/journey_planner.svg)](http://badge.fury.io/rb/journey_planner) [![Build Status](https://travis-ci.org/jpatel531/journey_planner.svg?branch=master)](https://travis-ci.org/jpatel531/journey_planner) [![Code Climate](https://codeclimate.com/github/jpatel531/journey_planner/badges/gpa.svg)](https://codeclimate.com/github/jpatel531/journey_planner)
+[![Gem Version](https://badge.fury.io/rb/journey_planner.svg)](http://badge.fury.io/rb/journey_planner) [![Build Status](https://travis-ci.org/jpatel531/journey_planner.svg?branch=master)](https://travis-ci.org/jpatel531/journey_planner) [![Test Coverage](https://codeclimate.com/github/jpatel531/journey_planner/badges/coverage.svg)](https://codeclimate.com/github/jpatel531/journey_planner)
 
 A Ruby-wrapper for the TFL Journey Planner API.
 
