@@ -2,6 +2,7 @@ require 'journey_planner'
 require 'webmock'
 require 'vcr'
 
+ENV['CODECLIMATE_REPO_TOKEN'] = 'c6f3050691513fe190dee1b60b55e62d9883f19b9fc50658cc95f359a1e93f38'
 require "codeclimate-test-reporter"
 CodeClimate::TestReporter.start
 
